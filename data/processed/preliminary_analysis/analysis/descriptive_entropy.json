@@ -1,0 +1,21 @@
+{
+  "schema": "virgo-rng-lab-v2",
+  "analyzed_bytes": 8000000,
+  "channels": {
+    "I": {
+      "sample_count": 4000000,
+      "distinct_symbols": 6,
+      "shannon_bits_per_8bit_symbol": 1.3084809467140825,
+      "most_frequent_symbol_probability": 0.534853,
+      "naive_most_frequent_bound_bits": 0.9027856619007685
+    },
+    "Q": {
+      "sample_count": 4000000,
+      "distinct_symbols": 6,
+      "shannon_bits_per_8bit_symbol": 1.309641558488148,
+      "most_frequent_symbol_probability": 0.53449975,
+      "naive_most_frequent_bound_bits": 0.9037388217289575
+    }
+  },
+  "warning": "Naive most-frequent-symbol bound is NOT validated min-entropy for dependent data."
+}

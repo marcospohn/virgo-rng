@@ -1,0 +1,15 @@
+{
+  "schema": "virgo-rng-restart-audit-v1",
+  "runs_expected": 3,
+  "runs_recorded": 3,
+  "samples_per_run": 1000,
+  "reset_mode": "manual-operator-attested",
+  "matrix_checks": {
+    "i": true,
+    "q": true
+  },
+  "integrity_ok": true,
+  "errors": [],
+  "physical_restart_verified": false,
+  "warning": "Hashes verify data integrity, not physical power cycling, first-sample fidelity, or NIST compliance."
+}

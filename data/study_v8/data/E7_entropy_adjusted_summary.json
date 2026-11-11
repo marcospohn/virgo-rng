@@ -1,0 +1,22 @@
+{
+  "method": "Pearson correlations; capture demeaning; OLS residualization on capture-centered std_i",
+  "input": "data/E7_analise_final.zip:results/E7_carina/analysis_final/windows.csv",
+  "scope": "Original E7 window-level spectrum/entropy summary; not later DC-corrected spectral features",
+  "all_windows": {
+    "n_windows": 102,
+    "n_captures": 7,
+    "pooled_spectral_entropy_r": -0.326092308426559,
+    "pooled_shannon_amplitude_r": 0.9982215338661513,
+    "capture_centered_spectral_entropy_r": 0.10071977151008714,
+    "capture_and_std_i_partial_r": 0.09677588987371541
+  },
+  "sky_windows": {
+    "n_windows": 90,
+    "n_captures": 5,
+    "pooled_spectral_entropy_r": -0.3808426270816714,
+    "pooled_shannon_amplitude_r": 0.9989911832897441,
+    "capture_centered_spectral_entropy_r": 0.09304524600128983,
+    "capture_and_std_i_partial_r": 0.10822100646835209
+  },
+  "caveat": "Descriptive only. 10-s windows are not independent astronomical replications; no causal interpretation or conventional p-values."
+}

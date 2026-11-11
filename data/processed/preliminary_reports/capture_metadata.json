@@ -1,0 +1,16 @@
+{
+  "schema": "virgo-rng-continuous-v1",
+  "created_utc": "2026-10-15T01:33:25.360760+00:00",
+  "setup": "indoor-dipole",
+  "rate": 2400000,
+  "freq": 1420405752,
+  "gain_requested": 30,
+  "seconds_requested": 180.0,
+  "pairs_requested": 432000000,
+  "bytes_received": 864000000,
+  "capture_status": "bounded-complete",
+  "rtl_returncode_after_termination": 0,
+  "pll_not_locked": true,
+  "elapsed_wall_seconds": 187.34467950399267,
+  "note": "Intentional termination after byte target; return code may be negative."
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "virgo-rng-nist-campaign-summary-v1",
+  "source_sha256": "a5dfd13dc1eaa963a62494405d22faa726657fd0be4c713b13528d2a0f5f33b9",
+  "reference_results": {},
+  "results": [
+    {
+      "id": "beginning_i",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.306231,
+        "h_bitstring": 0.506069,
+        "h_final": 4.048552
+      }
+    },
+    {
+      "id": "beginning_q",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.306231,
+        "h_bitstring": 0.505428,
+        "h_final": 4.043423
+      }
+    },
+    {
+      "id": "middle_i",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.430476,
+        "h_bitstring": 0.507681,
+        "h_final": 4.061444
+      }
+    },
+    {
+      "id": "middle_q",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.437386,
+        "h_bitstring": 0.51106,
+        "h_final": 4.088479
+      }
+    },
+    {
+      "id": "end_i",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.306244,
+        "h_bitstring": 0.511493,
+        "h_final": 4.091945
+      }
+    },
+    {
+      "id": "end_q",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 5.306231,
+        "h_bitstring": 0.510619,
+        "h_final": 4.08495
+      }
+    },
+    {
+      "id": "full_iq_interleaved",
+      "status": "completed",
+      "input_hash_matches": true,
+      "estimates": {
+        "h_original": 4.973908,
+        "h_bitstring": 0.496304,
+        "h_final": 3.970429
+      }
+    }
+  ],
+  "warning": "Within-recording sensitivity analysis only; not restart validation or certification"
+}

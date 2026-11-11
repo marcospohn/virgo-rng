@@ -1,0 +1,67 @@
+{
+  "source": "results/controlled_abab/B1_antenna.cu8",
+  "bytes": 864000000,
+  "total_pairs": 432000000,
+  "windows": 120,
+  "pairs_per_window": 65536,
+  "fraction_pairs_analyzed": 0.018204444444444443,
+  "lag_convention": "cross(k) = corr(I[t], Q[t+k])",
+  "antisym_convention": "(cross(+k) - cross(-k))/2",
+  "metrics": {
+    "acf1_i": {
+      "mean": 0.07967497743560402,
+      "std_across_windows": 0.00398387277480312,
+      "min": 0.0684940220535935,
+      "max": 0.09091380280388751
+    },
+    "acf1_q": {
+      "mean": 0.07998277560036084,
+      "std_across_windows": 0.0038094030503865524,
+      "min": 0.07145515283923258,
+      "max": 0.09291174198962175
+    },
+    "cross_+0": {
+      "mean": 6.74890187792073e-05,
+      "std_across_windows": 0.004264530733318705,
+      "min": -0.012201026965970573,
+      "max": 0.009167212731190968
+    },
+    "cross_-41": {
+      "mean": 2.303007344133702e-05,
+      "std_across_windows": 0.0035698401404025285,
+      "min": -0.00881593985875451,
+      "max": 0.00818743960788276
+    },
+    "cross_-8": {
+      "mean": 0.0015255229197511189,
+      "std_across_windows": 0.004167574840377919,
+      "min": -0.011071639285693493,
+      "max": 0.011104815463378928
+    },
+    "cross_+8": {
+      "mean": -0.0016094433145488966,
+      "std_across_windows": 0.0036785164308524966,
+      "min": -0.009766780392203724,
+      "max": 0.005658842260470581
+    },
+    "cross_+41": {
+      "mean": 6.973216699378802e-05,
+      "std_across_windows": 0.0043815903249094035,
+      "min": -0.01066194363108447,
+      "max": 0.012442281714821476
+    },
+    "antisym_8": {
+      "mean": -0.0015674831171500077,
+      "std_across_windows": 0.0029748376738720377,
+      "min": -0.008602534231255874,
+      "max": 0.005286641559671762
+    },
+    "antisym_41": {
+      "mean": 2.3351046776225573e-05,
+      "std_across_windows": 0.002706136651347387,
+      "min": -0.006188211466805982,
+      "max": 0.005585160839589246
+    }
+  },
+  "warning": "Estat\u00edsticas descritivas, n\u00e3o estimativa validada de entropia criptogr\u00e1fica."
+}

@@ -1,0 +1,47 @@
+{
+  "method": "Uncalibrated ON1/ON2 average vs OFF; power ratio, not confirmed HI detection",
+  "fft_size": 4096,
+  "blocks_per_capture": 3000,
+  "frequency_center_hz": 1420405752,
+  "peak_offset_hz": -417187.5,
+  "peak_frequency_hz": 1419988564.5,
+  "peak_on_off_db": 7.975039646621937,
+  "caution": "No bandpass calibration; peak may be RFI, baseline drift or gain changes. Do not claim astronomical detection. Marginal entropy is not NIST min-entropy.",
+  "captures": {
+    "A1": {
+      "sampled_symbols": 12288000,
+      "I_shannon_bits": 4.872749065411578,
+      "Q_shannon_bits": 4.873272141995355,
+      "I_marginal_min_bits": 4.1515398022464005,
+      "Q_marginal_min_bits": 4.152130420240505
+    },
+    "ON1": {
+      "sampled_symbols": 12288000,
+      "I_shannon_bits": 4.312873389323287,
+      "Q_shannon_bits": 4.312940465076116,
+      "I_marginal_min_bits": 3.5955012964008914,
+      "Q_marginal_min_bits": 3.596506448109541
+    },
+    "OFF": {
+      "sampled_symbols": 12288000,
+      "I_shannon_bits": 4.323511165828102,
+      "Q_shannon_bits": 4.323399134756357,
+      "I_marginal_min_bits": 3.6039604207503686,
+      "Q_marginal_min_bits": 3.60376771339609
+    },
+    "ON2": {
+      "sampled_symbols": 12288000,
+      "I_shannon_bits": 4.285536779387064,
+      "Q_shannon_bits": 4.2855091514524375,
+      "I_marginal_min_bits": 3.5657151134802403,
+      "Q_marginal_min_bits": 3.566415949734766
+    },
+    "A2": {
+      "sampled_symbols": 12288000,
+      "I_shannon_bits": 4.843607665256114,
+      "Q_shannon_bits": 4.843516925718838,
+      "I_marginal_min_bits": 4.1242690758828235,
+      "Q_marginal_min_bits": 4.125049381002355
+    }
+  }
+}

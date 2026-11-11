@@ -1,0 +1,86 @@
+{
+  "schema": "virgo-rng-nist-campaign-v1",
+  "setup": "indoor-dipole",
+  "source": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/antenna_01_sample.cu8",
+  "source_sha256": "a5dfd13dc1eaa963a62494405d22faa726657fd0be4c713b13528d2a0f5f33b9",
+  "total_pairs": 5000000,
+  "pairs_per_segment": 1000000,
+  "offsets_in_pairs": {
+    "beginning": 0,
+    "middle": 2000000,
+    "end": 4000000
+  },
+  "inputs": [
+    {
+      "id": "beginning_i",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/beginning_i.bin",
+      "sha256": "e069459e875cc2c4091f42010440c9541ebc86e0002d38b0f807c4d21d08b4a4",
+      "bytes": 1000000,
+      "channel": "i",
+      "start_pair": 0,
+      "pairs": 1000000
+    },
+    {
+      "id": "beginning_q",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/beginning_q.bin",
+      "sha256": "6cc272ccf3624031be5f259a1b92aa7988b812d68f10b25e9999402eed234849",
+      "bytes": 1000000,
+      "channel": "q",
+      "start_pair": 0,
+      "pairs": 1000000
+    },
+    {
+      "id": "middle_i",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/middle_i.bin",
+      "sha256": "756fe083abc313b64ee5fa2914a97953f6dd4b70a05791e4795cc48767e33ce1",
+      "bytes": 1000000,
+      "channel": "i",
+      "start_pair": 2000000,
+      "pairs": 1000000
+    },
+    {
+      "id": "middle_q",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/middle_q.bin",
+      "sha256": "f8a85bb554938a4566c9b8afaf116c7192b5428e6db65fbcb54e767730f2d4b2",
+      "bytes": 1000000,
+      "channel": "q",
+      "start_pair": 2000000,
+      "pairs": 1000000
+    },
+    {
+      "id": "end_i",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/end_i.bin",
+      "sha256": "81c80d8da1ed603acda39e28997fc83f5c62f7f0d7668aa309933abd86f24d76",
+      "bytes": 1000000,
+      "channel": "i",
+      "start_pair": 4000000,
+      "pairs": 1000000
+    },
+    {
+      "id": "end_q",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/end_q.bin",
+      "sha256": "54efb473060e4383837eef7643401978ef5d0a998ffd2748931e7bf345693d38",
+      "bytes": 1000000,
+      "channel": "q",
+      "start_pair": 4000000,
+      "pairs": 1000000
+    },
+    {
+      "id": "full_iq_interleaved",
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/full_iq_interleaved.bin",
+      "sha256": "a5dfd13dc1eaa963a62494405d22faa726657fd0be4c713b13528d2a0f5f33b9",
+      "bytes": 10000000,
+      "channel": "iq-interleaved",
+      "start_pair": 0,
+      "pairs": 5000000
+    }
+  ],
+  "references": {},
+  "method": "Three disjoint within-recording windows; I/Q raw 8-bit; plus full raw interleaved I,Q byte sequence",
+  "limitations": [
+    "Not independent acquisitions or restart tests",
+    "Do not add I and Q entropy estimates",
+    "No claim that 8-bit I/Q symbol process is IID or physically characterized",
+    "Do not use these estimates to select a cryptographic extraction rate"
+  ]
+}

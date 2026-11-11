@@ -1,0 +1,29 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+# Never add full experimental captures or local secrets by accident.
+*.cu8
+!data/samples/antenna_01_sample.cu8
+*.bin
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+results/
+local_results/
+data/raw/
+# Generated paper artifacts are not part of this repository.
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+paper.pdf
+paper.tex

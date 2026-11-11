@@ -1,0 +1,42 @@
+{
+  "schema": "virgo-rng-lab-v2",
+  "created_utc": "2026-10-24T13:30:30.577856+00:00",
+  "input": "/mnt/OneDrive/Main/astronomia/virgo_rng_v2_0_0/results/50ohm_30db/capture.cu8",
+  "input_bytes": 864000000,
+  "input_sha256": "d4fbd17aa85056fc6f9ea9b135b219a357984bac9e38a1e9499ca00c83f734cb",
+  "configuration": {
+    "rate": 2400000,
+    "freq": 1420405752,
+    "gain": 30.0,
+    "setup": "50ohm-termination",
+    "pairs_per_window": 65536,
+    "windows": 120,
+    "lags": [
+      8,
+      41
+    ],
+    "max_analysis_bytes": 8000000
+  },
+  "steps": {
+    "persistence": {
+      "status": "ok",
+      "coverage": {
+        "fraction_of_file": 0.018204444444444443,
+        "analyzed_pairs": 7864320,
+        "total_pairs": 432000000,
+        "unanalyzed_pairs": 424135680,
+        "time_span_seconds": 180.0
+      }
+    },
+    "descriptive_entropy": {
+      "status": "ok",
+      "analyzed_bytes": 8000000
+    }
+  },
+  "limitations": [
+    "Not NIST SP 800-90B certification",
+    "Correlations do not estimate min-entropy",
+    "RF source attribution requires controlled measurements"
+  ],
+  "status": "completed"
+}

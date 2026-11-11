@@ -1,0 +1,28 @@
+{
+  "tag": "ON1",
+  "condition": "antenna",
+  "azimuth_deg": "102",
+  "elevation_deg": "57",
+  "target_notes": "HI ON",
+  "start_utc": "2026-11-09T15:46:26.660300+00:00",
+  "end_utc": "2026-11-09T15:49:27.388415+00:00",
+  "elapsed_s": 180.73533037502784,
+  "command": [
+    "rtl_sdr",
+    "-d",
+    "0",
+    "-f",
+    "1420405752",
+    "-s",
+    "2400000",
+    "-g",
+    "30.0",
+    "-n",
+    "432000000",
+    "/Users/REDACTED_USER/astronomia/prog/virgo_rng_2_macos_completo/virgo_rng_v2_0_0/results/E1_20261109/ON1.cu8"
+  ],
+  "exit_code": 0,
+  "actual_bytes": 864000000,
+  "expected_bytes": 864000000,
+  "complete": true
+}

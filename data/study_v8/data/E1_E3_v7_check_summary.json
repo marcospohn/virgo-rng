@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "n_captures": 13,
+    "n_fft_blocks": 580074,
+    "n_complex_pairs": 4752000000,
+    "n_windows": 198,
+    "r_shannon_i_std_i": 0.9995313294445042
+  },
+  "full_record_peak_contrasts": [
+    {
+      "campaign": "first",
+      "pair": "ON1/OFF",
+      "peak_bin_minus_sideband_db": 13.138241939044038,
+      "median_3khz_minus_sideband_db": 0.09991046477459584,
+      "selected_bin_hz": 1419988857.46875
+    },
+    {
+      "campaign": "first",
+      "pair": "ON2/OFF",
+      "peak_bin_minus_sideband_db": 4.387166938749145,
+      "median_3khz_minus_sideband_db": 0.01739337495662932,
+      "selected_bin_hz": 1419988857.46875
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON1/OFF",
+      "peak_bin_minus_sideband_db": 7.291482835260146,
+      "median_3khz_minus_sideband_db": 0.016422819221865614,
+      "selected_bin_hz": 1419988857.46875
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON2/OFF",
+      "peak_bin_minus_sideband_db": 4.9125389399016015,
+      "median_3khz_minus_sideband_db": 0.023386366389822832,
+      "selected_bin_hz": 1419988857.46875
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A1",
+      "peak_bin_minus_sideband_db": 5.903913777179124,
+      "median_3khz_minus_sideband_db": 0.12157887265919332,
+      "selected_bin_hz": 1419988857.46875
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A2",
+      "peak_bin_minus_sideband_db": 5.922489599457679,
+      "median_3khz_minus_sideband_db": 0.06170926040934299,
+      "selected_bin_hz": 1419988857.46875
+    }
+  ],
+  "all_capture_peak_excess": [
+    {
+      "campaign": "first",
+      "capture": "A1",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": -0.007075205106383274,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "first",
+      "capture": "ON1",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 14.957514113537817,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "first",
+      "capture": "OFF",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 1.826181497200163,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "first",
+      "capture": "ON2",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 6.21359457447358,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "first",
+      "capture": "A2",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 0.013688549244958353,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A1",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": -0.034516526753899913,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON1",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 8.16299361755621,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "OFF",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 0.8658712702137463,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON2",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 5.783140272439593,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A2",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": -0.006422373760236282,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "e3",
+      "capture": "A1",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 0.05142102211520076,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "e3",
+      "capture": "ON",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 5.959809214801718,
+      "dc_change_at_peak_db": 0.0
+    },
+    {
+      "campaign": "e3",
+      "capture": "A2",
+      "frequency_bin_hz": 1419988857.46875,
+      "peak_bin_local_excess_db": 0.03250657044116153,
+      "dc_change_at_peak_db": 0.0
+    }
+  ],
+  "entropies": [
+    {
+      "campaign": "first",
+      "capture": "A1",
+      "n_windows": 18,
+      "shannon_i_mean": 4.872626106082316,
+      "min_entropy_i_mean": 4.152933402871778,
+      "std_i_mean": 7.089883453814869
+    },
+    {
+      "campaign": "first",
+      "capture": "ON1",
+      "n_windows": 18,
+      "shannon_i_mean": 4.31276330191947,
+      "min_entropy_i_mean": 3.5956478884865906,
+      "std_i_mean": 4.80917402827747
+    },
+    {
+      "campaign": "first",
+      "capture": "OFF",
+      "n_windows": 18,
+      "shannon_i_mean": 4.323567824305857,
+      "min_entropy_i_mean": 3.6039809800878877,
+      "std_i_mean": 4.855371977721403
+    },
+    {
+      "campaign": "first",
+      "capture": "ON2",
+      "n_windows": 18,
+      "shannon_i_mean": 4.285258796595109,
+      "min_entropy_i_mean": 3.5674178485179717,
+      "std_i_mean": 4.718372421491011
+    },
+    {
+      "campaign": "first",
+      "capture": "A2",
+      "n_windows": 18,
+      "shannon_i_mean": 4.843766513977447,
+      "min_entropy_i_mean": 4.124666023949481,
+      "std_i_mean": 6.948856719606476
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A1",
+      "n_windows": 18,
+      "shannon_i_mean": 4.885391405052641,
+      "min_entropy_i_mean": 4.165934351016365,
+      "std_i_mean": 7.152536451113736
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON1",
+      "n_windows": 18,
+      "shannon_i_mean": 4.311083006536379,
+      "min_entropy_i_mean": 3.589381691401338,
+      "std_i_mean": 4.8038426820753735
+    },
+    {
+      "campaign": "repeat",
+      "capture": "OFF",
+      "n_windows": 18,
+      "shannon_i_mean": 4.465032317774108,
+      "min_entropy_i_mean": 3.746568398254285,
+      "std_i_mean": 5.344824117471238
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON2",
+      "n_windows": 18,
+      "shannon_i_mean": 4.333822433679161,
+      "min_entropy_i_mean": 3.613213613085149,
+      "std_i_mean": 4.880016476212807
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A2",
+      "n_windows": 18,
+      "shannon_i_mean": 4.833030346153708,
+      "min_entropy_i_mean": 4.113986235336062,
+      "std_i_mean": 6.897542860718159
+    },
+    {
+      "campaign": "e3",
+      "capture": "A1",
+      "n_windows": 6,
+      "shannon_i_mean": 4.91163992987432,
+      "min_entropy_i_mean": 4.19281329114093,
+      "std_i_mean": 7.283409411840471
+    },
+    {
+      "campaign": "e3",
+      "capture": "ON",
+      "n_windows": 6,
+      "shannon_i_mean": 4.369324001609955,
+      "min_entropy_i_mean": 3.638798435690358,
+      "std_i_mean": 5.002918402360224
+    },
+    {
+      "campaign": "e3",
+      "capture": "A2",
+      "n_windows": 6,
+      "shannon_i_mean": 4.8767637395892125,
+      "min_entropy_i_mean": 4.157676483144621,
+      "std_i_mean": 7.109356805292751
+    }
+  ]
+}

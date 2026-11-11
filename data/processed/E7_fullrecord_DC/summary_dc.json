@@ -1,0 +1,619 @@
+{
+  "version": "1.0.0",
+  "timestamp_utc": "2026-11-11T02:48:27.084422+00:00",
+  "input": "results/E7_carina",
+  "config": {
+    "center": 1420405752,
+    "rate": 2400000,
+    "fft": 8192,
+    "target": 1420392000,
+    "half_width_hz": 20000.0,
+    "window_seconds": 10.0,
+    "batch_blocks": 128,
+    "smooth_bins": 35,
+    "baseline_bins": 341,
+    "masks_khz": [
+      0.0,
+      2.0,
+      5.0,
+      10.0
+    ]
+  },
+  "methodology": "All complete non-overlapping FFTs; per-FFT complex-mean DC removal before Hann FFT; FFT=8192, Hanning window; 0/2/5/10-kHz center masks applied via interpolation before smoothing, excluded from band metrics. Ratio baseline 35/341 bins, independent linear sideband fit. Windows are correlated and ON/OFF not simultaneous.",
+  "dc_checks": {
+    "A1": {
+      "center_bin_power_change_db": -7.696700209775922,
+      "center_bin_before_power": 726261.3374302947,
+      "center_bin_after_power": 123430.61818595653,
+      "mean_block_dc_i": -0.103960320353508,
+      "mean_block_dc_q": -0.10278592258691788,
+      "rms_block_dc": 0.18976898295438818,
+      "blocks_used": 17574,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "ON1": {
+      "center_bin_power_change_db": -9.475003807425399,
+      "center_bin_before_power": 534467.1372861424,
+      "center_bin_after_power": 60314.34643981639,
+      "mean_block_dc_i": -0.1023361086845398,
+      "mean_block_dc_q": -0.10227332264184952,
+      "rms_block_dc": 0.1679156015372361,
+      "blocks_used": 52722,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "OFF1": {
+      "center_bin_power_change_db": -8.766189169877647,
+      "center_bin_before_power": 585629.8468191647,
+      "center_bin_after_power": 77804.42286901103,
+      "mean_block_dc_i": -0.10282044112682343,
+      "mean_block_dc_q": -0.10243967920541763,
+      "rms_block_dc": 0.17386783128982797,
+      "blocks_used": 52722,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "ON2": {
+      "center_bin_power_change_db": -9.632458783673737,
+      "center_bin_before_power": 524803.6899207162,
+      "center_bin_after_power": 57115.10789613444,
+      "mean_block_dc_i": -0.10262002795934677,
+      "mean_block_dc_q": -0.1027742475271225,
+      "rms_block_dc": 0.16712298735912132,
+      "blocks_used": 52722,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "OFF2": {
+      "center_bin_power_change_db": -9.576620694634293,
+      "center_bin_before_power": 523535.5013087516,
+      "center_bin_after_power": 57714.38435567695,
+      "mean_block_dc_i": -0.10249172151088715,
+      "mean_block_dc_q": -0.10239121317863464,
+      "rms_block_dc": 0.16686213124145277,
+      "blocks_used": 52722,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "ON3": {
+      "center_bin_power_change_db": -9.581593485463706,
+      "center_bin_before_power": 530034.5733469899,
+      "center_bin_after_power": 58363.97333181594,
+      "mean_block_dc_i": -0.10296271741390228,
+      "mean_block_dc_q": -0.10256269574165344,
+      "rms_block_dc": 0.16750673632517682,
+      "blocks_used": 52722,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    },
+    "A2": {
+      "center_bin_power_change_db": -7.6642324914083515,
+      "center_bin_before_power": 723837.0506429953,
+      "center_bin_after_power": 123941.7318197337,
+      "mean_block_dc_i": -0.10197996348142624,
+      "mean_block_dc_q": -0.10233668237924576,
+      "rms_block_dc": 0.18878146279722083,
+      "blocks_used": 17574,
+      "fraction_of_samples_discarded": 0.00023466666666666666
+    }
+  },
+  "full_capture_pairs": [
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.06289199652876343,
+      "band_median_db": 0.05116142145125524,
+      "sideband_median_db": -0.011730575077508187,
+      "linear_sideband_fit_db": 0.08085220776264146,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.06414892596699207,
+      "band_median_db": 0.053416570784455275,
+      "sideband_median_db": -0.01073235518253679,
+      "linear_sideband_fit_db": 0.081201860430273,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.0638473789112165,
+      "band_median_db": 0.05224369823849828,
+      "sideband_median_db": -0.01160368067271822,
+      "linear_sideband_fit_db": 0.09026650181123097,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.05674881043519675,
+      "band_median_db": 0.04279195186291718,
+      "sideband_median_db": -0.013956858572279573,
+      "linear_sideband_fit_db": 0.09031065190516241,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.06045086698865465,
+      "band_median_db": 0.04971851185873,
+      "sideband_median_db": -0.010732355129924653,
+      "linear_sideband_fit_db": 0.07699694130138823,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.06414893306208336,
+      "band_median_db": 0.053416577932158704,
+      "sideband_median_db": -0.010732355129924653,
+      "linear_sideband_fit_db": 0.08120187881565333,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.06384738290733671,
+      "band_median_db": 0.05224370228827979,
+      "sideband_median_db": -0.011603680619056922,
+      "linear_sideband_fit_db": 0.09026650513655532,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON1",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.056748807559589776,
+      "band_median_db": 0.0427919472181304,
+      "sideband_median_db": -0.013956860341459376,
+      "linear_sideband_fit_db": 0.09031064339626371,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.04361451113566439,
+      "band_median_db": 0.03811358467796322,
+      "sideband_median_db": -0.005500926457701172,
+      "linear_sideband_fit_db": 0.07566190775873749,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.04343718634282234,
+      "band_median_db": 0.04083618784662124,
+      "sideband_median_db": -0.0026009984962011012,
+      "linear_sideband_fit_db": 0.07572893841603334,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.043159977601555544,
+      "band_median_db": 0.03938929715522321,
+      "sideband_median_db": -0.0037706804463323307,
+      "linear_sideband_fit_db": 0.08110251995451556,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "before_dc",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.04013151720195196,
+      "band_median_db": 0.028834063028010615,
+      "sideband_median_db": -0.011297454173941346,
+      "linear_sideband_fit_db": 0.08231038679454827,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.041089131481723884,
+      "band_median_db": 0.03848813304395149,
+      "sideband_median_db": -0.002600998437772395,
+      "linear_sideband_fit_db": 0.07456510995163157,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.043437189699082945,
+      "band_median_db": 0.04083619126131055,
+      "sideband_median_db": -0.002600998437772395,
+      "linear_sideband_fit_db": 0.07572890940107402,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.043159977403575356,
+      "band_median_db": 0.03938929255329837,
+      "sideband_median_db": -0.003770684850276984,
+      "linear_sideband_fit_db": 0.08110252730293155,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF1",
+      "method": "dc_removed",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.04013151609984411,
+      "band_median_db": 0.028834061940655742,
+      "sideband_median_db": -0.01129745415918837,
+      "linear_sideband_fit_db": 0.08231039132914986,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.03412156192245214,
+      "band_median_db": 0.0372244941825979,
+      "sideband_median_db": 0.003102932260145762,
+      "linear_sideband_fit_db": 0.06343877499889505,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.035032793807541984,
+      "band_median_db": 0.0380256374726053,
+      "sideband_median_db": 0.002992843665063319,
+      "linear_sideband_fit_db": 0.0666264131830015,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.03698787732628327,
+      "band_median_db": 0.03841879685425525,
+      "sideband_median_db": 0.0014309195279719814,
+      "linear_sideband_fit_db": 0.07390912777951048,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.032900920918241754,
+      "band_median_db": 0.027522219995269194,
+      "sideband_median_db": -0.005378700922972558,
+      "linear_sideband_fit_db": 0.07680276285511364,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.03428278640110887,
+      "band_median_db": 0.03768838032907618,
+      "sideband_median_db": 0.003405593927967311,
+      "linear_sideband_fit_db": 0.06343097603616786,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.03503279419249586,
+      "band_median_db": 0.03802563611785415,
+      "sideband_median_db": 0.0029928419253582896,
+      "linear_sideband_fit_db": 0.06662640014704838,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.03698787763682615,
+      "band_median_db": 0.03841879709788307,
+      "sideband_median_db": 0.0014309194610569176,
+      "linear_sideband_fit_db": 0.07390914193964718,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON2",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.032900923755602884,
+      "band_median_db": 0.027522224330307897,
+      "sideband_median_db": -0.005378699425294987,
+      "linear_sideband_fit_db": 0.07680281448012201,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.04726062161584052,
+      "band_median_db": 0.042128340082584356,
+      "sideband_median_db": -0.005132281533256162,
+      "linear_sideband_fit_db": 0.09514761053546823,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.04994852461273856,
+      "band_median_db": 0.04485801456395392,
+      "sideband_median_db": -0.0050905100487846425,
+      "linear_sideband_fit_db": 0.0983049173112861,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.05529251409076617,
+      "band_median_db": 0.04627548880424166,
+      "sideband_median_db": -0.009017025286524507,
+      "linear_sideband_fit_db": 0.104372577955717,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "before_dc",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.055737763009289745,
+      "band_median_db": 0.0562155375494033,
+      "sideband_median_db": 0.00047777454011355223,
+      "linear_sideband_fit_db": 0.1054226632931315,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 0.0,
+      "band_minus_sideband_db": 0.047280160986087325,
+      "band_median_db": 0.042284805694104935,
+      "sideband_median_db": -0.004995355291982389,
+      "linear_sideband_fit_db": 0.09514761468921269,
+      "n_band_bins_used": 137,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 2.0,
+      "band_minus_sideband_db": 0.049948525480775496,
+      "band_median_db": 0.04485801689578249,
+      "sideband_median_db": -0.005090508584993004,
+      "linear_sideband_fit_db": 0.09830489852347839,
+      "n_band_bins_used": 124,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 5.0,
+      "band_minus_sideband_db": 0.055292514071550246,
+      "band_median_db": 0.04627549729628941,
+      "sideband_median_db": -0.009017016775260837,
+      "linear_sideband_fit_db": 0.10437258774214805,
+      "n_band_bins_used": 102,
+      "n_sideband_bins_used": 274
+    },
+    {
+      "on": "ON3",
+      "off": "OFF2",
+      "method": "dc_removed",
+      "mask_dc_khz": 10.0,
+      "band_minus_sideband_db": 0.055737765903570005,
+      "band_median_db": 0.05621554065214675,
+      "sideband_median_db": 0.00047777474857674165,
+      "linear_sideband_fit_db": 0.1054226702907089,
+      "n_band_bins_used": 81,
+      "n_sideband_bins_used": 274
+    }
+  ],
+  "window_pair_stats": {
+    "ON1_OFF1_mask0kHz": {
+      "n_windows": 18,
+      "mean_db": 0.04953263061113634,
+      "sd_windows_db": 0.013307133769400027,
+      "median_db": 0.052192519335482135,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON1_OFF1_mask2kHz": {
+      "n_windows": 18,
+      "mean_db": 0.05437987997572871,
+      "sd_windows_db": 0.013218113597361329,
+      "median_db": 0.05707709358427632,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON1_OFF1_mask5kHz": {
+      "n_windows": 18,
+      "mean_db": 0.058514180024238804,
+      "sd_windows_db": 0.014102292270045237,
+      "median_db": 0.06112112424573668,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON1_OFF1_mask10kHz": {
+      "n_windows": 18,
+      "mean_db": 0.052334795623744275,
+      "sd_windows_db": 0.016711859024760887,
+      "median_db": 0.0545145902250142,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF1_mask0kHz": {
+      "n_windows": 18,
+      "mean_db": 0.03439073989010624,
+      "sd_windows_db": 0.015778505643505105,
+      "median_db": 0.03319524611942415,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF1_mask2kHz": {
+      "n_windows": 18,
+      "mean_db": 0.03867175379135761,
+      "sd_windows_db": 0.016429219081570853,
+      "median_db": 0.03699796668891042,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF1_mask5kHz": {
+      "n_windows": 18,
+      "mean_db": 0.04119669829638095,
+      "sd_windows_db": 0.017372972966371972,
+      "median_db": 0.038018054395295986,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF1_mask10kHz": {
+      "n_windows": 18,
+      "mean_db": 0.03695563350777452,
+      "sd_windows_db": 0.017396947016613356,
+      "median_db": 0.034202924132291423,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF2_mask0kHz": {
+      "n_windows": 18,
+      "mean_db": 0.03381734264344091,
+      "sd_windows_db": 0.015083595793926636,
+      "median_db": 0.03401956804514601,
+      "positive_fraction": 0.9444444444444444,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF2_mask2kHz": {
+      "n_windows": 18,
+      "mean_db": 0.0392284056186772,
+      "sd_windows_db": 0.01755845012162383,
+      "median_db": 0.04028859189021106,
+      "positive_fraction": 0.9444444444444444,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF2_mask5kHz": {
+      "n_windows": 18,
+      "mean_db": 0.042467763609837034,
+      "sd_windows_db": 0.01529650499500186,
+      "median_db": 0.042910573090771134,
+      "positive_fraction": 0.9444444444444444,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON2_OFF2_mask10kHz": {
+      "n_windows": 18,
+      "mean_db": 0.03759095814433746,
+      "sd_windows_db": 0.015989232546614475,
+      "median_db": 0.03540687195651036,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON3_OFF2_mask0kHz": {
+      "n_windows": 18,
+      "mean_db": 0.049170666502289365,
+      "sd_windows_db": 0.015887363475021274,
+      "median_db": 0.052320048802615024,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON3_OFF2_mask2kHz": {
+      "n_windows": 18,
+      "mean_db": 0.05369660094314936,
+      "sd_windows_db": 0.018164721907135514,
+      "median_db": 0.05376813465975515,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON3_OFF2_mask5kHz": {
+      "n_windows": 18,
+      "mean_db": 0.0582105126790866,
+      "sd_windows_db": 0.018970670834834915,
+      "median_db": 0.058077884839881286,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    },
+    "ON3_OFF2_mask10kHz": {
+      "n_windows": 18,
+      "mean_db": 0.06198106748143343,
+      "sd_windows_db": 0.019580038051255473,
+      "median_db": 0.05891741889571453,
+      "positive_fraction": 1.0,
+      "note": "Indicador descritivo; nao e valor-p ou intervalo de confianca"
+    }
+  },
+  "limitations": [
+    "A positive ON/OFF contrast is not proof of astronomical H I.",
+    "The target band intersects the SDR center/DC frequency; masks reduce usable target bandwidth.",
+    "Each ON/OFF window index refers to relative capture time, not simultaneous sky measurements.",
+    "Within-capture windows are dependent and are not independent astrophysical replications.",
+    "No flux-density or brightness-temperature calibration is performed.",
+    "No NIST-certified entropy evaluation is performed in this script."
+  ]
+}

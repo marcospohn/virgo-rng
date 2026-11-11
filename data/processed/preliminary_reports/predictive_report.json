@@ -1,0 +1,1390 @@
+{
+  "schema": "virgo-rng-predictive-v1",
+  "source": "continuous.cu8",
+  "file_bytes": 864000000,
+  "total_pairs": 432000000,
+  "window_pairs": 2400000,
+  "windows_available": 180,
+  "windows_selected": [
+    0,
+    16,
+    32,
+    48,
+    65,
+    81,
+    97,
+    113,
+    130,
+    146,
+    162,
+    179
+  ],
+  "sample_pairs_per_window": 120000,
+  "quantization": "upper 4 bits of each 8-bit I/Q sample",
+  "chronological_train_fraction": 0.7,
+  "dirichlet_prior_strength": 20.0,
+  "summary": {
+    "I": {
+      "1": {
+        "baseline_cross_entropy_bits": 2.113183727591724,
+        "model_cross_entropy_bits": 2.098142759996758,
+        "predictive_gain_bits": 0.015040967594966185,
+        "shuffled_control_gain_bits": -0.000947279721430531,
+        "excess_gain_over_shuffled_bits": 0.015988247316396715,
+        "test_unseen_context_fraction": 6.9446373510375295e-06
+      },
+      "2": {
+        "baseline_cross_entropy_bits": 2.113170176331177,
+        "model_cross_entropy_bits": 2.0942003169385126,
+        "predictive_gain_bits": 0.018969859392664157,
+        "shuffled_control_gain_bits": -0.00396685936327514,
+        "excess_gain_over_shuffled_bits": 0.022936718755939296,
+        "test_unseen_context_fraction": 0.00021065985147323
+      },
+      "4": {
+        "baseline_cross_entropy_bits": 2.1131649636020113,
+        "model_cross_entropy_bits": 2.107185147844746,
+        "predictive_gain_bits": 0.005979815757265657,
+        "shuffled_control_gain_bits": -0.022697024921962627,
+        "excess_gain_over_shuffled_bits": 0.028676840679228283,
+        "test_unseen_context_fraction": 0.008179149535133533
+      },
+      "8": {
+        "baseline_cross_entropy_bits": 2.1131597679663567,
+        "model_cross_entropy_bits": 2.11840897013905,
+        "predictive_gain_bits": -0.00524920217269335,
+        "shuffled_control_gain_bits": -0.011713220656083509,
+        "excess_gain_over_shuffled_bits": 0.006464018483390159,
+        "test_unseen_context_fraction": 0.40810689412462026
+      }
+    },
+    "Q": {
+      "1": {
+        "baseline_cross_entropy_bits": 2.113056364547167,
+        "model_cross_entropy_bits": 2.097634780842077,
+        "predictive_gain_bits": 0.015421583705089522,
+        "shuffled_control_gain_bits": -0.001104278293469707,
+        "excess_gain_over_shuffled_bits": 0.016525861998559228,
+        "test_unseen_context_fraction": 1.3889274702075056e-05
+      },
+      "2": {
+        "baseline_cross_entropy_bits": 2.113049039427116,
+        "model_cross_entropy_bits": 2.093951807180466,
+        "predictive_gain_bits": 0.019097232246649554,
+        "shuffled_control_gain_bits": -0.003992094346526698,
+        "excess_gain_over_shuffled_bits": 0.02308932659317625,
+        "test_unseen_context_fraction": 0.00020140007778209895
+      },
+      "4": {
+        "baseline_cross_entropy_bits": 2.113046197295423,
+        "model_cross_entropy_bits": 2.106376258772397,
+        "predictive_gain_bits": 0.006669938523025831,
+        "shuffled_control_gain_bits": -0.02170507364480258,
+        "excess_gain_over_shuffled_bits": 0.028375012167828412,
+        "test_unseen_context_fraction": 0.00820924547171908
+      },
+      "8": {
+        "baseline_cross_entropy_bits": 2.1130520316001355,
+        "model_cross_entropy_bits": 2.117619837659261,
+        "predictive_gain_bits": -0.004567806059125767,
+        "shuffled_control_gain_bits": -0.011385908577306184,
+        "excess_gain_over_shuffled_bits": 0.006818102518180417,
+        "test_unseen_context_fraction": 0.4066667592798399
+      }
+    }
+  },
+  "windows": [
+    {
+      "window_index": 0,
+      "start_seconds": 0.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.2956682839632854,
+            "model_cross_entropy_bits": 2.2780010739464687,
+            "predictive_gain_bits": 0.017667210016816703,
+            "train_unique_contexts": 14,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0008253060405674084,
+            "excess_gain_over_shuffled_bits": 0.018492516057384112
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.2956564520477385,
+            "model_cross_entropy_bits": 2.2775812356246323,
+            "predictive_gain_bits": 0.018075216423106166,
+            "train_unique_contexts": 105,
+            "test_unseen_context_fraction": 0.00011111728429357187,
+            "shuffled_control_gain_bits": -0.006276721826914855,
+            "excess_gain_over_shuffled_bits": 0.02435193825002102
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.2956605008461355,
+            "model_cross_entropy_bits": 2.301781398674256,
+            "predictive_gain_bits": -0.00612089782812042,
+            "train_unique_contexts": 2576,
+            "test_unseen_context_fraction": 0.0070563395932881435,
+            "shuffled_control_gain_bits": -0.028824730063090165,
+            "excess_gain_over_shuffled_bits": 0.022703832234969745
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.295696393008024,
+            "model_cross_entropy_bits": 2.2997792017500167,
+            "predictive_gain_bits": -0.004082808741992849,
+            "train_unique_contexts": 62639,
+            "test_unseen_context_fraction": 0.5979106468104023,
+            "shuffled_control_gain_bits": -0.005547339881072588,
+            "excess_gain_over_shuffled_bits": 0.0014645311390797389
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.294257010653238,
+            "model_cross_entropy_bits": 2.277922271461015,
+            "predictive_gain_bits": 0.016334739192223058,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0020321028512064743,
+            "excess_gain_over_shuffled_bits": 0.018366842043429532
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.294189032604538,
+            "model_cross_entropy_bits": 2.277684513419566,
+            "predictive_gain_bits": 0.0165045191849722,
+            "train_unique_contexts": 106,
+            "test_unseen_context_fraction": 0.00011111728429357187,
+            "shuffled_control_gain_bits": -0.004431963713149134,
+            "excess_gain_over_shuffled_bits": 0.020936482898121334
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.2942217044921267,
+            "model_cross_entropy_bits": 2.297241881295592,
+            "predictive_gain_bits": -0.0030201768034654464,
+            "train_unique_contexts": 2724,
+            "test_unseen_context_fraction": 0.006278475386154017,
+            "shuffled_control_gain_bits": -0.0296432695380604,
+            "excess_gain_over_shuffled_bits": 0.026623092734594955
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.2942869414007343,
+            "model_cross_entropy_bits": 2.2980636087937096,
+            "predictive_gain_bits": -0.0037766673929753303,
+            "train_unique_contexts": 63155,
+            "test_unseen_context_fraction": 0.5932429428761947,
+            "shuffled_control_gain_bits": -0.003794587532595539,
+            "excess_gain_over_shuffled_bits": 1.7920139620208886e-05
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 16,
+      "start_seconds": 16.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.0657526492344833,
+            "model_cross_entropy_bits": 2.053266188771545,
+            "predictive_gain_bits": 0.012486460462938442,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0007970905396752492,
+            "excess_gain_over_shuffled_bits": 0.013283551002613692
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.065768235505662,
+            "model_cross_entropy_bits": 2.0481345082394498,
+            "predictive_gain_bits": 0.01763372726621215,
+            "train_unique_contexts": 90,
+            "test_unseen_context_fraction": 0.00013889660536696484,
+            "shuffled_control_gain_bits": -0.0032815456610060245,
+            "excess_gain_over_shuffled_bits": 0.020915272927218176
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.065758384540423,
+            "model_cross_entropy_bits": 2.060925692303721,
+            "predictive_gain_bits": 0.004832692236701686,
+            "train_unique_contexts": 1744,
+            "test_unseen_context_fraction": 0.00827869763307034,
+            "shuffled_control_gain_bits": -0.020783653247694378,
+            "excess_gain_over_shuffled_bits": 0.025616345484396064
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.065696959606879,
+            "model_cross_entropy_bits": 2.0735302233849975,
+            "predictive_gain_bits": -0.00783326377811866,
+            "train_unique_contexts": 42930,
+            "test_unseen_context_fraction": 0.3621915981329184,
+            "shuffled_control_gain_bits": -0.014813212285570643,
+            "excess_gain_over_shuffled_bits": 0.006979948507451983
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.052854435127078,
+            "model_cross_entropy_bits": 2.0400548807648247,
+            "predictive_gain_bits": 0.012799554362253218,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 5.555709880830023e-05,
+            "shuffled_control_gain_bits": -0.001403158455382414,
+            "excess_gain_over_shuffled_bits": 0.014202712817635632
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0528699647394215,
+            "model_cross_entropy_bits": 2.036094859833849,
+            "predictive_gain_bits": 0.016775104905572658,
+            "train_unique_contexts": 89,
+            "test_unseen_context_fraction": 0.00019445524751375077,
+            "shuffled_control_gain_bits": -0.003035808149327579,
+            "excess_gain_over_shuffled_bits": 0.019810913054900237
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.052900841440013,
+            "model_cross_entropy_bits": 2.0485186446079635,
+            "predictive_gain_bits": 0.004382196832049434,
+            "train_unique_contexts": 1745,
+            "test_unseen_context_fraction": 0.006389598844316035,
+            "shuffled_control_gain_bits": -0.0190599521507413,
+            "excess_gain_over_shuffled_bits": 0.023442148982790734
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.0529213977403846,
+            "model_cross_entropy_bits": 2.060286860360757,
+            "predictive_gain_bits": -0.007365462620372298,
+            "train_unique_contexts": 43192,
+            "test_unseen_context_fraction": 0.34471549233162924,
+            "shuffled_control_gain_bits": -0.01208276918023099,
+            "excess_gain_over_shuffled_bits": 0.004717306559858692
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 32,
+      "start_seconds": 32.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.066352060408752,
+            "model_cross_entropy_bits": 2.0527532044318773,
+            "predictive_gain_bits": 0.013598855976874713,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0009088412586000238,
+            "excess_gain_over_shuffled_bits": 0.014507697235474737
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.066326309239829,
+            "model_cross_entropy_bits": 2.0482071731608342,
+            "predictive_gain_bits": 0.018119136078994735,
+            "train_unique_contexts": 91,
+            "test_unseen_context_fraction": 8.33379632201789e-05,
+            "shuffled_control_gain_bits": -0.0033208166777400905,
+            "excess_gain_over_shuffled_bits": 0.021439952756734826
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0662032693881582,
+            "model_cross_entropy_bits": 2.054571423046496,
+            "predictive_gain_bits": 0.011631846341662033,
+            "train_unique_contexts": 1916,
+            "test_unseen_context_fraction": 0.005195021669074341,
+            "shuffled_control_gain_bits": -0.019064784065614404,
+            "excess_gain_over_shuffled_bits": 0.030696630407276437
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.066223908396351,
+            "model_cross_entropy_bits": 2.0726934255500473,
+            "predictive_gain_bits": -0.006469517153696369,
+            "train_unique_contexts": 44545,
+            "test_unseen_context_fraction": 0.36480328961991554,
+            "shuffled_control_gain_bits": -0.011437100568994829,
+            "excess_gain_over_shuffled_bits": 0.00496758341529846
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.061708452535806,
+            "model_cross_entropy_bits": 2.0488579126415045,
+            "predictive_gain_bits": 0.012850539894301516,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.00045669140771353867,
+            "excess_gain_over_shuffled_bits": 0.013307231302015055
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.061610043665898,
+            "model_cross_entropy_bits": 2.0442894663523252,
+            "predictive_gain_bits": 0.017320577313572727,
+            "train_unique_contexts": 89,
+            "test_unseen_context_fraction": 2.7779321073392966e-05,
+            "shuffled_control_gain_bits": -0.0025534113790306456,
+            "excess_gain_over_shuffled_bits": 0.019873988692603373
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.061598508563314,
+            "model_cross_entropy_bits": 2.0489959782756992,
+            "predictive_gain_bits": 0.012602530287614933,
+            "train_unique_contexts": 1871,
+            "test_unseen_context_fraction": 0.005222802533614846,
+            "shuffled_control_gain_bits": -0.018981878862784907,
+            "excess_gain_over_shuffled_bits": 0.03158440915039984
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.0615761465619675,
+            "model_cross_entropy_bits": 2.066246747825904,
+            "predictive_gain_bits": -0.004670601263936369,
+            "train_unique_contexts": 44260,
+            "test_unseen_context_fraction": 0.3670815736830407,
+            "shuffled_control_gain_bits": -0.0134750601870679,
+            "excess_gain_over_shuffled_bits": 0.00880445892313153
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 48,
+      "start_seconds": 48.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.0339068819804256,
+            "model_cross_entropy_bits": 2.0214589048049536,
+            "predictive_gain_bits": 0.01244797717547197,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.000871781888232892,
+            "excess_gain_over_shuffled_bits": 0.013319759063704861
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0338064333680435,
+            "model_cross_entropy_bits": 2.0151787738639495,
+            "predictive_gain_bits": 0.018627659504093952,
+            "train_unique_contexts": 87,
+            "test_unseen_context_fraction": 0.0001666759264403578,
+            "shuffled_control_gain_bits": -0.0021886101504371425,
+            "excess_gain_over_shuffled_bits": 0.020816269654531094
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0337945416805163,
+            "model_cross_entropy_bits": 2.023684337594412,
+            "predictive_gain_bits": 0.010110204086104524,
+            "train_unique_contexts": 1789,
+            "test_unseen_context_fraction": 0.004722746971885765,
+            "shuffled_control_gain_bits": -0.021016726373078498,
+            "excess_gain_over_shuffled_bits": 0.031126930459183022
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.033770685843422,
+            "model_cross_entropy_bits": 2.038508740770136,
+            "predictive_gain_bits": -0.004738054926713975,
+            "train_unique_contexts": 43577,
+            "test_unseen_context_fraction": 0.3521060235607913,
+            "shuffled_control_gain_bits": -0.012561507483976442,
+            "excess_gain_over_shuffled_bits": 0.007823452557262467
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.0324184702489525,
+            "model_cross_entropy_bits": 2.019862111754071,
+            "predictive_gain_bits": 0.012556358494881348,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.0005363567658394075,
+            "excess_gain_over_shuffled_bits": 0.013092715260720755
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.032433329550725,
+            "model_cross_entropy_bits": 2.0142227497496767,
+            "predictive_gain_bits": 0.018210579801048343,
+            "train_unique_contexts": 84,
+            "test_unseen_context_fraction": 0.0001666759264403578,
+            "shuffled_control_gain_bits": -0.0026282036423705968,
+            "excess_gain_over_shuffled_bits": 0.02083878344341894
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0323043711322946,
+            "model_cross_entropy_bits": 2.0198060371541104,
+            "predictive_gain_bits": 0.012498333978184117,
+            "train_unique_contexts": 1753,
+            "test_unseen_context_fraction": 0.005139459939993332,
+            "shuffled_control_gain_bits": -0.020368403144639835,
+            "excess_gain_over_shuffled_bits": 0.03286673712282395
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.032322748953572,
+            "model_cross_entropy_bits": 2.0378374199159692,
+            "predictive_gain_bits": -0.005514670962397439,
+            "train_unique_contexts": 43637,
+            "test_unseen_context_fraction": 0.3470215603467437,
+            "shuffled_control_gain_bits": -0.013289749731031364,
+            "excess_gain_over_shuffled_bits": 0.007775078768633925
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 65,
+      "start_seconds": 65.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.134417474849389,
+            "model_cross_entropy_bits": 2.119656116083296,
+            "predictive_gain_bits": 0.014761358766093302,
+            "train_unique_contexts": 10,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0005156921461870745,
+            "excess_gain_over_shuffled_bits": 0.015277050912280377
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.1344329737522565,
+            "model_cross_entropy_bits": 2.115415177014453,
+            "predictive_gain_bits": 0.01901779673780357,
+            "train_unique_contexts": 79,
+            "test_unseen_context_fraction": 0.0003333518528807156,
+            "shuffled_control_gain_bits": -0.004499976577899023,
+            "excess_gain_over_shuffled_bits": 0.023517773315702595
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.1344281116565336,
+            "model_cross_entropy_bits": 2.1244888763288077,
+            "predictive_gain_bits": 0.009939235327725893,
+            "train_unique_contexts": 1810,
+            "test_unseen_context_fraction": 0.007973108123124791,
+            "shuffled_control_gain_bits": -0.02436141779231793,
+            "excess_gain_over_shuffled_bits": 0.03430065312004382
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.1344551411527157,
+            "model_cross_entropy_bits": 2.140017660344751,
+            "predictive_gain_bits": -0.005562519192035431,
+            "train_unique_contexts": 48941,
+            "test_unseen_context_fraction": 0.4166203600800178,
+            "shuffled_control_gain_bits": -0.009921452273893738,
+            "excess_gain_over_shuffled_bits": 0.004358933081858307
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.1344993867640434,
+            "model_cross_entropy_bits": 2.1183934829132816,
+            "predictive_gain_bits": 0.016105903850761827,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0016425795841419344,
+            "excess_gain_over_shuffled_bits": 0.01774848343490376
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.134478985655773,
+            "model_cross_entropy_bits": 2.1140632491565072,
+            "predictive_gain_bits": 0.02041573649926587,
+            "train_unique_contexts": 78,
+            "test_unseen_context_fraction": 0.0005278071003944663,
+            "shuffled_control_gain_bits": -0.0037414482009423544,
+            "excess_gain_over_shuffled_bits": 0.024157184700208223
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.1344744596109164,
+            "model_cross_entropy_bits": 2.1238324447051222,
+            "predictive_gain_bits": 0.010642014905794195,
+            "train_unique_contexts": 1732,
+            "test_unseen_context_fraction": 0.0071119013223691525,
+            "shuffled_control_gain_bits": -0.01941858372444205,
+            "excess_gain_over_shuffled_bits": 0.030060598630236246
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.134357317497677,
+            "model_cross_entropy_bits": 2.139835999011393,
+            "predictive_gain_bits": -0.005478681513715777,
+            "train_unique_contexts": 48666,
+            "test_unseen_context_fraction": 0.4173427428317404,
+            "shuffled_control_gain_bits": -0.010423355836346904,
+            "excess_gain_over_shuffled_bits": 0.004944674322631126
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 81,
+      "start_seconds": 81.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.083909820161882,
+            "model_cross_entropy_bits": 2.0711406291077847,
+            "predictive_gain_bits": 0.012769191054097462,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0002358530650634627,
+            "excess_gain_over_shuffled_bits": 0.013005044119160925
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0839253853771114,
+            "model_cross_entropy_bits": 2.06573922157487,
+            "predictive_gain_bits": 0.01818616380224114,
+            "train_unique_contexts": 85,
+            "test_unseen_context_fraction": 0.0001666759264403578,
+            "shuffled_control_gain_bits": -0.004030869674255477,
+            "excess_gain_over_shuffled_bits": 0.022217033476496617
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0839565141801986,
+            "model_cross_entropy_bits": 2.0712570627358677,
+            "predictive_gain_bits": 0.012699451444330823,
+            "train_unique_contexts": 1789,
+            "test_unseen_context_fraction": 0.005417268585398378,
+            "shuffled_control_gain_bits": -0.02033548341346192,
+            "excess_gain_over_shuffled_bits": 0.03303493485779274
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.0838679247401792,
+            "model_cross_entropy_bits": 2.0899793559600477,
+            "predictive_gain_bits": -0.006111431219868457,
+            "train_unique_contexts": 46795,
+            "test_unseen_context_fraction": 0.36349744387641697,
+            "shuffled_control_gain_bits": -0.011407838172242446,
+            "excess_gain_over_shuffled_bits": 0.005296406952373989
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.086038221400416,
+            "model_cross_entropy_bits": 2.0697377328104523,
+            "predictive_gain_bits": 0.016300488589963802,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0006456829027623456,
+            "excess_gain_over_shuffled_bits": 0.016946171492726148
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0860532705580774,
+            "model_cross_entropy_bits": 2.0651493289837677,
+            "predictive_gain_bits": 0.020903941574309748,
+            "train_unique_contexts": 89,
+            "test_unseen_context_fraction": 2.7779321073392966e-05,
+            "shuffled_control_gain_bits": -0.003261576232274077,
+            "excess_gain_over_shuffled_bits": 0.024165517806583825
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0860838316090717,
+            "model_cross_entropy_bits": 2.074317250636272,
+            "predictive_gain_bits": 0.011766580972799812,
+            "train_unique_contexts": 1792,
+            "test_unseen_context_fraction": 0.006028447605289477,
+            "shuffled_control_gain_bits": -0.022671790452833296,
+            "excess_gain_over_shuffled_bits": 0.03443837142563311
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.086035473252478,
+            "model_cross_entropy_bits": 2.0932782782775985,
+            "predictive_gain_bits": -0.007242805025120536,
+            "train_unique_contexts": 46972,
+            "test_unseen_context_fraction": 0.37388864192042676,
+            "shuffled_control_gain_bits": -0.010734361078357235,
+            "excess_gain_over_shuffled_bits": 0.0034915560532366996
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 97,
+      "start_seconds": 97.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 1.9813105128669206,
+            "model_cross_entropy_bits": 1.9636116762323663,
+            "predictive_gain_bits": 0.017698836634554294,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.0014953604188689962,
+            "excess_gain_over_shuffled_bits": 0.01919419705342329
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 1.9813256272142803,
+            "model_cross_entropy_bits": 1.9615292952872085,
+            "predictive_gain_bits": 0.019796331927071753,
+            "train_unique_contexts": 72,
+            "test_unseen_context_fraction": 0.00038891049502750154,
+            "shuffled_control_gain_bits": -0.002227700555344825,
+            "excess_gain_over_shuffled_bits": 0.022024032482416578
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 1.9813084042594256,
+            "model_cross_entropy_bits": 1.9686288266388148,
+            "predictive_gain_bits": 0.012679577620610782,
+            "train_unique_contexts": 1375,
+            "test_unseen_context_fraction": 0.009167685298366484,
+            "shuffled_control_gain_bits": -0.017954801199086434,
+            "excess_gain_over_shuffled_bits": 0.030634378819697217
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 1.981321606553245,
+            "model_cross_entropy_bits": 1.9866694637835085,
+            "predictive_gain_bits": -0.005347857230263431,
+            "train_unique_contexts": 35199,
+            "test_unseen_context_fraction": 0.29223160702378304,
+            "shuffled_control_gain_bits": -0.014363834942027198,
+            "excess_gain_over_shuffled_bits": 0.009015977711763767
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 1.9777673081125953,
+            "model_cross_entropy_bits": 1.9581513226160097,
+            "predictive_gain_bits": 0.01961598549658561,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.0008496259133601303,
+            "excess_gain_over_shuffled_bits": 0.02046561140994574
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 1.9777821785783039,
+            "model_cross_entropy_bits": 1.9556241349563896,
+            "predictive_gain_bits": 0.022158043621914203,
+            "train_unique_contexts": 75,
+            "test_unseen_context_fraction": 0.00019445524751375077,
+            "shuffled_control_gain_bits": -0.003455850182688236,
+            "excess_gain_over_shuffled_bits": 0.02561389380460244
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 1.9778131763532478,
+            "model_cross_entropy_bits": 1.961593312285013,
+            "predictive_gain_bits": 0.016219864068234724,
+            "train_unique_contexts": 1423,
+            "test_unseen_context_fraction": 0.00808423158128681,
+            "shuffled_control_gain_bits": -0.016326123476773535,
+            "excess_gain_over_shuffled_bits": 0.03254598754500826
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 1.9778286616266583,
+            "model_cross_entropy_bits": 1.9849953980727406,
+            "predictive_gain_bits": -0.007166736446082345,
+            "train_unique_contexts": 35554,
+            "test_unseen_context_fraction": 0.2878973105134474,
+            "shuffled_control_gain_bits": -0.016278550589098773,
+            "excess_gain_over_shuffled_bits": 0.009111814143016428
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 113,
+      "start_seconds": 113.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.0186424711198043,
+            "model_cross_entropy_bits": 2.0041829875497714,
+            "predictive_gain_bits": 0.014459483570032905,
+            "train_unique_contexts": 10,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0007531114863392752,
+            "excess_gain_over_shuffled_bits": 0.01521259505637218
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.01861220336571,
+            "model_cross_entropy_bits": 1.9993560665653651,
+            "predictive_gain_bits": 0.019256136800344992,
+            "train_unique_contexts": 76,
+            "test_unseen_context_fraction": 0.00019445524751375077,
+            "shuffled_control_gain_bits": -0.003357556549286489,
+            "excess_gain_over_shuffled_bits": 0.02261369334963148
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.018643325052651,
+            "model_cross_entropy_bits": 2.0082655949453265,
+            "predictive_gain_bits": 0.010377730107324457,
+            "train_unique_contexts": 1578,
+            "test_unseen_context_fraction": 0.006028447605289477,
+            "shuffled_control_gain_bits": -0.01957406763464631,
+            "excess_gain_over_shuffled_bits": 0.029951797741970765
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.0186148290644255,
+            "model_cross_entropy_bits": 2.0272903465726313,
+            "predictive_gain_bits": -0.008675517508205832,
+            "train_unique_contexts": 40402,
+            "test_unseen_context_fraction": 0.33585241164703267,
+            "shuffled_control_gain_bits": -0.013834197740486331,
+            "excess_gain_over_shuffled_bits": 0.005158680232280499
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.030432549395076,
+            "model_cross_entropy_bits": 2.0166702867004815,
+            "predictive_gain_bits": 0.013762262694594352,
+            "train_unique_contexts": 10,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -7.914872710346188e-05,
+            "excess_gain_over_shuffled_bits": 0.013841411421697813
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0304486068106655,
+            "model_cross_entropy_bits": 2.0130449743892873,
+            "predictive_gain_bits": 0.017403632421378212,
+            "train_unique_contexts": 73,
+            "test_unseen_context_fraction": 0.0002500138896605367,
+            "shuffled_control_gain_bits": -0.0031090917655069994,
+            "excess_gain_over_shuffled_bits": 0.02051272418688521
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.030387430021227,
+            "model_cross_entropy_bits": 2.0245107412827053,
+            "predictive_gain_bits": 0.0058766887385215405,
+            "train_unique_contexts": 1582,
+            "test_unseen_context_fraction": 0.0070563395932881435,
+            "shuffled_control_gain_bits": -0.016335389561973557,
+            "excess_gain_over_shuffled_bits": 0.022212078300495097
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.03040553538243,
+            "model_cross_entropy_bits": 2.03771291294487,
+            "predictive_gain_bits": -0.007307377562439932,
+            "train_unique_contexts": 39986,
+            "test_unseen_context_fraction": 0.34524338741942656,
+            "shuffled_control_gain_bits": -0.012924811804492009,
+            "excess_gain_over_shuffled_bits": 0.005617434242052077
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 130,
+      "start_seconds": 130.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.094545750184069,
+            "model_cross_entropy_bits": 2.0742158748071806,
+            "predictive_gain_bits": 0.020329875376888573,
+            "train_unique_contexts": 14,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.0009227919635406145,
+            "excess_gain_over_shuffled_bits": 0.021252667340429188
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.0945154696776815,
+            "model_cross_entropy_bits": 2.0705172361217854,
+            "predictive_gain_bits": 0.023998233555896142,
+            "train_unique_contexts": 103,
+            "test_unseen_context_fraction": 0.0002777932107339297,
+            "shuffled_control_gain_bits": -0.0038505928686003443,
+            "excess_gain_over_shuffled_bits": 0.027848826424496487
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.094552460490214,
+            "model_cross_entropy_bits": 2.08889103553166,
+            "predictive_gain_bits": 0.00566142495855404,
+            "train_unique_contexts": 2175,
+            "test_unseen_context_fraction": 0.014640515612845871,
+            "shuffled_control_gain_bits": -0.020064307657870817,
+            "excess_gain_over_shuffled_bits": 0.025725732616424857
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.094527194520507,
+            "model_cross_entropy_bits": 2.0976469675988083,
+            "predictive_gain_bits": -0.0031197730783012467,
+            "train_unique_contexts": 38232,
+            "test_unseen_context_fraction": 0.374833296288064,
+            "shuffled_control_gain_bits": -0.01696449701811087,
+            "excess_gain_over_shuffled_bits": 0.013844723939809622
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.0905925357720303,
+            "model_cross_entropy_bits": 2.072715063788383,
+            "predictive_gain_bits": 0.017877471983647197,
+            "train_unique_contexts": 12,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.002090768457978953,
+            "excess_gain_over_shuffled_bits": 0.01996824044162615
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.090611964804971,
+            "model_cross_entropy_bits": 2.0681424664546673,
+            "predictive_gain_bits": 0.022469498350303763,
+            "train_unique_contexts": 98,
+            "test_unseen_context_fraction": 0.0003333518528807156,
+            "shuffled_control_gain_bits": -0.005061895989529663,
+            "excess_gain_over_shuffled_bits": 0.027531394339833426
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.0906002752728825,
+            "model_cross_entropy_bits": 2.08616025573559,
+            "predictive_gain_bits": 0.00444001953729245,
+            "train_unique_contexts": 2107,
+            "test_unseen_context_fraction": 0.01475163907100789,
+            "shuffled_control_gain_bits": -0.01920749727704818,
+            "excess_gain_over_shuffled_bits": 0.02364751681434063
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.090548071796958,
+            "model_cross_entropy_bits": 2.0934430108083135,
+            "predictive_gain_bits": -0.002894939011355735,
+            "train_unique_contexts": 37978,
+            "test_unseen_context_fraction": 0.3755556790397866,
+            "shuffled_control_gain_bits": -0.0125356153768581,
+            "excess_gain_over_shuffled_bits": 0.009640676365502365
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 146,
+      "start_seconds": 146.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.169776549002454,
+            "model_cross_entropy_bits": 2.1518263946004867,
+            "predictive_gain_bits": 0.017950154401967122,
+            "train_unique_contexts": 14,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.0016179877620889904,
+            "excess_gain_over_shuffled_bits": 0.019568142164056113
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.1697937591458873,
+            "model_cross_entropy_bits": 2.1462415002434194,
+            "predictive_gain_bits": 0.023552258902467926,
+            "train_unique_contexts": 110,
+            "test_unseen_context_fraction": 0.00022223456858714373,
+            "shuffled_control_gain_bits": -0.003639664300786105,
+            "excess_gain_over_shuffled_bits": 0.02719192320325403
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.169831601420823,
+            "model_cross_entropy_bits": 2.1641711011678026,
+            "predictive_gain_bits": 0.005660500253020562,
+            "train_unique_contexts": 2510,
+            "test_unseen_context_fraction": 0.009612179131014557,
+            "shuffled_control_gain_bits": -0.024324052172075117,
+            "excess_gain_over_shuffled_bits": 0.02998455242509568
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.1698700194280343,
+            "model_cross_entropy_bits": 2.1728558734926398,
+            "predictive_gain_bits": -0.0029858540646054976,
+            "train_unique_contexts": 46917,
+            "test_unseen_context_fraction": 0.4444043120693487,
+            "shuffled_control_gain_bits": -0.009806450989055637,
+            "excess_gain_over_shuffled_bits": 0.00682059692445014
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.170094087098855,
+            "model_cross_entropy_bits": 2.153830744862302,
+            "predictive_gain_bits": 0.01626334223655279,
+            "train_unique_contexts": 14,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.00020500888010133167,
+            "excess_gain_over_shuffled_bits": 0.016468351116654123
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.170111146937241,
+            "model_cross_entropy_bits": 2.148567268100921,
+            "predictive_gain_bits": 0.02154387883632003,
+            "train_unique_contexts": 108,
+            "test_unseen_context_fraction": 0.0002500138896605367,
+            "shuffled_control_gain_bits": -0.0044723622041189515,
+            "excess_gain_over_shuffled_bits": 0.02601624104043898
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.170104601196754,
+            "model_cross_entropy_bits": 2.16457035585326,
+            "predictive_gain_bits": 0.005534245343493893,
+            "train_unique_contexts": 2496,
+            "test_unseen_context_fraction": 0.011195688409823313,
+            "shuffled_control_gain_bits": -0.02496022444137136,
+            "excess_gain_over_shuffled_bits": 0.030494469784865252
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.1701423777547926,
+            "model_cross_entropy_bits": 2.1719954203731784,
+            "predictive_gain_bits": -0.001853042618385814,
+            "train_unique_contexts": 46447,
+            "test_unseen_context_fraction": 0.4396254723271838,
+            "shuffled_control_gain_bits": -0.010493236051151378,
+            "excess_gain_over_shuffled_bits": 0.008640193432765564
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 162,
+      "start_seconds": 162.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.512737453820313,
+            "model_cross_entropy_bits": 2.500743638629386,
+            "predictive_gain_bits": 0.011993815190926682,
+            "train_unique_contexts": 16,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.001399341609425342,
+            "excess_gain_over_shuffled_bits": 0.013393156800352024
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.512729605418967,
+            "model_cross_entropy_bits": 2.4984336398144125,
+            "predictive_gain_bits": 0.014295965604554706,
+            "train_unique_contexts": 142,
+            "test_unseen_context_fraction": 0.0003333518528807156,
+            "shuffled_control_gain_bits": -0.008366504664974794,
+            "excess_gain_over_shuffled_bits": 0.0226624702695295
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.5127147945907966,
+            "model_cross_entropy_bits": 2.532213287479211,
+            "predictive_gain_bits": -0.019498492888414543,
+            "train_unique_contexts": 4301,
+            "test_unseen_context_fraction": 0.015751750194466053,
+            "shuffled_control_gain_bits": -0.04215586368208779,
+            "excess_gain_over_shuffled_bits": 0.022657370793673248
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.5127390681818498,
+            "model_cross_entropy_bits": 2.514867773067709,
+            "predictive_gain_bits": -0.002128704885859367,
+            "train_unique_contexts": 67442,
+            "test_unseen_context_fraction": 0.7444432096021338,
+            "shuffled_control_gain_bits": -0.0027769069372785005,
+            "excess_gain_over_shuffled_bits": 0.0006482020514191333
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 2.518410193850582,
+            "model_cross_entropy_bits": 2.5049161087088216,
+            "predictive_gain_bits": 0.013494085141760426,
+            "train_unique_contexts": 15,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.002688960192009038,
+            "excess_gain_over_shuffled_bits": 0.016183045333769464
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 2.518430207777216,
+            "model_cross_entropy_bits": 2.5032787106780714,
+            "predictive_gain_bits": 0.015151497099144429,
+            "train_unique_contexts": 136,
+            "test_unseen_context_fraction": 0.0002500138896605367,
+            "shuffled_control_gain_bits": -0.010299835461499374,
+            "excess_gain_over_shuffled_bits": 0.025451332560643802
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 2.5184698922278206,
+            "model_cross_entropy_bits": 2.5376486408453847,
+            "predictive_gain_bits": -0.01917874861756408,
+            "train_unique_contexts": 4290,
+            "test_unseen_context_fraction": 0.016946327369707744,
+            "shuffled_control_gain_bits": -0.03864022652101573,
+            "excess_gain_over_shuffled_bits": 0.01946147790345165
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 2.518549286610874,
+            "model_cross_entropy_bits": 2.5197801186414956,
+            "predictive_gain_bits": -0.001230832030621798,
+            "train_unique_contexts": 67451,
+            "test_unseen_context_fraction": 0.7406090242276061,
+            "shuffled_control_gain_bits": -0.0032256285780030147,
+            "excess_gain_over_shuffled_bits": 0.001994796547381217
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 179,
+      "start_seconds": 179.0,
+      "pairs_analyzed": 120000,
+      "channels": {
+        "I": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 1.901184823508912,
+            "model_cross_entropy_bits": 1.8868564309959799,
+            "predictive_gain_bits": 0.014328392512932053,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 0.0,
+            "shuffled_control_gain_bits": -0.001024198478577043,
+            "excess_gain_over_shuffled_bits": 0.015352590991509096
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 1.9011496618609562,
+            "model_cross_entropy_bits": 1.8840699757517736,
+            "predictive_gain_bits": 0.017079686109182646,
+            "train_unique_contexts": 83,
+            "test_unseen_context_fraction": 0.00011111728429357187,
+            "shuffled_control_gain_bits": -0.002561752852056509,
+            "excess_gain_over_shuffled_bits": 0.019641438961239155
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 1.901127655118262,
+            "model_cross_entropy_bits": 1.887343137690574,
+            "predictive_gain_bits": 0.013784517427688048,
+            "train_unique_contexts": 1560,
+            "test_unseen_context_fraction": 0.004306034003778198,
+            "shuffled_control_gain_bits": -0.013904411762527769,
+            "excess_gain_over_shuffled_bits": 0.027688929190215816
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 1.9011334851006474,
+            "model_cross_entropy_bits": 1.9070686093933065,
+            "predictive_gain_bits": -0.0059351242926590775,
+            "train_unique_contexts": 35454,
+            "test_unseen_context_fraction": 0.2483885307846188,
+            "shuffled_control_gain_bits": -0.017124309580292874,
+            "excess_gain_over_shuffled_bits": 0.011189185287633796
+          }
+        ],
+        "Q": [
+          {
+            "history": 1,
+            "train_symbols": 83999,
+            "test_symbols": 35999,
+            "baseline_cross_entropy_bits": 1.9076037236073295,
+            "model_cross_entropy_bits": 1.8905054510837804,
+            "predictive_gain_bits": 0.01709827252354912,
+            "train_unique_contexts": 11,
+            "test_unseen_context_fraction": 2.7778549404150115e-05,
+            "shuffled_control_gain_bits": -0.0006212553840374557,
+            "excess_gain_over_shuffled_bits": 0.017719527907586574
+          },
+          {
+            "history": 2,
+            "train_symbols": 83998,
+            "test_symbols": 35998,
+            "baseline_cross_entropy_bits": 1.90756974144256,
+            "model_cross_entropy_bits": 1.8872599640905676,
+            "predictive_gain_bits": 0.020309777351992464,
+            "train_unique_contexts": 81,
+            "test_unseen_context_fraction": 8.33379632201789e-05,
+            "shuffled_control_gain_bits": -0.0018536852378827628,
+            "excess_gain_over_shuffled_bits": 0.022163462589875227
+          },
+          {
+            "history": 4,
+            "train_symbols": 83996,
+            "test_symbols": 35996,
+            "baseline_cross_entropy_bits": 1.9075952756254035,
+            "model_cross_entropy_bits": 1.8893195625920491,
+            "predictive_gain_bits": 0.0182757130333544,
+            "train_unique_contexts": 1569,
+            "test_unseen_context_fraction": 0.004306034003778198,
+            "shuffled_control_gain_bits": -0.014847544585946837,
+            "excess_gain_over_shuffled_bits": 0.03312325761930124
+          },
+          {
+            "history": 8,
+            "train_symbols": 83992,
+            "test_symbols": 35992,
+            "baseline_cross_entropy_bits": 1.9076504206230964,
+            "model_cross_entropy_bits": 1.9079622768852023,
+            "predictive_gain_bits": -0.0003118562621058363,
+            "train_unique_contexts": 35251,
+            "test_unseen_context_fraction": 0.2477772838408535,
+            "shuffled_control_gain_bits": -0.017373176982441008,
+            "excess_gain_over_shuffled_bits": 0.01706132072033517
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Cross-entropy is held-out predictive log loss, not Shannon conditional entropy or cryptographic min-entropy.",
+    "Quantization to 4 bits per channel discards information; no inference about full 8-bit entropy is justified.",
+    "Only selected windows and first sample_pairs of each are analyzed; no random representative sample claim.",
+    "Shuffled controls break local ordering but do not eliminate all finite-sample biases or nonstationarity.",
+    "Context-count models cannot rule out nonlinear, longer-range, or adversarial prediction.",
+    "No NIST SP 800-90B entropy claim; no physical RF-noise isolation or validated source model."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "tag": "OFF",
+  "condition": "antenna",
+  "azimuth_deg": "323",
+  "elevation_deg": "57",
+  "target_notes": "OFF",
+  "start_utc": "2026-11-09T15:53:14.592148+00:00",
+  "end_utc": "2026-11-09T15:56:15.318871+00:00",
+  "elapsed_s": 180.7335977499606,
+  "command": [
+    "rtl_sdr",
+    "-d",
+    "0",
+    "-f",
+    "1420405752",
+    "-s",
+    "2400000",
+    "-g",
+    "30.0",
+    "-n",
+    "432000000",
+    "/Users/REDACTED_USER/astronomia/prog/virgo_rng_2_macos_completo/virgo_rng_v2_0_0/results/E1_20261109/OFF.cu8"
+  ],
+  "exit_code": 0,
+  "actual_bytes": 864000000,
+  "expected_bytes": 864000000,
+  "complete": true
+}

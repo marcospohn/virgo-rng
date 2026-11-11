@@ -1,0 +1,756 @@
+{
+  "schema": "virgo-rng-joint-predictive-v1",
+  "source": "continuous.cu8",
+  "file_bytes": 864000000,
+  "total_pairs": 432000000,
+  "window_pairs": 2400000,
+  "windows_available": 180,
+  "windows_selected": [
+    0,
+    16,
+    32,
+    48,
+    65,
+    81,
+    97,
+    113,
+    130,
+    146,
+    162,
+    179
+  ],
+  "sample_pairs_per_window": 120000,
+  "quantization_bits_per_component": 2,
+  "alphabet_size": 16,
+  "context_orders": [
+    0,
+    1,
+    2,
+    4,
+    8
+  ],
+  "train_fraction": 0.7,
+  "test_embargo_pairs": 8,
+  "backoff_alpha": 30.0,
+  "shuffle_repeats": 3,
+  "shuffle_preserves_simultaneous_IQ_pairing": true,
+  "summary": {
+    "0": {
+      "cross_entropy_bits": 2.0207201547757765,
+      "gain_vs_baseline_bits": 0.0,
+      "unseen_context_fraction": 0.0,
+      "shuffled_control_mean_gain_bits": 0.0,
+      "excess_over_shuffled_mean_bits": 0.0
+    },
+    "1": {
+      "cross_entropy_bits": 2.0080255320321956,
+      "gain_vs_baseline_bits": 0.012694622743581093,
+      "unseen_context_fraction": 1.1576646662221233e-05,
+      "shuffled_control_mean_gain_bits": -0.0010526147196229243,
+      "excess_over_shuffled_mean_bits": 0.013747237463204018
+    },
+    "2": {
+      "cross_entropy_bits": 2.006127707918559,
+      "gain_vs_baseline_bits": 0.01459244685721752,
+      "unseen_context_fraction": 0.00028478550789064243,
+      "shuffled_control_mean_gain_bits": -0.004454577251006113,
+      "excess_over_shuffled_mean_bits": 0.01904702410822363
+    },
+    "4": {
+      "cross_entropy_bits": 2.0121811149927606,
+      "gain_vs_baseline_bits": 0.008539039783016455,
+      "unseen_context_fraction": 0.003690634955916129,
+      "shuffled_control_mean_gain_bits": -0.019131792412891747,
+      "excess_over_shuffled_mean_bits": 0.027670832195908202
+    },
+    "8": {
+      "cross_entropy_bits": 2.06214805131841,
+      "gain_vs_baseline_bits": -0.04142789654263342,
+      "unseen_context_fraction": 0.2615905386382159,
+      "shuffled_control_mean_gain_bits": -0.07294474194206055,
+      "excess_over_shuffled_mean_bits": 0.03151684539942713
+    }
+  },
+  "windows": [
+    {
+      "window_index": 0,
+      "start_seconds": 0.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.018905216561679,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.0016675686355434,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.01723764792613558,
+          "shuffled_control_mean_gain_bits": -0.0005066943004775245,
+          "shuffled_control_std_gain_bits": 0.0002789858171256674,
+          "excess_over_shuffled_mean_bits": 0.017744342226613103
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 2.001917718460653,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0001389197599466548,
+          "gain_vs_baseline_bits": 0.016987498101026066,
+          "shuffled_control_mean_gain_bits": -0.005746740467820199,
+          "shuffled_control_std_gain_bits": 0.0005988429023372119,
+          "excess_over_shuffled_mean_bits": 0.022734238568846266
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.013599770720629,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.00405645699044232,
+          "gain_vs_baseline_bits": 0.005305445841050194,
+          "shuffled_control_mean_gain_bits": -0.025373251059381523,
+          "shuffled_control_std_gain_bits": 0.0018562175699124435,
+          "excess_over_shuffled_mean_bits": 0.030678696900431717
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0696860811252757,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.265697932873972,
+          "gain_vs_baseline_bits": -0.05078086456359676,
+          "shuffled_control_mean_gain_bits": -0.0800083672960031,
+          "shuffled_control_std_gain_bits": 0.002145519036131515,
+          "excess_over_shuffled_mean_bits": 0.029227502732406332
+        }
+      ]
+    },
+    {
+      "window_index": 16,
+      "start_seconds": 16.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0097919261332438,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 1.9961794546751883,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.013612471458055442,
+          "shuffled_control_mean_gain_bits": -0.0008394007180287192,
+          "shuffled_control_std_gain_bits": 0.0008686828620900238,
+          "excess_over_shuffled_mean_bits": 0.01445187217608416
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.9932690068020764,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.00011113580795732385,
+          "gain_vs_baseline_bits": 0.01652291933116734,
+          "shuffled_control_mean_gain_bits": -0.003914303422241083,
+          "shuffled_control_std_gain_bits": 0.0014864675542170188,
+          "excess_over_shuffled_mean_bits": 0.020437222753408424
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9996579446600398,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0026394754389864414,
+          "gain_vs_baseline_bits": 0.01013398147320399,
+          "shuffled_control_mean_gain_bits": -0.015021554180219887,
+          "shuffled_control_std_gain_bits": 0.0019140574851231737,
+          "excess_over_shuffled_mean_bits": 0.025155535653423877
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0474798559125333,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.24905534563236276,
+          "gain_vs_baseline_bits": -0.037687929779289586,
+          "shuffled_control_mean_gain_bits": -0.06650190348386668,
+          "shuffled_control_std_gain_bits": 0.0022863938901485185,
+          "excess_over_shuffled_mean_bits": 0.028813973704577098
+        }
+      ]
+    },
+    {
+      "window_index": 32,
+      "start_seconds": 32.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.006921022541943,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 1.9990361832459862,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.007884839295956958,
+          "shuffled_control_mean_gain_bits": -0.0015477576687160284,
+          "shuffled_control_std_gain_bits": 0.0005259857387291707,
+          "excess_over_shuffled_mean_bits": 0.009432596964672987
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.9960155807180857,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0002500555679039787,
+          "gain_vs_baseline_bits": 0.010905441823857442,
+          "shuffled_control_mean_gain_bits": -0.004728215266261919,
+          "shuffled_control_std_gain_bits": 0.0008883992464699892,
+          "excess_over_shuffled_mean_bits": 0.015633657090119362
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9884863854173997,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0019448766392531674,
+          "gain_vs_baseline_bits": 0.018434637124543407,
+          "shuffled_control_mean_gain_bits": -0.015290758256115774,
+          "shuffled_control_std_gain_bits": 0.0005133484277689603,
+          "excess_over_shuffled_mean_bits": 0.03372539538065918
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0318747441441056,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.2506390308957546,
+          "gain_vs_baseline_bits": -0.02495372160216247,
+          "shuffled_control_mean_gain_bits": -0.06640821835127471,
+          "shuffled_control_std_gain_bits": 7.142067054445762e-05,
+          "excess_over_shuffled_mean_bits": 0.04145449674911224
+        }
+      ]
+    },
+    {
+      "window_index": 48,
+      "start_seconds": 48.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0067637029516185,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.000868154944072,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.005895548007546658,
+          "shuffled_control_mean_gain_bits": -0.0017762562283459478,
+          "shuffled_control_std_gain_bits": 0.0003411829418772863,
+          "excess_over_shuffled_mean_bits": 0.007671804235892606
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.995409936147842,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0001389197599466548,
+          "gain_vs_baseline_bits": 0.011353766803776644,
+          "shuffled_control_mean_gain_bits": -0.005740636312129362,
+          "shuffled_control_std_gain_bits": 0.00122654655874643,
+          "excess_over_shuffled_mean_bits": 0.017094403115906005
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9944825290670813,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0016670371193598578,
+          "gain_vs_baseline_bits": 0.0122811738845372,
+          "shuffled_control_mean_gain_bits": -0.01681503574557386,
+          "shuffled_control_std_gain_bits": 0.002503613232534107,
+          "excess_over_shuffled_mean_bits": 0.02909620963011106
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0371707186846524,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.25216714825516784,
+          "gain_vs_baseline_bits": -0.030407015733033838,
+          "shuffled_control_mean_gain_bits": -0.06859981069271504,
+          "shuffled_control_std_gain_bits": 0.004520434998158238,
+          "excess_over_shuffled_mean_bits": 0.0381927949596812
+        }
+      ]
+    },
+    {
+      "window_index": 65,
+      "start_seconds": 65.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.014558614698572,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.0021703825898647,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.012388232108707431,
+          "shuffled_control_mean_gain_bits": -0.0007767690628043648,
+          "shuffled_control_std_gain_bits": 0.0004817171614803353,
+          "excess_over_shuffled_mean_bits": 0.013165001171511795
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 2.002199618477243,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0006112469437652812,
+          "gain_vs_baseline_bits": 0.0123589962213293,
+          "shuffled_control_mean_gain_bits": -0.0044110678417278075,
+          "shuffled_control_std_gain_bits": 0.0019489561049004258,
+          "excess_over_shuffled_mean_bits": 0.016770064063057106
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.008436032900799,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.004000889086463659,
+          "gain_vs_baseline_bits": 0.00612258179777303,
+          "shuffled_control_mean_gain_bits": -0.015685178062784615,
+          "shuffled_control_std_gain_bits": 0.002669013717413096,
+          "excess_over_shuffled_mean_bits": 0.021807759860557645
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.050834185478443,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.25005556790397865,
+          "gain_vs_baseline_bits": -0.03627557077987076,
+          "shuffled_control_mean_gain_bits": -0.06583836159056726,
+          "shuffled_control_std_gain_bits": 0.004314446349157952,
+          "excess_over_shuffled_mean_bits": 0.0295627908106965
+        }
+      ]
+    },
+    {
+      "window_index": 81,
+      "start_seconds": 81.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0082917746994338,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 1.9936916197072572,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 2.7783951989330962e-05,
+          "gain_vs_baseline_bits": 0.014600154992176595,
+          "shuffled_control_mean_gain_bits": -0.0013813037045175374,
+          "shuffled_control_std_gain_bits": 0.0004407627566734041,
+          "excess_over_shuffled_mean_bits": 0.015981458696694133
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.991577520684624,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0004445432318292954,
+          "gain_vs_baseline_bits": 0.01671425401480975,
+          "shuffled_control_mean_gain_bits": -0.005564088170902999,
+          "shuffled_control_std_gain_bits": 0.0006790667690672101,
+          "excess_over_shuffled_mean_bits": 0.022278342185712747
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9929481280846948,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.002167148255167815,
+          "gain_vs_baseline_bits": 0.01534364661473897,
+          "shuffled_control_mean_gain_bits": -0.017169122882522814,
+          "shuffled_control_std_gain_bits": 0.0018656606475549208,
+          "excess_over_shuffled_mean_bits": 0.032512769497261784
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.043275263574265,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.25216714825516784,
+          "gain_vs_baseline_bits": -0.03498348887483127,
+          "shuffled_control_mean_gain_bits": -0.06844915178353246,
+          "shuffled_control_std_gain_bits": 0.001650462999060121,
+          "excess_over_shuffled_mean_bits": 0.03346566290870119
+        }
+      ]
+    },
+    {
+      "window_index": 97,
+      "start_seconds": 97.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0104634618055637,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 1.9923295020062444,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.01813395979931931,
+          "shuffled_control_mean_gain_bits": -0.0017754888032495881,
+          "shuffled_control_std_gain_bits": 0.0008137014678074204,
+          "excess_over_shuffled_mean_bits": 0.019909448602568897
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.9915440677331075,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0005834629917759502,
+          "gain_vs_baseline_bits": 0.01891939407245613,
+          "shuffled_control_mean_gain_bits": -0.004614447179462762,
+          "shuffled_control_std_gain_bits": 0.0012696938380201625,
+          "excess_over_shuffled_mean_bits": 0.023533841251918892
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9933296810147987,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0028617470549010893,
+          "gain_vs_baseline_bits": 0.017133780790764996,
+          "shuffled_control_mean_gain_bits": -0.014698792400887969,
+          "shuffled_control_std_gain_bits": 0.0026385368912346567,
+          "excess_over_shuffled_mean_bits": 0.03183257319165297
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.041722882799112,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.2447210491220271,
+          "gain_vs_baseline_bits": -0.03125942099354839,
+          "shuffled_control_mean_gain_bits": -0.06498143555053677,
+          "shuffled_control_std_gain_bits": 0.00217050809428835,
+          "excess_over_shuffled_mean_bits": 0.03372201455698838
+        }
+      ]
+    },
+    {
+      "window_index": 113,
+      "start_seconds": 113.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0079653178213888,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.0017921204894162,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.00011113580795732385,
+          "gain_vs_baseline_bits": 0.006173197331972524,
+          "shuffled_control_mean_gain_bits": -0.0013134271230993793,
+          "shuffled_control_std_gain_bits": 0.0004232437716762892,
+          "excess_over_shuffled_mean_bits": 0.007486624455071904
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.9998790524130499,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0005556790397866192,
+          "gain_vs_baseline_bits": 0.0080862654083389,
+          "shuffled_control_mean_gain_bits": -0.00356705745944493,
+          "shuffled_control_std_gain_bits": 0.0005721544083079154,
+          "excess_over_shuffled_mean_bits": 0.01165332286778383
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.0009952049627735,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.00202822849522116,
+          "gain_vs_baseline_bits": 0.006970112858615263,
+          "shuffled_control_mean_gain_bits": -0.012259913687279559,
+          "shuffled_control_std_gain_bits": 0.0011605153917060179,
+          "excess_over_shuffled_mean_bits": 0.01923002654589482
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.043093955815992,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.25200044454323184,
+          "gain_vs_baseline_bits": -0.035128637994603196,
+          "shuffled_control_mean_gain_bits": -0.06316632110309357,
+          "shuffled_control_std_gain_bits": 0.0034681558893522595,
+          "excess_over_shuffled_mean_bits": 0.028037683108490377
+        }
+      ]
+    },
+    {
+      "window_index": 130,
+      "start_seconds": 130.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0307381683473062,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.0187183545999665,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.012019813747339736,
+          "shuffled_control_mean_gain_bits": -0.00019984840845962046,
+          "shuffled_control_std_gain_bits": 0.00014597538042916794,
+          "excess_over_shuffled_mean_bits": 0.012219662155799357
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 2.019532012568634,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0002222716159146477,
+          "gain_vs_baseline_bits": 0.011206155778672233,
+          "shuffled_control_mean_gain_bits": -0.0040233499892794455,
+          "shuffled_control_std_gain_bits": 0.0006946978119578827,
+          "excess_over_shuffled_mean_bits": 0.015229505767951679
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.035575812997918,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.007390531229162036,
+          "gain_vs_baseline_bits": -0.004837644650611761,
+          "shuffled_control_mean_gain_bits": -0.021061032046333878,
+          "shuffled_control_std_gain_bits": 0.002336687106518644,
+          "excess_over_shuffled_mean_bits": 0.016223387395722117
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.089737828273519,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.26980995776839295,
+          "gain_vs_baseline_bits": -0.05899965992621281,
+          "shuffled_control_mean_gain_bits": -0.07742577136042945,
+          "shuffled_control_std_gain_bits": 0.003399090211831327,
+          "excess_over_shuffled_mean_bits": 0.018426111434216644
+        }
+      ]
+    },
+    {
+      "window_index": 146,
+      "start_seconds": 146.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.025906816841276,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.0121394344825636,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.013767382358712332,
+          "shuffled_control_mean_gain_bits": -0.0004706581439405018,
+          "shuffled_control_std_gain_bits": 0.00015233870758785893,
+          "excess_over_shuffled_mean_bits": 0.014238040502652835
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 2.0083429100380874,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.00011113580795732385,
+          "gain_vs_baseline_bits": 0.017563906803188534,
+          "shuffled_control_mean_gain_bits": -0.004068813945406517,
+          "shuffled_control_std_gain_bits": 0.0006687794964759643,
+          "excess_over_shuffled_mean_bits": 0.02163272074859505
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.01993436818038,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.005612358301844854,
+          "gain_vs_baseline_bits": 0.005972448660895857,
+          "shuffled_control_mean_gain_bits": -0.023570854437715855,
+          "shuffled_control_std_gain_bits": 0.003516338483105517,
+          "excess_over_shuffled_mean_bits": 0.029543303098611712
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0728763081035084,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.26597577239386533,
+          "gain_vs_baseline_bits": -0.04696949126223249,
+          "shuffled_control_mean_gain_bits": -0.0801327427369986,
+          "shuffled_control_std_gain_bits": 0.003375497605775568,
+          "excess_over_shuffled_mean_bits": 0.033163251474766106
+        }
+      ]
+    },
+    {
+      "window_index": 162,
+      "start_seconds": 162.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.1036569675859673,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 2.090948004963001,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.012708962622966169,
+          "shuffled_control_mean_gain_bits": -0.001045366905934782,
+          "shuffled_control_std_gain_bits": 0.00030077167793330614,
+          "excess_over_shuffled_mean_bits": 0.013754329528900952
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 2.088307254407646,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0002222716159146477,
+          "gain_vs_baseline_bits": 0.015349713178321345,
+          "shuffled_control_mean_gain_bits": -0.003631270240228949,
+          "shuffled_control_std_gain_bits": 0.0011474817465272472,
+          "excess_over_shuffled_mean_bits": 0.018980983418550295
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 2.117681430798668,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.008751944876639254,
+          "gain_vs_baseline_bits": -0.014024463212700677,
+          "shuffled_control_mean_gain_bits": -0.04021381471041,
+          "shuffled_control_std_gain_bits": 0.003925110043875425,
+          "excess_over_shuffled_mean_bits": 0.026189351497709325
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.189672616991462,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.34088130695710156,
+          "gain_vs_baseline_bits": -0.08601564940549489,
+          "shuffled_control_mean_gain_bits": -0.11230690564402372,
+          "shuffled_control_std_gain_bits": 0.005391749076738079,
+          "excess_over_shuffled_mean_bits": 0.026291256238528835
+        }
+      ]
+    },
+    {
+      "window_index": 179,
+      "start_seconds": 179.0,
+      "metrics": [
+        {
+          "history": 0,
+          "cross_entropy_bits": 2.0046788673213287,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.0,
+          "shuffled_control_mean_gain_bits": 0.0,
+          "shuffled_control_std_gain_bits": 0.0,
+          "excess_over_shuffled_mean_bits": 0.0
+        },
+        {
+          "history": 1,
+          "cross_entropy_bits": 1.9867656040472443,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0,
+          "gain_vs_baseline_bits": 0.01791326327408438,
+          "shuffled_control_mean_gain_bits": -0.000998405567901095,
+          "shuffled_control_std_gain_bits": 0.00033513072760662377,
+          "excess_over_shuffled_mean_bits": 0.018911668841985474
+        },
+        {
+          "history": 2,
+          "cross_entropy_bits": 1.9855378165716622,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 2.7783951989330962e-05,
+          "gain_vs_baseline_bits": 0.019141050749666544,
+          "shuffled_control_mean_gain_bits": -0.0034449367171673906,
+          "shuffled_control_std_gain_bits": 0.0011141729915642223,
+          "excess_over_shuffled_mean_bits": 0.022585987466833934
+        },
+        {
+          "history": 4,
+          "cross_entropy_bits": 1.9810460911079417,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.0011669259835519004,
+          "gain_vs_baseline_bits": 0.023632776213386997,
+          "shuffled_control_mean_gain_bits": -0.0124222014854752,
+          "shuffled_control_std_gain_bits": 0.002757217526313293,
+          "excess_over_shuffled_mean_bits": 0.0360549776988622
+        },
+        {
+          "history": 8,
+          "cross_entropy_bits": 2.0283521749180533,
+          "test_symbols": 35992,
+          "unseen_context_fraction": 0.24591575905756835,
+          "gain_vs_baseline_bits": -0.02367330759672459,
+          "shuffled_control_mean_gain_bits": -0.061517913711685246,
+          "shuffled_control_std_gain_bits": 0.005192536963210208,
+          "excess_over_shuffled_mean_bits": 0.037844606114960655
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Held-out log loss measures predictive performance, not cryptographic min-entropy.",
+    "Coarse quantization discards most of the original 8-bit I/Q values.",
+    "Models are trained and evaluated separately within selected windows; results do not cover all 432M pairs.",
+    "Backoff is a specific finite model and cannot exclude other predictors or adversarial side information.",
+    "Shuffling removes temporal ordering but retains same-time I/Q pairing; this is an exploratory control.",
+    "Averaging windows is not a confidence bound or NIST SP 800-90B entropy assessment."
+  ]
+}

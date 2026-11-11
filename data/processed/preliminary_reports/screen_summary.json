@@ -1,0 +1,74 @@
+{
+  "schema": "virgo-rng-nist-screen-summary-v1",
+  "source_sha256": "303ae4b7cbb03f7f1cbeee16288cccb2de254bb1fa1bc46760fd0c3b82d74d84",
+  "results": [
+    {
+      "id": "beginning_i",
+      "status": "completed",
+      "estimates": {
+        "h_original": 5.306244,
+        "h_bitstring": 0.506639,
+        "h_final": 4.053116
+      },
+      "report": "results/nist_screen_20261015T143415Z/beginning_i_non_iid.json"
+    },
+    {
+      "id": "beginning_q",
+      "status": "completed",
+      "estimates": {
+        "h_original": 5.423631,
+        "h_bitstring": 0.508266,
+        "h_final": 4.066127
+      },
+      "report": "results/nist_screen_20261015T143415Z/beginning_q_non_iid.json"
+    },
+    {
+      "id": "middle_i",
+      "status": "completed",
+      "estimates": {
+        "h_original": 5.241719,
+        "h_bitstring": 0.507108,
+        "h_final": 4.056863
+      },
+      "report": "results/nist_screen_20261015T143415Z/middle_i_non_iid.json"
+    },
+    {
+      "id": "middle_q",
+      "status": "completed",
+      "estimates": {
+        "h_original": 5.211702,
+        "h_bitstring": 0.507558,
+        "h_final": 4.060463
+      },
+      "report": "results/nist_screen_20261015T143415Z/middle_q_non_iid.json"
+    },
+    {
+      "id": "end_i",
+      "status": "completed",
+      "estimates": {
+        "h_original": 4.416482,
+        "h_bitstring": 0.496939,
+        "h_final": 3.975515
+      },
+      "report": "results/nist_screen_20261015T143415Z/end_i_non_iid.json"
+    },
+    {
+      "id": "end_q",
+      "status": "completed",
+      "estimates": {
+        "h_original": 4.874759,
+        "h_bitstring": 0.496456,
+        "h_final": 3.97165
+      },
+      "report": "results/nist_screen_20261015T143415Z/end_q_non_iid.json"
+    }
+  ],
+  "all_completed": true,
+  "limitations": [
+    "Not an SP 800-90B source validation, IID determination, or restart experiment",
+    "These are separate within-recording estimates, not an extraction rate",
+    "Do not sum I and Q estimates or infer independence",
+    "No characterization of environmental RF or adversarial influence",
+    "Official -t flag truncates bitstring assessment to 1M bits"
+  ]
+}

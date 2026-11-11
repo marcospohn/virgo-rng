@@ -1,0 +1,12 @@
+{
+  "protocol": "E1-A1-ON1-OFF-ON2-A2",
+  "created_utc": "2026-11-09T15:37:06.276293+00:00",
+  "center_hz": 1420405752,
+  "rate_sps": 2400000,
+  "gain_db": 30.0,
+  "seconds": 180,
+  "samples_per_capture": 432000000,
+  "format": "CU8 interleaved I,Q",
+  "location": "Chapeco, SC (user reported)",
+  "notes": "Keep receiver settings fixed; use actual astronomical pointing coordinates and document times."
+}

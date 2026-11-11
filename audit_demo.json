@@ -1,0 +1,54 @@
+{
+  "schema": "virgo-rng-audit-v1",
+  "discovery": "/mnt/data/global_lag_mi_report.json",
+  "replication": "/mnt/data/global_lag_mi_report(1).json",
+  "prespecified_lags": [
+    -8,
+    8
+  ],
+  "lag_results": [
+    {
+      "lag": -8,
+      "discovery_excess_bits": 0.002908189427871613,
+      "replication_excess_bits": 0.0014166395529236191,
+      "replication_pointwise_p": 0.02,
+      "holm_adjusted_p_two_lags": 0.03,
+      "passes_0_05_if_null_valid": true
+    },
+    {
+      "lag": 8,
+      "discovery_excess_bits": 0.0029594452160686727,
+      "replication_excess_bits": 0.0016765843300042692,
+      "replication_pointwise_p": 0.015,
+      "holm_adjusted_p_two_lags": 0.03,
+      "passes_0_05_if_null_valid": true
+    }
+  ],
+  "global_tests": {
+    "discovery": {
+      "statistic": "max over lags of observed mean MI minus mean shifted-control MI",
+      "max_excess_lag": 8,
+      "max_excess_bits": 0.0029594452160686727,
+      "p_value_max_statistic": 0.075,
+      "null_max_95th_percentile_bits": 0.003387308889176537,
+      "null_max_99th_percentile_bits": 0.006907378464519825
+    },
+    "replication": {
+      "statistic": "max over lags of observed mean MI minus mean shifted-control MI",
+      "max_excess_lag": -25,
+      "max_excess_bits": 0.0026401530294254036,
+      "p_value_max_statistic": 0.495,
+      "null_max_95th_percentile_bits": 0.010443638075523157,
+      "null_max_99th_percentile_bits": 0.013550974873823602
+    }
+  },
+  "null_95_ratio_replication_over_discovery": 3.0831667312342543,
+  "interpretation": "Exploratory audit only: Holm-adjusted pointwise p-values are conditional on valid circular-shift null and valid pre-registration of +/-8 before replication.",
+  "limitations": [
+    "No raw permutation distribution in existing JSON; cannot independently verify p-values or null exchangeability.",
+    "Same permutation seed across captures is not by itself evidence of invalidity.",
+    "Shared nonstationarity or periodic interference may invalidate circular-shift controls.",
+    "No claim of physical coupling, independent entropy, or cryptographic min-entropy.",
+    "First capture selected the lags; only second capture is eligible for a pre-specified two-lag confirmation."
+  ]
+}

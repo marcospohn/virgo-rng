@@ -1,0 +1,1005 @@
+{
+  "schema": "virgo-rng-cross-channel-v1",
+  "source": "../continuous.cu8",
+  "source_bytes": 864000000,
+  "total_pairs": 432000000,
+  "windows_selected": [
+    0,
+    16,
+    32,
+    48,
+    65,
+    81,
+    97,
+    113,
+    130,
+    146,
+    162,
+    179
+  ],
+  "sample_pairs_per_window": 120000,
+  "quantization_bits_per_component": 2,
+  "train_fraction": 0.7,
+  "context_orders": [
+    1,
+    2,
+    4
+  ],
+  "shift_control_repeats": 3,
+  "smoothing_alpha": 30.0,
+  "summary": {
+    "i": {
+      "1": {
+        "own_only_logloss_bits": 1.0037694157862909,
+        "own_and_other_logloss_bits": 1.0039072402434932,
+        "incremental_other_channel_gain_bits": -0.00013782445720232164,
+        "unseen_combined_fraction": 1.1575360225210208e-05,
+        "shifted_control_mean_gain_bits": -0.0002390257248798452,
+        "excess_over_shifted_mean_bits": 0.00010120126767752351
+      },
+      "2": {
+        "own_only_logloss_bits": 1.0015750025690113,
+        "own_and_other_logloss_bits": 1.0021417612499568,
+        "incremental_other_channel_gain_bits": -0.0005667586809455413,
+        "unseen_combined_fraction": 0.00028475386154017113,
+        "shifted_control_mean_gain_bits": -0.0009993327496733981,
+        "excess_over_shifted_mean_bits": 0.0004325740687278572
+      },
+      "4": {
+        "own_only_logloss_bits": 0.9992030030231591,
+        "own_and_other_logloss_bits": 1.0012023785791013,
+        "incremental_other_channel_gain_bits": -0.0019993755559422435,
+        "unseen_combined_fraction": 0.003690224839797015,
+        "shifted_control_mean_gain_bits": -0.003492165248083129,
+        "excess_over_shifted_mean_bits": 0.0014927896921408852
+      }
+    },
+    "q": {
+      "1": {
+        "own_only_logloss_bits": 1.0030378473899149,
+        "own_and_other_logloss_bits": 1.0033025570005738,
+        "incremental_other_channel_gain_bits": -0.00026470961065907145,
+        "unseen_combined_fraction": 1.1575360225210208e-05,
+        "shifted_control_mean_gain_bits": -0.00020638145322050057,
+        "excess_over_shifted_mean_bits": -5.8328157438570896e-05
+      },
+      "2": {
+        "own_only_logloss_bits": 1.000970029229055,
+        "own_and_other_logloss_bits": 1.001507892983532,
+        "incremental_other_channel_gain_bits": -0.0005378637544768231,
+        "unseen_combined_fraction": 0.00028475386154017113,
+        "shifted_control_mean_gain_bits": -0.0008037355928272716,
+        "excess_over_shifted_mean_bits": 0.00026587183835044857
+      },
+      "4": {
+        "own_only_logloss_bits": 0.9983924184562941,
+        "own_and_other_logloss_bits": 1.0004983922492097,
+        "incremental_other_channel_gain_bits": -0.0021059737929150966,
+        "unseen_combined_fraction": 0.003690224839797015,
+        "shifted_control_mean_gain_bits": -0.0030390372133314116,
+        "excess_over_shifted_mean_bits": 0.0009330634204163152
+      }
+    }
+  },
+  "windows": [
+    {
+      "window_index": 0,
+      "start_seconds": 0.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9997508047778038,
+            "own_and_other_logloss_bits": 0.9998954736144531,
+            "incremental_other_channel_gain_bits": -0.00014466883664931984,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -6.117778414804764e-05,
+            "shifted_control_std_gain_bits": 0.00010958667209879233,
+            "excess_over_shifted_mean_bits": -8.34910525012722e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9992327487390743,
+            "own_and_other_logloss_bits": 0.9989947900258518,
+            "incremental_other_channel_gain_bits": 0.00023795871322251916,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0001389043227025225,
+            "shifted_control_mean_gain_bits": -0.0005936178773398026,
+            "shifted_control_std_gain_bits": 0.0005150651108222403,
+            "excess_over_shifted_mean_bits": 0.0008315765905623218
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9984043058208554,
+            "own_and_other_logloss_bits": 1.0017496202101082,
+            "incremental_other_channel_gain_bits": -0.003345314389252785,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.004056006222913657,
+            "shifted_control_mean_gain_bits": -0.004112416766584692,
+            "shifted_control_std_gain_bits": 0.0011130570122606267,
+            "excess_over_shifted_mean_bits": 0.0007671023773319074
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0010290127275296,
+            "own_and_other_logloss_bits": 1.0010131242247382,
+            "incremental_other_channel_gain_bits": 1.5888502791439052e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -8.098908838875356e-05,
+            "shifted_control_std_gain_bits": 7.237310586066964e-05,
+            "excess_over_shifted_mean_bits": 9.687759118019261e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0006875649711187,
+            "own_and_other_logloss_bits": 1.000381452601012,
+            "incremental_other_channel_gain_bits": 0.00030611237010669257,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0001389043227025225,
+            "shifted_control_mean_gain_bits": -0.0005042425593520713,
+            "shifted_control_std_gain_bits": 0.0003959179466204976,
+            "excess_over_shifted_mean_bits": 0.0008103549294587639
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9997534729157839,
+            "own_and_other_logloss_bits": 1.0013953991183782,
+            "incremental_other_channel_gain_bits": -0.0016419262025942905,
+            "unseen_own_fraction": 8.33425936215135e-05,
+            "unseen_combined_fraction": 0.004056006222913657,
+            "shifted_control_mean_gain_bits": -0.004543684239512162,
+            "shifted_control_std_gain_bits": 0.0013948170823008396,
+            "excess_over_shifted_mean_bits": 0.0029017580369178715
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 16,
+      "start_seconds": 16.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9994937542897158,
+            "own_and_other_logloss_bits": 0.9996814698279737,
+            "incremental_other_channel_gain_bits": -0.00018771553825791543,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -2.0723996714970088e-05,
+            "shifted_control_std_gain_bits": 0.00014385438612507382,
+            "excess_over_shifted_mean_bits": -0.00016699154154294535
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9970276606974331,
+            "own_and_other_logloss_bits": 0.9987457262080773,
+            "incremental_other_channel_gain_bits": -0.00171806551064424,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.0016535526025876675,
+            "shifted_control_std_gain_bits": 0.0005304889921222286,
+            "excess_over_shifted_mean_bits": -6.45129080565725e-05
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.995950520971037,
+            "own_and_other_logloss_bits": 0.9986088169205929,
+            "incremental_other_channel_gain_bits": -0.002658295949555911,
+            "unseen_own_fraction": 0.0001944660517835315,
+            "unseen_combined_fraction": 0.0026391821313479277,
+            "shifted_control_mean_gain_bits": -0.0031782954870713067,
+            "shifted_control_std_gain_bits": 0.0004320060594955761,
+            "excess_over_shifted_mean_bits": 0.0005199995375153956
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9959941337608441,
+            "own_and_other_logloss_bits": 0.9960933873714088,
+            "incremental_other_channel_gain_bits": -9.925361056473125e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0001295451923780666,
+            "shifted_control_std_gain_bits": 0.00014338790351111033,
+            "excess_over_shifted_mean_bits": 3.0291581813335355e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9933004519992117,
+            "own_and_other_logloss_bits": 0.9937312781053778,
+            "incremental_other_channel_gain_bits": -0.0004308261061660712,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.0007558011482358129,
+            "shifted_control_std_gain_bits": 0.0007474054523216515,
+            "excess_over_shifted_mean_bits": 0.0003249750420697417
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9921384127084849,
+            "own_and_other_logloss_bits": 0.9948533417423657,
+            "incremental_other_channel_gain_bits": -0.0027149290338808196,
+            "unseen_own_fraction": 0.0001944660517835315,
+            "unseen_combined_fraction": 0.0026391821313479277,
+            "shifted_control_mean_gain_bits": -0.002987492317821953,
+            "shifted_control_std_gain_bits": 0.0009444094537454944,
+            "excess_over_shifted_mean_bits": 0.00027256328394113316
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 32,
+      "start_seconds": 32.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9987643038428906,
+            "own_and_other_logloss_bits": 0.998819480927341,
+            "incremental_other_channel_gain_bits": -5.5177084450352964e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": 0.0006450777544245353,
+            "shifted_control_std_gain_bits": 0.0013066566075429986,
+            "excess_over_shifted_mean_bits": -0.0007002548388748883
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9967032551194265,
+            "own_and_other_logloss_bits": 0.9965670771407436,
+            "incremental_other_channel_gain_bits": 0.00013617797868292758,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0002500277808645405,
+            "shifted_control_mean_gain_bits": 0.00016930710440173544,
+            "shifted_control_std_gain_bits": 0.0012217140447649676,
+            "excess_over_shifted_mean_bits": -3.3129125718807856e-05
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.991358222329928,
+            "own_and_other_logloss_bits": 0.98978864975918,
+            "incremental_other_channel_gain_bits": 0.001569572570747968,
+            "unseen_own_fraction": 0.0002500277808645405,
+            "unseen_combined_fraction": 0.001944660517835315,
+            "shifted_control_mean_gain_bits": -0.0008196230976326158,
+            "shifted_control_std_gain_bits": 0.0008584688333140951,
+            "excess_over_shifted_mean_bits": 0.0023891956683805837
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9989424008915556,
+            "own_and_other_logloss_bits": 0.998962329159821,
+            "incremental_other_channel_gain_bits": -1.9928268265356763e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": 0.0002967121792886533,
+            "shifted_control_std_gain_bits": 0.00040150663424050955,
+            "excess_over_shifted_mean_bits": -0.00031664044755401005
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9969577151057015,
+            "own_and_other_logloss_bits": 0.9964649409850043,
+            "incremental_other_channel_gain_bits": 0.0004927741206972591,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0002500277808645405,
+            "shifted_control_mean_gain_bits": -0.00023186869601980278,
+            "shifted_control_std_gain_bits": 0.0006274318513721501,
+            "excess_over_shifted_mean_bits": 0.0007246428167170619
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9920240620488319,
+            "own_and_other_logloss_bits": 0.9905411678356525,
+            "incremental_other_channel_gain_bits": 0.0014828942131793754,
+            "unseen_own_fraction": 0.00011112345816201801,
+            "unseen_combined_fraction": 0.001944660517835315,
+            "shifted_control_mean_gain_bits": 0.003344889998855812,
+            "shifted_control_std_gain_bits": 0.009359306746780793,
+            "excess_over_shifted_mean_bits": -0.0018619957856764366
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 48,
+      "start_seconds": 48.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0000968577735896,
+            "own_and_other_logloss_bits": 1.0001297387098167,
+            "incremental_other_channel_gain_bits": -3.288093622710875e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -9.57473970835121e-05,
+            "shifted_control_std_gain_bits": 0.0001613678432127503,
+            "excess_over_shifted_mean_bits": 6.286646085640335e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9964625310385349,
+            "own_and_other_logloss_bits": 0.9961042345707145,
+            "incremental_other_channel_gain_bits": 0.0003582964678203737,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0001389043227025225,
+            "shifted_control_mean_gain_bits": -0.00019056857881612674,
+            "shifted_control_std_gain_bits": 0.0001576825152518476,
+            "excess_over_shifted_mean_bits": 0.0005488650466365005
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9929050944567969,
+            "own_and_other_logloss_bits": 0.9939124651960994,
+            "incremental_other_channel_gain_bits": -0.001007370739302571,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00166685187243027,
+            "shifted_control_mean_gain_bits": -0.0012652781632186416,
+            "shifted_control_std_gain_bits": 0.0012146316877259618,
+            "excess_over_shifted_mean_bits": 0.0002579074239160706
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9994526965678905,
+            "own_and_other_logloss_bits": 0.9998364515672159,
+            "incremental_other_channel_gain_bits": -0.0003837549993254141,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0003400436371844284,
+            "shifted_control_std_gain_bits": 0.0006424106636370651,
+            "excess_over_shifted_mean_bits": -4.37113621409857e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9971076375111357,
+            "own_and_other_logloss_bits": 0.9973252499185012,
+            "incremental_other_channel_gain_bits": -0.00021761240736550835,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0001389043227025225,
+            "shifted_control_mean_gain_bits": -0.0005205063226866683,
+            "shifted_control_std_gain_bits": 0.0004967328122064979,
+            "excess_over_shifted_mean_bits": 0.00030289391532115995
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9940022887516463,
+            "own_and_other_logloss_bits": 0.9949977258717878,
+            "incremental_other_channel_gain_bits": -0.0009954371201414958,
+            "unseen_own_fraction": 5.5561729081009004e-05,
+            "unseen_combined_fraction": 0.00166685187243027,
+            "shifted_control_mean_gain_bits": -0.001295575852287345,
+            "shifted_control_std_gain_bits": 0.000636316707775949,
+            "excess_over_shifted_mean_bits": 0.0003001387321458493
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 65,
+      "start_seconds": 65.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9993296574856212,
+            "own_and_other_logloss_bits": 0.9996187289792734,
+            "incremental_other_channel_gain_bits": -0.0002890714936522043,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.00024870555583252535,
+            "shifted_control_std_gain_bits": 9.772139663649926e-05,
+            "excess_over_shifted_mean_bits": -4.0365937819678954e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9971157982922864,
+            "own_and_other_logloss_bits": 0.9986491647231655,
+            "incremental_other_channel_gain_bits": -0.0015333664308790906,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.000611179019891099,
+            "shifted_control_mean_gain_bits": -0.00188567055000477,
+            "shifted_control_std_gain_bits": 1.7112387881425057e-05,
+            "excess_over_shifted_mean_bits": 0.00035230411912567927
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9955241324818189,
+            "own_and_other_logloss_bits": 0.9977209551947709,
+            "incremental_other_channel_gain_bits": -0.0021968227129519624,
+            "unseen_own_fraction": 0.00044449383264807203,
+            "unseen_combined_fraction": 0.004000444493832648,
+            "shifted_control_mean_gain_bits": -0.005461564560917324,
+            "shifted_control_std_gain_bits": 0.0029876849630633773,
+            "excess_over_shifted_mean_bits": 0.003264741847965362
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0000954370774067,
+            "own_and_other_logloss_bits": 1.0008786672643155,
+            "incremental_other_channel_gain_bits": -0.0007832301869088454,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0005424909112296353,
+            "shifted_control_std_gain_bits": 0.0007129217453441502,
+            "excess_over_shifted_mean_bits": -0.00024073927567921005
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9980100602596322,
+            "own_and_other_logloss_bits": 0.9990453374904674,
+            "incremental_other_channel_gain_bits": -0.0010352772308351854,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.000611179019891099,
+            "shifted_control_mean_gain_bits": -0.0008231106338676408,
+            "shifted_control_std_gain_bits": 0.0005123411984722403,
+            "excess_over_shifted_mean_bits": -0.00021216659696754459
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9971707830289467,
+            "own_and_other_logloss_bits": 0.9997038104813487,
+            "incremental_other_channel_gain_bits": -0.0025330274524020258,
+            "unseen_own_fraction": 0.0003055895099455495,
+            "unseen_combined_fraction": 0.004000444493832648,
+            "shifted_control_mean_gain_bits": -0.002845793540633782,
+            "shifted_control_std_gain_bits": 0.00038847569860307767,
+            "excess_over_shifted_mean_bits": 0.00031276608823175645
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 81,
+      "start_seconds": 81.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.998569858855727,
+            "own_and_other_logloss_bits": 0.9978529737233026,
+            "incremental_other_channel_gain_bits": 0.0007168851324244052,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 2.7780864540504502e-05,
+            "shifted_control_mean_gain_bits": -0.00039087384958721066,
+            "shifted_control_std_gain_bits": 0.00016954674429836339,
+            "excess_over_shifted_mean_bits": 0.0011077589820116158
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9964337017828869,
+            "own_and_other_logloss_bits": 0.9972413395560353,
+            "incremental_other_channel_gain_bits": -0.0008076377731484063,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.00044449383264807203,
+            "shifted_control_mean_gain_bits": -0.0012415133127640088,
+            "shifted_control_std_gain_bits": 0.0004922826647499912,
+            "excess_over_shifted_mean_bits": 0.00043387553961560243
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.994742475063088,
+            "own_and_other_logloss_bits": 0.9957234515729162,
+            "incremental_other_channel_gain_bits": -0.000980976509828202,
+            "unseen_own_fraction": 0.00055561729081009,
+            "unseen_combined_fraction": 0.002166907434159351,
+            "shifted_control_mean_gain_bits": -0.0024180840457287043,
+            "shifted_control_std_gain_bits": 0.0002945716742599944,
+            "excess_over_shifted_mean_bits": 0.0014371075359005023
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9948473508746833,
+            "own_and_other_logloss_bits": 0.9946698841728886,
+            "incremental_other_channel_gain_bits": 0.00017746670179474844,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 2.7780864540504502e-05,
+            "shifted_control_mean_gain_bits": -0.00028416760626977694,
+            "shifted_control_std_gain_bits": 0.00021937722888235695,
+            "excess_over_shifted_mean_bits": 0.0004616343080645254
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9926847275486335,
+            "own_and_other_logloss_bits": 0.9926546237118961,
+            "incremental_other_channel_gain_bits": 3.0103836737405132e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00044449383264807203,
+            "shifted_control_mean_gain_bits": -0.001506390855749477,
+            "shifted_control_std_gain_bits": 0.000984592508386415,
+            "excess_over_shifted_mean_bits": 0.001536494692486882
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9894220257809644,
+            "own_and_other_logloss_bits": 0.9909100517831531,
+            "incremental_other_channel_gain_bits": -0.0014880260021886693,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.002166907434159351,
+            "shifted_control_mean_gain_bits": -0.0035016992362726373,
+            "shifted_control_std_gain_bits": 0.001185975215550798,
+            "excess_over_shifted_mean_bits": 0.002013673234083968
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 97,
+      "start_seconds": 97.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9974292046182318,
+            "own_and_other_logloss_bits": 0.9987166363012777,
+            "incremental_other_channel_gain_bits": -0.0012874316830459032,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0016280447899861643,
+            "shifted_control_std_gain_bits": 0.00032215389522375097,
+            "excess_over_shifted_mean_bits": 0.00034061310694026114
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9958939178146727,
+            "own_and_other_logloss_bits": 0.9979599892419684,
+            "incremental_other_channel_gain_bits": -0.002066071427295646,
+            "unseen_own_fraction": 0.0001389043227025225,
+            "unseen_combined_fraction": 0.0005833981553505945,
+            "shifted_control_mean_gain_bits": -0.0023514502267118673,
+            "shifted_control_std_gain_bits": 0.00022353379800841704,
+            "excess_over_shifted_mean_bits": 0.00028537879941622135
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9918734714739835,
+            "own_and_other_logloss_bits": 0.9938197325202899,
+            "incremental_other_channel_gain_bits": -0.0019462610463063523,
+            "unseen_own_fraction": 0.0007500833425936215,
+            "unseen_combined_fraction": 0.0028614290476719636,
+            "shifted_control_mean_gain_bits": -0.0030571936871507757,
+            "shifted_control_std_gain_bits": 0.0002650937819214225,
+            "excess_over_shifted_mean_bits": 0.0011109326408444233
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9932545227044084,
+            "own_and_other_logloss_bits": 0.9933226361400718,
+            "incremental_other_channel_gain_bits": -6.811343566337502e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0005434253525119503,
+            "shifted_control_std_gain_bits": 0.0005703245237094689,
+            "excess_over_shifted_mean_bits": 0.0004753119168485753
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9906385202479617,
+            "own_and_other_logloss_bits": 0.9912925946514846,
+            "incremental_other_channel_gain_bits": -0.0006540744035228307,
+            "unseen_own_fraction": 5.5561729081009004e-05,
+            "unseen_combined_fraction": 0.0005833981553505945,
+            "shifted_control_mean_gain_bits": -0.0007448208804851086,
+            "shifted_control_std_gain_bits": 0.0005104955751870757,
+            "excess_over_shifted_mean_bits": 9.074647696227789e-05
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9876823242784567,
+            "own_and_other_logloss_bits": 0.9891816668860981,
+            "incremental_other_channel_gain_bits": -0.0014993426076413963,
+            "unseen_own_fraction": 0.00044449383264807203,
+            "unseen_combined_fraction": 0.0028614290476719636,
+            "shifted_control_mean_gain_bits": -0.0025439708340777947,
+            "shifted_control_std_gain_bits": 0.0009075744925652653,
+            "excess_over_shifted_mean_bits": 0.0010446282264363984
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 113,
+      "start_seconds": 113.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9998695408973516,
+            "own_and_other_logloss_bits": 1.0005227738405673,
+            "incremental_other_channel_gain_bits": -0.0006532329432157313,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.0006995004538080662,
+            "shifted_control_std_gain_bits": 0.0006201355164615563,
+            "excess_over_shifted_mean_bits": 4.6267510592334915e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9972570122083368,
+            "own_and_other_logloss_bits": 0.9977141261908216,
+            "incremental_other_channel_gain_bits": -0.0004571139824847137,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00055561729081009,
+            "shifted_control_mean_gain_bits": -0.000987371279457953,
+            "shifted_control_std_gain_bits": 0.001075057616860534,
+            "excess_over_shifted_mean_bits": 0.0005302572969732393
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9973574770942378,
+            "own_and_other_logloss_bits": 0.9979231098304312,
+            "incremental_other_channel_gain_bits": -0.0005656327361933666,
+            "unseen_own_fraction": 0.0002500277808645405,
+            "unseen_combined_fraction": 0.0020280031114568286,
+            "shifted_control_mean_gain_bits": -0.002493858381734141,
+            "shifted_control_std_gain_bits": 0.0011533390724995701,
+            "excess_over_shifted_mean_bits": 0.0019282256455407745
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9991849720678443,
+            "own_and_other_logloss_bits": 1.0004583213273943,
+            "incremental_other_channel_gain_bits": -0.0012733492595500273,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.00013444682692502022,
+            "shifted_control_std_gain_bits": 0.0002378273764033105,
+            "excess_over_shifted_mean_bits": -0.001138902432625007
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9973490902013192,
+            "own_and_other_logloss_bits": 0.9986397959396959,
+            "incremental_other_channel_gain_bits": -0.0012907057383766407,
+            "unseen_own_fraction": 0.00011112345816201801,
+            "unseen_combined_fraction": 0.00055561729081009,
+            "shifted_control_mean_gain_bits": -0.0005004460743128029,
+            "shifted_control_std_gain_bits": 0.00023611190604115844,
+            "excess_over_shifted_mean_bits": -0.0007902596640638379
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9939925495962622,
+            "own_and_other_logloss_bits": 0.9943166845588304,
+            "incremental_other_channel_gain_bits": -0.00032413496256822327,
+            "unseen_own_fraction": 0.0004722746971885765,
+            "unseen_combined_fraction": 0.0020280031114568286,
+            "shifted_control_mean_gain_bits": -0.0027686997656704015,
+            "shifted_control_std_gain_bits": 0.0006348331116806915,
+            "excess_over_shifted_mean_bits": 0.0024445648031021783
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 130,
+      "start_seconds": 130.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0090415555112402,
+            "own_and_other_logloss_bits": 1.0090065796878578,
+            "incremental_other_channel_gain_bits": 3.4975823382410454e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0001390719604253595,
+            "shifted_control_std_gain_bits": 0.00015609866532434466,
+            "excess_over_shifted_mean_bits": 0.00017404778380776995
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0064751664146232,
+            "own_and_other_logloss_bits": 1.006936789612948,
+            "incremental_other_channel_gain_bits": -0.0004616231983247676,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00022224691632403602,
+            "shifted_control_mean_gain_bits": -0.0013644096128172152,
+            "shifted_control_std_gain_bits": 0.0005633755329240958,
+            "excess_over_shifted_mean_bits": 0.0009027864144924476
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 1.0037233312219376,
+            "own_and_other_logloss_bits": 1.0070563871936888,
+            "incremental_other_channel_gain_bits": -0.0033330559717512642,
+            "unseen_own_fraction": 0.0002500277808645405,
+            "unseen_combined_fraction": 0.007389709967774197,
+            "shifted_control_mean_gain_bits": -0.005401244277563648,
+            "shifted_control_std_gain_bits": 0.00044981510455310045,
+            "excess_over_shifted_mean_bits": 0.0020681883058123835
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0082054003085632,
+            "own_and_other_logloss_bits": 1.0083902728636474,
+            "incremental_other_channel_gain_bits": -0.0001848725550841479,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0001462363767492647,
+            "shifted_control_std_gain_bits": 0.0001657825940353637,
+            "excess_over_shifted_mean_bits": -3.86361783348832e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0057285018741602,
+            "own_and_other_logloss_bits": 1.0077729105675055,
+            "incremental_other_channel_gain_bits": -0.002044408693345323,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.00022224691632403602,
+            "shifted_control_mean_gain_bits": -0.001636142870111823,
+            "shifted_control_std_gain_bits": 0.0018078824315662697,
+            "excess_over_shifted_mean_bits": -0.00040826582323350014
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 1.0043823635495177,
+            "own_and_other_logloss_bits": 1.0090212999730301,
+            "incremental_other_channel_gain_bits": -0.00463893642351243,
+            "unseen_own_fraction": 0.000388932103567063,
+            "unseen_combined_fraction": 0.007389709967774197,
+            "shifted_control_mean_gain_bits": -0.005246907609909017,
+            "shifted_control_std_gain_bits": 0.0021883888867765197,
+            "excess_over_shifted_mean_bits": 0.0006079711863965871
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 146,
+      "start_seconds": 146.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0040271397960692,
+            "own_and_other_logloss_bits": 1.0038250120008738,
+            "incremental_other_channel_gain_bits": 0.0002021277951953504,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.00013564058788095856,
+            "shifted_control_std_gain_bits": 9.929848193264266e-05,
+            "excess_over_shifted_mean_bits": 0.00033776838307630896
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0011976890266836,
+            "own_and_other_logloss_bits": 1.0012356925798631,
+            "incremental_other_channel_gain_bits": -3.8003553179510874e-05,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.0007179148964653326,
+            "shifted_control_std_gain_bits": 0.0004005232836772891,
+            "excess_over_shifted_mean_bits": 0.0006799113432858217
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9995064283544866,
+            "own_and_other_logloss_bits": 1.002216051993418,
+            "incremental_other_channel_gain_bits": -0.0027096236389314576,
+            "unseen_own_fraction": 0.00011112345816201801,
+            "unseen_combined_fraction": 0.005611734637181909,
+            "shifted_control_mean_gain_bits": -0.003389242690789477,
+            "shifted_control_std_gain_bits": 0.0006130687002699561,
+            "excess_over_shifted_mean_bits": 0.0006796190518580194
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0079587699823165,
+            "own_and_other_logloss_bits": 1.0082113743811998,
+            "incremental_other_channel_gain_bits": -0.0002526043988833049,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -5.063759416320165e-05,
+            "shifted_control_std_gain_bits": 0.0001993161491063753,
+            "excess_over_shifted_mean_bits": -0.00020196680472010323
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0053547262093467,
+            "own_and_other_logloss_bits": 1.005675307318628,
+            "incremental_other_channel_gain_bits": -0.0003205811092812372,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.00011112345816201801,
+            "shifted_control_mean_gain_bits": -0.0006079871081313323,
+            "shifted_control_std_gain_bits": 0.0004086220756726072,
+            "excess_over_shifted_mean_bits": 0.0002874059988500951
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 1.0031098026513188,
+            "own_and_other_logloss_bits": 1.0064648878107343,
+            "incremental_other_channel_gain_bits": -0.003355085159415516,
+            "unseen_own_fraction": 0.00011112345816201801,
+            "unseen_combined_fraction": 0.005611734637181909,
+            "shifted_control_mean_gain_bits": -0.005094543184678946,
+            "shifted_control_std_gain_bits": 0.00047456974718101036,
+            "excess_over_shifted_mean_bits": 0.0017394580252634295
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 162,
+      "start_seconds": 162.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0447249697048977,
+            "own_and_other_logloss_bits": 1.0447383687807983,
+            "incremental_other_channel_gain_bits": -1.3399075900588642e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": 1.2353891944390702e-05,
+            "shifted_control_std_gain_bits": 2.9354554578434025e-05,
+            "excess_over_shifted_mean_bits": -2.5752967844979345e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0421157069412545,
+            "own_and_other_logloss_bits": 1.0423797836434336,
+            "incremental_other_channel_gain_bits": -0.0002640767021790946,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.00022224691632403602,
+            "shifted_control_mean_gain_bits": -0.000453028610998422,
+            "shifted_control_std_gain_bits": 0.0001909344020785374,
+            "excess_over_shifted_mean_bits": 0.00018895190881932739
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 1.0395080382460835,
+            "own_and_other_logloss_bits": 1.0457876373909392,
+            "incremental_other_channel_gain_bits": -0.006279599144855652,
+            "unseen_own_fraction": 0.0003611512390265585,
+            "unseen_combined_fraction": 0.008750972330258918,
+            "shifted_control_mean_gain_bits": -0.0075990035263901285,
+            "shifted_control_std_gain_bits": 0.0005532235996524776,
+            "excess_over_shifted_mean_bits": 0.0013194043815344765
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 1.0450717255663202,
+            "own_and_other_logloss_bits": 1.0451572263383166,
+            "incremental_other_channel_gain_bits": -8.550077199642736e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.0003502039507001786,
+            "shifted_control_std_gain_bits": 0.00011035003308303834,
+            "excess_over_shifted_mean_bits": 0.00026470317870375126
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 1.0427137605141563,
+            "own_and_other_logloss_bits": 1.0434184280071042,
+            "incremental_other_channel_gain_bits": -0.0007046674929478414,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.00022224691632403602,
+            "shifted_control_mean_gain_bits": -0.0006326193983218579,
+            "shifted_control_std_gain_bits": 0.00024876752195389704,
+            "excess_over_shifted_mean_bits": -7.20480946259835e-05
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 1.039954619723521,
+            "own_and_other_logloss_bits": 1.0473054501264172,
+            "incremental_other_channel_gain_bits": -0.007350830402896191,
+            "unseen_own_fraction": 0.0001944660517835315,
+            "unseen_combined_fraction": 0.008750972330258918,
+            "shifted_control_mean_gain_bits": -0.006316170178984078,
+            "shifted_control_std_gain_bits": 0.0018237457202284419,
+            "excess_over_shifted_mean_bits": -0.0010346602239121134
+          }
+        ]
+      }
+    },
+    {
+      "window_index": 179,
+      "start_seconds": 179.0,
+      "metrics": {
+        "i": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.9941353418823519,
+            "own_and_other_logloss_bits": 0.9940796465283828,
+            "incremental_other_channel_gain_bits": 5.569535396909853e-05,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.00010625396946025341,
+            "shifted_control_std_gain_bits": 8.599896922502408e-05,
+            "excess_over_shifted_mean_bits": 0.00016194932342935192
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9929848427529232,
+            "own_and_other_logloss_bits": 0.99317242150586,
+            "incremental_other_channel_gain_bits": -0.00018757875293684556,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 2.7780864540504502e-05,
+            "shifted_control_mean_gain_bits": -0.0007222025525193502,
+            "shifted_control_std_gain_bits": 0.00014638515069864092,
+            "excess_over_shifted_mean_bits": 0.0005346237995825046
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9895825387636561,
+            "own_and_other_logloss_bits": 0.9901216651667815,
+            "incremental_other_channel_gain_bits": -0.0005391264031253673,
+            "unseen_own_fraction": 2.7780864540504502e-05,
+            "unseen_combined_fraction": 0.001166796310701189,
+            "shifted_control_mean_gain_bits": -0.002710178292216092,
+            "shifted_control_std_gain_bits": 0.00039718935908046425,
+            "excess_over_shifted_mean_bits": 0.002171051889090725
+          }
+        ],
+        "q": [
+          {
+            "history": 1,
+            "own_only_logloss_bits": 0.992417746149616,
+            "own_and_other_logloss_bits": 0.9926370091958694,
+            "incremental_other_channel_gain_bits": -0.00021926304625341508,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 0.0,
+            "shifted_control_mean_gain_bits": -0.00017110308143438355,
+            "shifted_control_std_gain_bits": 8.444760078096067e-05,
+            "excess_over_shifted_mean_bits": -4.815996481903154e-05
+          },
+          {
+            "history": 2,
+            "own_only_logloss_bits": 0.9911075943062857,
+            "own_and_other_logloss_bits": 0.9916927965057083,
+            "incremental_other_channel_gain_bits": -0.0005852021994225964,
+            "unseen_own_fraction": 0.0,
+            "unseen_combined_fraction": 2.7780864540504502e-05,
+            "shifted_control_mean_gain_bits": -0.0011808905666528628,
+            "shifted_control_std_gain_bits": 0.000626693878863621,
+            "excess_over_shifted_mean_bits": 0.0005956883672302664
+          },
+          {
+            "history": 4,
+            "own_only_logloss_bits": 0.9870763164417979,
+            "own_and_other_logloss_bits": 0.9872892208027174,
+            "incremental_other_channel_gain_bits": -0.00021290436091947473,
+            "unseen_own_fraction": 0.0002500277808645405,
+            "unseen_combined_fraction": 0.001166796310701189,
+            "shifted_control_mean_gain_bits": -0.002668799798984637,
+            "shifted_control_std_gain_bits": 0.001747870872455473,
+            "excess_over_shifted_mean_bits": 0.0024558954380651623
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Conditional held-out log loss is not min-entropy or cryptographic certification.",
+    "The comparison is model-specific; small gain does not prove conditional independence.",
+    "2-bit quantization discards 6 bits per original component.",
+    "Circular shifts preserve temporal ordering of each channel but can retain long-timescale common drift.",
+    "Results average selected windows and do not constitute a confidence bound."
+  ]
+}

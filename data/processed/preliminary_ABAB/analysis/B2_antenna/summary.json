@@ -1,0 +1,67 @@
+{
+  "source": "results/controlled_abab/B2_antenna.cu8",
+  "bytes": 864000000,
+  "total_pairs": 432000000,
+  "windows": 120,
+  "pairs_per_window": 65536,
+  "fraction_pairs_analyzed": 0.018204444444444443,
+  "lag_convention": "cross(k) = corr(I[t], Q[t+k])",
+  "antisym_convention": "(cross(+k) - cross(-k))/2",
+  "metrics": {
+    "acf1_i": {
+      "mean": 0.08012033359529928,
+      "std_across_windows": 0.004082161404253206,
+      "min": 0.07064947558142853,
+      "max": 0.08976062264968883
+    },
+    "acf1_q": {
+      "mean": 0.07967249416672237,
+      "std_across_windows": 0.0034574967724052964,
+      "min": 0.0694431017492004,
+      "max": 0.09056093282731464
+    },
+    "cross_+0": {
+      "mean": -0.00029922338364988946,
+      "std_across_windows": 0.004197634769548195,
+      "min": -0.008924472193729192,
+      "max": 0.008766141483215627
+    },
+    "cross_-41": {
+      "mean": 0.0007931613504041735,
+      "std_across_windows": 0.003695455945760121,
+      "min": -0.0097699623942149,
+      "max": 0.009270280645355655
+    },
+    "cross_-8": {
+      "mean": 0.0018598646309009596,
+      "std_across_windows": 0.00360873193770354,
+      "min": -0.00859081944552375,
+      "max": 0.010128421318837824
+    },
+    "cross_+8": {
+      "mean": -0.0022667591250641744,
+      "std_across_windows": 0.003738744299278578,
+      "min": -0.011421258083644355,
+      "max": 0.006948797716894385
+    },
+    "cross_+41": {
+      "mean": 0.00012993077116416044,
+      "std_across_windows": 0.004134878377490073,
+      "min": -0.009209209153496736,
+      "max": 0.01227855984219166
+    },
+    "antisym_8": {
+      "mean": -0.0020633118779825673,
+      "std_across_windows": 0.0027219042507306826,
+      "min": -0.008344106024313833,
+      "max": 0.0064696580557753285
+    },
+    "antisym_41": {
+      "mean": -0.0003316152896200065,
+      "std_across_windows": 0.002620633981046016,
+      "min": -0.006286875005686932,
+      "max": 0.0070180485960009194
+    }
+  },
+  "warning": "Estat\u00edsticas descritivas, n\u00e3o estimativa validada de entropia criptogr\u00e1fica."
+}

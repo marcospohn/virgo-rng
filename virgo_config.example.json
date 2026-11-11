@@ -1,0 +1,10 @@
+{
+  "rate": 2400000,
+  "freq": 1420405752,
+  "gain": 30.0,
+  "setup": "unknown",
+  "pairs_per_window": 65536,
+  "windows": 120,
+  "lags": [8, 41],
+  "max_analysis_bytes": 8000000
+}

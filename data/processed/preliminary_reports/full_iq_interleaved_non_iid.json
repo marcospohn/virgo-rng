@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "tool": "ea_non_iid",
+  "tool_sha256": "06d7dc2d204c550c0170fcfdffef63cf383cb05f8936d2def431d22992411aff",
+  "command": [
+    "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/SP800-90B_EntropyAssessment/cpp/ea_non_iid",
+    "-i",
+    "-t",
+    "/mnt/OneDrive/Main/astronomia/virgo_rng_v12/results/campaign12/full_iq_interleaved.bin",
+    "8"
+  ],
+  "input_sha256": "a5dfd13dc1eaa963a62494405d22faa726657fd0be4c713b13528d2a0f5f33b9",
+  "input_bytes": 10000000,
+  "elapsed_seconds": 59.376,
+  "mode": "initial, non-conditioned (-i); bitstring truncated to 1M bits (-t)",
+  "disclaimer": "Reference tool output is preserved verbatim. This is not an entropy-source validation or an IID claim.",
+  "returncode": 0,
+  "stdout": "\nRunning non-IID tests...\n\nRunning Most Common Value Estimate...\n\nRunning Entropic Statistic Estimates (bit strings only)...\n\nRunning Tuple Estimates...\n\nRunning Predictor Estimates...\n\nH_original: 4.973908\nH_bitstring: 0.496304\nmin(H_original, 8 X H_bitstring): 3.970429\n",
+  "stderr": "",
+  "timed_out": false
+}

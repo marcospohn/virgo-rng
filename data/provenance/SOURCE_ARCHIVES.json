@@ -1,0 +1,294 @@
+[
+  {
+    "archive": "virgo_rng_v2_0_0.zip",
+    "sha256": "32ad003abdab56d00e521714aaa418161e23db3af808fbb8effbaa7cca654609",
+    "role": "canonical Virgo-RNG 2.0.0 source"
+  },
+  {
+    "archive": "virgo_rng_v122.zip",
+    "sha256": "0a5de788bb0f53d8ff6f1928bab59fb0d07f9808975331dd204fd708d56e8d5b",
+    "role": "historical research snapshot; not primary install target"
+  },
+  {
+    "archive": "Virgo_RNG_Astronomy_and_Computing_v8_Full_Package.zip",
+    "sha256": "30ed33601a81d7a928683e4bf3f570afd43f6a5db238a4c1ece9c22453f1bc62",
+    "role": "analysis/reproduction scripts and processed data; article files excluded"
+  },
+  {
+    "archive": "E1_results.zip",
+    "sha256": "f6420475117491d9921909b7f08dd375a8e919adcd789205fb246082cb61aa34",
+    "role": "data/processed/E1_original",
+    "included_by_extension": {
+      ".json": 7,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E1_repeticao.zip",
+    "sha256": "370b3375575931dcd7097469e2a09fdd0d24f729412f2637bad68ffad5616224",
+    "role": "data/processed/E1_repetition",
+    "included_by_extension": {
+      ".json": 7,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E2_resultados.zip",
+    "sha256": "84d9831df01643a6f4791d26e58d5a08892dfa0412d9b6910e461b3e2910e12a",
+    "role": "data/processed/E2_retuning",
+    "included_by_extension": {
+      ".csv": 4
+    }
+  },
+  {
+    "archive": "E3_resultados.zip",
+    "sha256": "a08481440e4391c4e0f47425886d874fd2d003d46d797da50dca0c7069227a41",
+    "role": "data/processed/E3_load_antenna",
+    "included_by_extension": {
+      ".json": 2,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E4_resultados.zip",
+    "sha256": "ec44f625c6321acc554f2ceb17698438bed9bb939571c09c4b4aed954368a182",
+    "role": "data/processed/E4_first_archived",
+    "included_by_extension": {
+      ".json": 2,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E4_repeticao.zip",
+    "sha256": "6ef27f32ab71643fef6d14ccca0988875154985c9e62632126648a6a7317c86c",
+    "role": "data/processed/E4_repetition",
+    "included_by_extension": {
+      ".json": 2,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E5_analise.zip",
+    "sha256": "15eadfffef50ec47fc58b8dc28eb49414a7fd78ccaecaa4f00f9e79fda547367",
+    "role": "data/processed/E5_exploratory",
+    "included_by_extension": {
+      ".json": 1,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E6_resultados.zip",
+    "sha256": "d14475cc6a2db600cf86657521aa2849c1806451490f89930570b93abcc2ce1e",
+    "role": "data/processed/E6_initial",
+    "included_by_extension": {
+      ".json": 2,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "E7_resultados.zip",
+    "sha256": "58effac439009c3290618ef600455db3b32623006fe8882df9c4886eeb8881f7",
+    "role": "data/processed/E7_initial",
+    "included_by_extension": {
+      ".json": 2,
+      ".csv": 2
+    }
+  },
+  {
+    "archive": "E1_E3_reprocessamento_resultados.zip",
+    "sha256": "f7ca937b86cc3904055a1676d7d0909397f17910a64ff0c142a2ea4318176adb",
+    "role": "data/processed/E1_E3_fullrecord",
+    "included_by_extension": {
+      ".csv": 4,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "E4_E5_reprocessamento_resultados.zip",
+    "sha256": "6aa4bf369e933c1bf32478d5e38b904e35d59b14cd0b02b93456973bfff41eff",
+    "role": "data/processed/E4_E5_fullrecord",
+    "included_by_extension": {
+      ".txt": 1,
+      ".csv": 8,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "E6_reprocessamento_resultados.zip",
+    "sha256": "f69e26363051277b0e6563a66ea63d66588c73b6f8631444ebd47622a89eb2f4",
+    "role": "data/processed/E6_fullrecord",
+    "included_by_extension": {
+      ".txt": 1,
+      ".csv": 5,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "E7_DC_resultados.zip",
+    "sha256": "e84aef7f4510f99233863fa3958ac3f379fc5b37567fc4d53855c4c68aeb64fb",
+    "role": "data/processed/E7_fullrecord_DC",
+    "included_by_extension": {
+      ".csv": 4,
+      ".json": 1,
+      ".txt": 1
+    }
+  },
+  {
+    "archive": "E7_analise_final.zip",
+    "sha256": "7433131e8830f1c78a9020558e3c0dd586127a955bd89fcbdd8d65336dd48233",
+    "role": "data/processed/E7_entropy_windows",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "E7_complementar_sem_novas_medidas.zip",
+    "sha256": "38cdd6d0f83f111fdf3e302e59f1b6b27b74718bb50b8893ba4349a8d47f2185",
+    "role": "data/processed/E7_uncertainty",
+    "included_by_extension": {
+      ".csv": 4,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "controlled_abab_results.zip",
+    "sha256": "e56c64d011c1399805f78d0c748a4c19ef0a57dd26e0407cfbb41d921540db45",
+    "role": "data/processed/preliminary_ABAB",
+    "included_by_extension": {
+      ".json": 8,
+      ".csv": 4
+    }
+  },
+  {
+    "archive": "nist_non_iid_results.zip",
+    "sha256": "c0a9dd00715d78ee30f8cbd91a503ff5b9a8f9bcb522f1ee027e1b67661be67a",
+    "role": "data/processed/preliminary_NIST",
+    "included_by_extension": {
+      ".txt": 12
+    }
+  },
+  {
+    "archive": "source_characterization_results.zip",
+    "sha256": "cfceecf123bf43631c8971838994f3f00472ab29679f03a8c51c0d3c3ee6ea5c",
+    "role": "data/processed/preliminary_source",
+    "included_by_extension": {
+      ".json": 1,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "power_startup_results.zip",
+    "sha256": "c0b3315879915963cd4ae5d29b65f3d642353a3419dd1714cc334aaa2ec05868",
+    "role": "data/processed/preliminary_startup",
+    "included_by_extension": {
+      ".json": 4,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "predictability_8bit_results.zip",
+    "sha256": "1571b35c3e1d82f4c5fbf09365358bab6fa76af410d403f3736ac6d16711fa14",
+    "role": "data/processed/preliminary_predictability",
+    "included_by_extension": {
+      ".json": 2
+    }
+  },
+  {
+    "archive": "temporal_drift_abab.zip",
+    "sha256": "c73bd68cec34de5bc822d4a924dc94425ec9f44c4e230112d307d7e71fb5d04c",
+    "role": "data/processed/preliminary_temporal_drift",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "analysis.zip",
+    "sha256": "6ecaeda322487cc6d6cdb07843072a4f3da1e4eb7459d70a8323b14b15c06b9d",
+    "role": "data/processed/preliminary_analysis",
+    "included_by_extension": {
+      ".json": 3
+    }
+  },
+  {
+    "archive": "analysis_antenna_30db.zip",
+    "sha256": "fc77eb77ce57156fef39f5711c138c9d4ca636361e196116a55486c0d4b18c2a",
+    "role": "data/processed/preliminary_antenna30",
+    "included_by_extension": {
+      ".json": 2
+    }
+  },
+  {
+    "archive": "correlations_50ohm.zip",
+    "sha256": "e39d203eb99723d525b27f628e890a04981a39ad7e0dbd2a930031a58262cfd1",
+    "role": "data/processed/preliminary_correlations_load",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "correlations_antenna.zip",
+    "sha256": "5be0766800814baad415f227ec268f4da7505cbed88deabe1ed77b504776460c",
+    "role": "data/processed/preliminary_correlations_antenna",
+    "included_by_extension": {
+      ".json": 1,
+      ".csv": 1
+    }
+  },
+  {
+    "archive": "predictability_results.zip",
+    "sha256": "0b682196836cd7e5144428614653af35cb0bd33cb614fed6d3499ef3f436ce47",
+    "role": "data/processed/preliminary_predictability_all",
+    "included_by_extension": {
+      ".json": 1
+    }
+  },
+  {
+    "archive": "incerteza_pesos_results.zip",
+    "sha256": "c6a2394ed0206ac62fe169f03e3581e605082e76d38a08023819cbe1fbe8238b",
+    "role": "data/processed/preliminary_inc_pesos",
+    "included_by_extension": {
+      ".csv": 2,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "multivariada_8bit_results.zip",
+    "sha256": "729c0fb77114ae7aa7115f3a6e509b5ec7a3aee130da2398733cd2fc7c447eb2",
+    "role": "data/processed/preliminary_multivar",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "pesos_multivariados_results.zip",
+    "sha256": "45a0a4f909518bbe11b53d878ba62355726ec597972fbd12c9cb4e4d876eba5d",
+    "role": "data/processed/preliminary_pesos_multivar",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "transferencia_8bit_results.zip",
+    "sha256": "3b3134be11a6c638f5605604168cb19690e3513c8590583264f841877da12a04",
+    "role": "data/processed/preliminary_transfer",
+    "included_by_extension": {
+      ".csv": 1,
+      ".json": 1
+    }
+  },
+  {
+    "archive": "startup_50ohm_results.zip",
+    "sha256": "bb86ba641131be4e5da42feac817642d731d6b9d8a76534c374e1c5fbc51e9ab",
+    "role": "data/processed/preliminary_startup_load",
+    "included_by_extension": {
+      ".json": 4,
+      ".txt": 6,
+      ".csv": 1
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "schema": "virgo-rng-restart-matrix-v1",
+  "runs": 3,
+  "samples_per_run": 1000,
+  "layout": "row-major: run 0 first 1000 samples, then run 1, etc.",
+  "source_config_sha256": "937a30c41025e135d078b70bcbecf2022966860b10e51bf79dede6da8ddc90b8",
+  "outputs": {
+    "i": {
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v15/results/restart_trial/restart_i.bin",
+      "bytes": 3000,
+      "sha256": "0b61c21c292194d6fea9c22f70390727a0d01744d1de9fe02b64fa3ed8b230e0"
+    },
+    "q": {
+      "path": "/mnt/OneDrive/Main/astronomia/virgo_rng_v15/results/restart_trial/restart_q.bin",
+      "bytes": 3000,
+      "sha256": "2f25054aafea7234cfd9f13abce0f95e3a931c76377004ecc15e7ff00c9d2996"
+    }
+  },
+  "warning": "Matrix construction is NOT NIST restart test. External ea_restart and physical restart evidence required."
+}

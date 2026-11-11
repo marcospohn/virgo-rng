@@ -1,0 +1,19 @@
+{
+  "band_mhz": [
+    1419.205752,
+    1421.6051660625
+  ],
+  "resolution_hz": 585.9375,
+  "median_on_off_db": 0.3305919508160886,
+  "broad_residual_peak_mhz": 1420.330752,
+  "broad_residual_peak_db": 0.2820853149014556,
+  "common_regions_above_0_25_db": [
+    {
+      "start_mhz": 1420.3125879375,
+      "end_mhz": 1420.3500879375,
+      "average_excess_db": 0.2734920689208379
+    }
+  ],
+  "method": "Median filter 41 bins, Gaussian baseline sigma 220 bins, Gaussian residual smoothing sigma 25 bins; exploratory and baseline dependent",
+  "calibrated": false
+}

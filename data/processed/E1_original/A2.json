@@ -1,0 +1,28 @@
+{
+  "tag": "A2",
+  "condition": "50ohm",
+  "azimuth_deg": "",
+  "elevation_deg": "",
+  "target_notes": "",
+  "start_utc": "2026-11-09T16:05:35.920189+00:00",
+  "end_utc": "2026-11-09T16:08:36.632228+00:00",
+  "elapsed_s": 180.7186824590317,
+  "command": [
+    "rtl_sdr",
+    "-d",
+    "0",
+    "-f",
+    "1420405752",
+    "-s",
+    "2400000",
+    "-g",
+    "30.0",
+    "-n",
+    "432000000",
+    "/Users/REDACTED_USER/astronomia/prog/virgo_rng_2_macos_completo/virgo_rng_v2_0_0/results/E1_20261109/A2.cu8"
+  ],
+  "exit_code": 0,
+  "actual_bytes": 864000000,
+  "expected_bytes": 864000000,
+  "complete": true
+}

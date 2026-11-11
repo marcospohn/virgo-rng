@@ -1,0 +1,313 @@
+{
+  "version": "1.0.0",
+  "source": "Original E1/E3 CU8 processed on local computer",
+  "candidates_hz": [
+    1419988565
+  ],
+  "fft": 8192,
+  "rate_hz": 2400000,
+  "n_captures": 13,
+  "total_fft_blocks": 580074,
+  "total_complex_samples": 4752000000,
+  "warnings": [
+    "No astronomical detection inferred from narrow spike",
+    "E1 ON/OFF are sequential not simultaneous and no randomization",
+    "E3 matched load is an instrumental control, not a sky OFF reference",
+    "Window comparisons are descriptive, not independent sky measurements"
+  ],
+  "capture_audit": [
+    {
+      "campaign": "first",
+      "capture": "A1",
+      "peak_hz": 1419987392.625,
+      "peak_excess_db": 0.049541854531827995,
+      "peak_excess_before_dc_db": 0.049541854531827995,
+      "center_dc_attenuation_db": -7.632681665564971,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T15:37:25.700915+00:00",
+      "condition": "50ohm",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "first",
+      "capture": "ON1",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 14.957514113537817,
+      "peak_excess_before_dc_db": 14.957514113537817,
+      "center_dc_attenuation_db": -9.4534682044547,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T15:46:26.660300+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "102",
+      "elevation_deg": "57"
+    },
+    {
+      "campaign": "first",
+      "capture": "OFF",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 1.826181497200163,
+      "peak_excess_before_dc_db": 1.826181497200163,
+      "center_dc_attenuation_db": -9.508299637141292,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T15:53:14.592148+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "323",
+      "elevation_deg": "57"
+    },
+    {
+      "campaign": "first",
+      "capture": "ON2",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 6.21359457447358,
+      "peak_excess_before_dc_db": 6.21359457447358,
+      "center_dc_attenuation_db": -9.55732999798937,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:00:10.601772+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "102",
+      "elevation_deg": "57"
+    },
+    {
+      "campaign": "first",
+      "capture": "A2",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 0.013688549244958353,
+      "peak_excess_before_dc_db": 0.013688549244958353,
+      "center_dc_attenuation_db": -7.6917508468083,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:05:35.920189+00:00",
+      "condition": "50ohm",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A1",
+      "peak_hz": 1419988271.53125,
+      "peak_excess_db": 0.024950824483112484,
+      "peak_excess_before_dc_db": 0.024950824483112484,
+      "center_dc_attenuation_db": -7.575356364667018,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:19:18.006897+00:00",
+      "condition": "50ohm",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON1",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 8.16299361755621,
+      "peak_excess_before_dc_db": 8.16299361755621,
+      "center_dc_attenuation_db": -9.434650168940603,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:25:02.381632+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "101",
+      "elevation_deg": "67"
+    },
+    {
+      "campaign": "repeat",
+      "capture": "OFF",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 0.8658712702137471,
+      "peak_excess_before_dc_db": 0.8658712702137471,
+      "center_dc_attenuation_db": -8.907193620785765,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:30:31.542189+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "320",
+      "elevation_deg": "67"
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON2",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 5.783140272439593,
+      "peak_excess_before_dc_db": 5.783140272439593,
+      "center_dc_attenuation_db": -9.358959812832747,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:36:05.150415+00:00",
+      "condition": "antenna",
+      "azimuth_deg": "101",
+      "elevation_deg": "67"
+    },
+    {
+      "campaign": "repeat",
+      "capture": "A2",
+      "peak_hz": 1419987685.59375,
+      "peak_excess_db": 0.024568803480539834,
+      "peak_excess_before_dc_db": 0.024568803480539834,
+      "center_dc_attenuation_db": -7.729323590751962,
+      "fft_blocks": 52734,
+      "sample_pairs": 432000000,
+      "discarded_tail_samples": 3072,
+      "start_utc": "2026-11-09T16:40:29.788609+00:00",
+      "condition": "50ohm",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "e3",
+      "capture": "A1",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 0.05142102211520076,
+      "peak_excess_before_dc_db": 0.05142102211520076,
+      "center_dc_attenuation_db": -7.490487951374398,
+      "fft_blocks": 17578,
+      "sample_pairs": 144000000,
+      "discarded_tail_samples": 1024,
+      "start_utc": "2026-11-09T17:04:12.443061+00:00",
+      "condition": "Carga 50 ohms",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "e3",
+      "capture": "ON",
+      "peak_hz": 1419988857.46875,
+      "peak_excess_db": 5.959809214801718,
+      "peak_excess_before_dc_db": 5.959809214801718,
+      "center_dc_attenuation_db": -9.35326478510516,
+      "fft_blocks": 17578,
+      "sample_pairs": 144000000,
+      "discarded_tail_samples": 1024,
+      "start_utc": "2026-11-09T17:06:05.055103+00:00",
+      "condition": "Antena",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    },
+    {
+      "campaign": "e3",
+      "capture": "A2",
+      "peak_hz": 1419989150.4375,
+      "peak_excess_db": 0.07153390529612516,
+      "peak_excess_before_dc_db": 0.07153390529612516,
+      "center_dc_attenuation_db": -7.584788640100721,
+      "fft_blocks": 17578,
+      "sample_pairs": 144000000,
+      "discarded_tail_samples": 1024,
+      "start_utc": "2026-11-09T17:07:44.857237+00:00",
+      "condition": "Carga 50 ohms",
+      "azimuth_deg": "",
+      "elevation_deg": ""
+    }
+  ],
+  "full_contrasts": [
+    {
+      "campaign": "first",
+      "pair": "ON1/OFF",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.09991046477459534,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "first",
+      "pair": "ON1/OFF",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.09991046477459534,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "first",
+      "pair": "ON2/OFF",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.01739337495662932,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "first",
+      "pair": "ON2/OFF",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.01739337495662932,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON1/OFF",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.01642281922186506,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON1/OFF",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.01642281922186506,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON2/OFF",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.0233863663898225,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON2/OFF",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.0233863663898225,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A1",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.12157887265919332,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A1",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.12157887265919332,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A2",
+      "method": "before_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.06170926040934299,
+      "notes": "Descriptive; no calibration"
+    },
+    {
+      "campaign": "e3",
+      "pair": "ON/A2",
+      "method": "after_dc",
+      "window_index": "full",
+      "relative_narrow_peak_db": 0.06170926040934299,
+      "notes": "Descriptive; no calibration"
+    }
+  ]
+}

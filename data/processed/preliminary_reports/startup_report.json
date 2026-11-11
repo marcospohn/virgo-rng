@@ -1,0 +1,1656 @@
+{
+  "schema": "virgo-rng-startup-analysis-v1",
+  "config": {
+    "schema": "virgo-rng-startup-v1",
+    "created_utc": "2026-10-14T23:29:01.955015+00:00",
+    "runs": 3,
+    "pairs_per_run": 262144,
+    "block_pairs": 4096,
+    "rate": 2400000,
+    "freq": 1420405752,
+    "gain_requested": 30,
+    "device": 0,
+    "setup": "indoor-dipole",
+    "rtl_binary": "/usr/bin/rtl_sdr",
+    "rtl_binary_sha256": "3639adf3c63bdd914173f749d39998b616390ddfc6a934488d3f7a765285b679",
+    "physical_restart_evidence": "operator-attested-only",
+    "limitation": "Driver initialization may discard samples; these are first delivered samples, not guaranteed first ADC samples."
+  },
+  "runs_analyzed": 3,
+  "pll_warning_runs": 3,
+  "analyses": [
+    {
+      "file": "startup_0000.cu8",
+      "bytes": 524288,
+      "sha256": "57caaf2e50a00be6b979311985646360ad2365c1e3a6761fc4593849dbf80855",
+      "pairs": 262144,
+      "block_pairs": 4096,
+      "blocks_analyzed": 32,
+      "channels": {
+        "i": {
+          "blocks": [
+            {
+              "mean": 127.20849609375,
+              "std": 22.500650730259803,
+              "shannon_bits": 6.507841188831784,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.1726735982526265
+            },
+            {
+              "mean": 127.41015625,
+              "std": 21.908439494161513,
+              "shannon_bits": 6.469175121260956,
+              "most_common_probability": 0.0234375,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.17084108531163497
+            },
+            {
+              "mean": 127.775146484375,
+              "std": 21.79894092982813,
+              "shannon_bits": 6.464120866479128,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.18050947343376803
+            },
+            {
+              "mean": 127.730224609375,
+              "std": 21.57410748598278,
+              "shannon_bits": 6.445945508189748,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.1861665727887991
+            },
+            {
+              "mean": 127.343505859375,
+              "std": 21.2249834781196,
+              "shannon_bits": 6.426330742257157,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.16650531453119977
+            },
+            {
+              "mean": 127.54248046875,
+              "std": 21.689799772237983,
+              "shannon_bits": 6.459679442901324,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.19307846203659337
+            },
+            {
+              "mean": 127.113525390625,
+              "std": 21.111197707053677,
+              "shannon_bits": 6.421496066248068,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.1877412381373765
+            },
+            {
+              "mean": 127.210693359375,
+              "std": 21.33652634228895,
+              "shannon_bits": 6.426486604396294,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.18143322404689372
+            },
+            {
+              "mean": 127.503173828125,
+              "std": 21.095497374038494,
+              "shannon_bits": 6.418008781594688,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.17895013400167634
+            },
+            {
+              "mean": 127.462890625,
+              "std": 21.39399945634376,
+              "shannon_bits": 6.436986180269516,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.18621558431384186
+            },
+            {
+              "mean": 127.655029296875,
+              "std": 22.137540343940888,
+              "shannon_bits": 6.48622742033797,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.15337350125900492
+            },
+            {
+              "mean": 127.670166015625,
+              "std": 22.06100270618102,
+              "shannon_bits": 6.478046963912339,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.16639602790296734
+            },
+            {
+              "mean": 127.638916015625,
+              "std": 21.112057777265647,
+              "shannon_bits": 6.422027278999127,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.18668479191143986
+            },
+            {
+              "mean": 126.861572265625,
+              "std": 21.564178554879636,
+              "shannon_bits": 6.44848182279031,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.18712969510963115
+            },
+            {
+              "mean": 127.236572265625,
+              "std": 21.338898157561044,
+              "shannon_bits": 6.440503221042846,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.18576797181983928
+            },
+            {
+              "mean": 127.2001953125,
+              "std": 21.486856901210633,
+              "shannon_bits": 6.444198060148827,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.16893270986800205
+            },
+            {
+              "mean": 127.369873046875,
+              "std": 21.197572287465384,
+              "shannon_bits": 6.425752801830534,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.17387731013599822
+            },
+            {
+              "mean": 127.81591796875,
+              "std": 21.68893638383452,
+              "shannon_bits": 6.457703094395416,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.17305469119288408
+            },
+            {
+              "mean": 127.434814453125,
+              "std": 21.740123225863478,
+              "shannon_bits": 6.462858290789736,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.15962368898776605
+            },
+            {
+              "mean": 127.47607421875,
+              "std": 22.14726576085616,
+              "shannon_bits": 6.485303798134625,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.18166267636367162
+            },
+            {
+              "mean": 126.89501953125,
+              "std": 21.897381732924853,
+              "shannon_bits": 6.471378033496622,
+              "most_common_probability": 0.023681640625,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.16975438362131176
+            },
+            {
+              "mean": 126.5908203125,
+              "std": 22.38580076498465,
+              "shannon_bits": 6.503023637300968,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.17496042244465082
+            },
+            {
+              "mean": 127.21630859375,
+              "std": 22.50095674282029,
+              "shannon_bits": 6.509291589877302,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.18089623241815814
+            },
+            {
+              "mean": 127.52392578125,
+              "std": 22.50885055568679,
+              "shannon_bits": 6.508437736139916,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.17395106838814509
+            },
+            {
+              "mean": 127.784423828125,
+              "std": 22.415513286527585,
+              "shannon_bits": 6.503506362962206,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.18505347782747042
+            },
+            {
+              "mean": 127.7490234375,
+              "std": 22.898478793963054,
+              "shannon_bits": 6.5322468597280965,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 146,
+              "lag1_autocorrelation": 0.18306635084515166
+            },
+            {
+              "mean": 127.493896484375,
+              "std": 22.433298741705308,
+              "shannon_bits": 6.506563294023513,
+              "most_common_probability": 0.024169921875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.14560267007198627
+            },
+            {
+              "mean": 126.8388671875,
+              "std": 22.841503674736167,
+              "shannon_bits": 6.527540350781852,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.17500332626807977
+            },
+            {
+              "mean": 126.784423828125,
+              "std": 22.85773899562782,
+              "shannon_bits": 6.535726981891688,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 146,
+              "lag1_autocorrelation": 0.18056114819520463
+            },
+            {
+              "mean": 126.9765625,
+              "std": 23.107656872827754,
+              "shannon_bits": 6.5472164539550075,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.1831746935493394
+            },
+            {
+              "mean": 127.5810546875,
+              "std": 22.707931839312984,
+              "shannon_bits": 6.517364767420974,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.17513833154372238
+            },
+            {
+              "mean": 127.69287109375,
+              "std": 22.601948027713135,
+              "shannon_bits": 6.518661304024745,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 148,
+              "lag1_autocorrelation": 0.1788173639182106
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": -0.484375,
+            "std_ratio": 0.9955182050091821,
+            "shannon_delta_bits": -0.010820115192960778
+          }
+        },
+        "q": {
+          "blocks": [
+            {
+              "mean": 126.79736328125,
+              "std": 22.231480461644118,
+              "shannon_bits": 6.493275314172925,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.17732881309350754
+            },
+            {
+              "mean": 127.1337890625,
+              "std": 21.567824770488688,
+              "shannon_bits": 6.447742888380951,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.1770116605063844
+            },
+            {
+              "mean": 127.09326171875,
+              "std": 21.920267749033446,
+              "shannon_bits": 6.474183674862117,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.17750287165797124
+            },
+            {
+              "mean": 127.4033203125,
+              "std": 21.61335553339705,
+              "shannon_bits": 6.45146999133868,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.2001077328612514
+            },
+            {
+              "mean": 127.501220703125,
+              "std": 21.640698295772108,
+              "shannon_bits": 6.455917536168014,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.1723658427925217
+            },
+            {
+              "mean": 127.922119140625,
+              "std": 21.158477980022997,
+              "shannon_bits": 6.422599236660024,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.18633254856307718
+            },
+            {
+              "mean": 127.463134765625,
+              "std": 21.444994779918797,
+              "shannon_bits": 6.438585470804149,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.1764948797935571
+            },
+            {
+              "mean": 127.23876953125,
+              "std": 21.2933638624736,
+              "shannon_bits": 6.428916785010788,
+              "most_common_probability": 0.02294921875,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.17299529652767048
+            },
+            {
+              "mean": 126.866455078125,
+              "std": 21.464962541912726,
+              "shannon_bits": 6.446241876721057,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.16601028688666325
+            },
+            {
+              "mean": 127.1162109375,
+              "std": 21.189543386403006,
+              "shannon_bits": 6.427530415044606,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.18193552544160693
+            },
+            {
+              "mean": 127.3525390625,
+              "std": 22.716089798657286,
+              "shannon_bits": 6.5257345021679,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.19826813490685072
+            },
+            {
+              "mean": 127.851318359375,
+              "std": 22.19799736753557,
+              "shannon_bits": 6.487142805171146,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.17571833223527475
+            },
+            {
+              "mean": 128.027099609375,
+              "std": 21.68172423959397,
+              "shannon_bits": 6.457309006030909,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.18746094625603396
+            },
+            {
+              "mean": 127.008544921875,
+              "std": 21.396101043763444,
+              "shannon_bits": 6.436084627415766,
+              "most_common_probability": 0.0234375,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.18631118816748676
+            },
+            {
+              "mean": 127.408935546875,
+              "std": 21.76945538441711,
+              "shannon_bits": 6.465788593480267,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.1915952533300217
+            },
+            {
+              "mean": 127.25048828125,
+              "std": 21.369888134995147,
+              "shannon_bits": 6.433543896828979,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.1922001393796241
+            },
+            {
+              "mean": 126.96435546875,
+              "std": 21.72574525329665,
+              "shannon_bits": 6.460854933509115,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.1895191518317333
+            },
+            {
+              "mean": 127.158203125,
+              "std": 21.956330306343094,
+              "shannon_bits": 6.47727479305399,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.17702977486235144
+            },
+            {
+              "mean": 127.43896484375,
+              "std": 22.049564313801113,
+              "shannon_bits": 6.478133079438981,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.20054238246002568
+            },
+            {
+              "mean": 127.68701171875,
+              "std": 21.871443622868156,
+              "shannon_bits": 6.46645803677291,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.17145495120096624
+            },
+            {
+              "mean": 127.783935546875,
+              "std": 22.270584880458816,
+              "shannon_bits": 6.497145384464096,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.1700269245742355
+            },
+            {
+              "mean": 127.3857421875,
+              "std": 22.07222766770003,
+              "shannon_bits": 6.477508880174666,
+              "most_common_probability": 0.02392578125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.16476637728661536
+            },
+            {
+              "mean": 127.0751953125,
+              "std": 22.493840518906016,
+              "shannon_bits": 6.509664734814583,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.19213453088322285
+            },
+            {
+              "mean": 127.088134765625,
+              "std": 22.66950680768581,
+              "shannon_bits": 6.519795925462516,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.16535263614986512
+            },
+            {
+              "mean": 127.015380859375,
+              "std": 22.995031897016144,
+              "shannon_bits": 6.539492565888244,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 146,
+              "lag1_autocorrelation": 0.19723290199673976
+            },
+            {
+              "mean": 127.55517578125,
+              "std": 22.557238015394603,
+              "shannon_bits": 6.514177550206091,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 145,
+              "lag1_autocorrelation": 0.1677102868284434
+            },
+            {
+              "mean": 127.453369140625,
+              "std": 22.8371500677997,
+              "shannon_bits": 6.53185311188623,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.17075789559537588
+            },
+            {
+              "mean": 127.605712890625,
+              "std": 22.653664865005965,
+              "shannon_bits": 6.521586504748463,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.15211859167531036
+            },
+            {
+              "mean": 127.69384765625,
+              "std": 23.41667869393344,
+              "shannon_bits": 6.56541978709626,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.19179111313298902
+            },
+            {
+              "mean": 126.80615234375,
+              "std": 22.89076943726262,
+              "shannon_bits": 6.535040324084649,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.17659504108311533
+            },
+            {
+              "mean": 127.300537109375,
+              "std": 22.7241173101182,
+              "shannon_bits": 6.523150386565707,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.18549854257986265
+            },
+            {
+              "mean": 127.459716796875,
+              "std": 22.957242830037234,
+              "shannon_bits": 6.526178899768011,
+              "most_common_probability": 0.024658203125,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.17206562229549863
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": -0.662353515625,
+            "std_ratio": 0.9683863443983121,
+            "shannon_delta_bits": -0.032903585595086327
+          }
+        }
+      },
+      "run": 0,
+      "pll_not_locked": true
+    },
+    {
+      "file": "startup_0001.cu8",
+      "bytes": 524288,
+      "sha256": "a251435ab213ecb15b9ba367d656d0c168dbc37215d990ff82ef5f380200c8fc",
+      "pairs": 262144,
+      "block_pairs": 4096,
+      "blocks_analyzed": 32,
+      "channels": {
+        "i": {
+          "blocks": [
+            {
+              "mean": 127.09814453125,
+              "std": 21.18900106395971,
+              "shannon_bits": 6.429428466194247,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.18517414652867922
+            },
+            {
+              "mean": 127.054443359375,
+              "std": 20.99309816787996,
+              "shannon_bits": 6.410959153192566,
+              "most_common_probability": 0.02392578125,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.1710014096155766
+            },
+            {
+              "mean": 127.360107421875,
+              "std": 20.989161088323314,
+              "shannon_bits": 6.409538991452264,
+              "most_common_probability": 0.02490234375,
+              "unique_symbols": 124,
+              "lag1_autocorrelation": 0.180251252900776
+            },
+            {
+              "mean": 127.8291015625,
+              "std": 21.544877145717496,
+              "shannon_bits": 6.447389056009614,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.1623021531458395
+            },
+            {
+              "mean": 127.60546875,
+              "std": 21.574659374461127,
+              "shannon_bits": 6.447604864172419,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.16489446355600015
+            },
+            {
+              "mean": 127.388916015625,
+              "std": 21.599105346163423,
+              "shannon_bits": 6.450337143572068,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.193803009721274
+            },
+            {
+              "mean": 127.05859375,
+              "std": 21.081176446446506,
+              "shannon_bits": 6.417196177821955,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.16830709865115853
+            },
+            {
+              "mean": 126.923583984375,
+              "std": 20.925025912067134,
+              "shannon_bits": 6.40636927252688,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.15827663573565526
+            },
+            {
+              "mean": 127.481689453125,
+              "std": 21.814394990152103,
+              "shannon_bits": 6.4681134165396825,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.18344066309286444
+            },
+            {
+              "mean": 127.567138671875,
+              "std": 21.28979234336819,
+              "shannon_bits": 6.430441642684052,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.1783435180266684
+            },
+            {
+              "mean": 127.90625,
+              "std": 20.958536540184525,
+              "shannon_bits": 6.410652386235682,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 126,
+              "lag1_autocorrelation": 0.16375516405029847
+            },
+            {
+              "mean": 127.622802734375,
+              "std": 21.16322026877479,
+              "shannon_bits": 6.4241444269951025,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 123,
+              "lag1_autocorrelation": 0.17012643672223135
+            },
+            {
+              "mean": 126.9990234375,
+              "std": 21.444309209760657,
+              "shannon_bits": 6.444008056903819,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.17716265043435928
+            },
+            {
+              "mean": 127.0888671875,
+              "std": 21.077850792460694,
+              "shannon_bits": 6.414036571670406,
+              "most_common_probability": 0.02294921875,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.17881899080942412
+            },
+            {
+              "mean": 127.0556640625,
+              "std": 20.96265576372412,
+              "shannon_bits": 6.411162421029546,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 124,
+              "lag1_autocorrelation": 0.16852358872099987
+            },
+            {
+              "mean": 127.126708984375,
+              "std": 21.579676345149473,
+              "shannon_bits": 6.449844206069505,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.1694660954473816
+            },
+            {
+              "mean": 127.791015625,
+              "std": 21.09536515445409,
+              "shannon_bits": 6.418989384839298,
+              "most_common_probability": 0.02392578125,
+              "unique_symbols": 125,
+              "lag1_autocorrelation": 0.17228688395255434
+            },
+            {
+              "mean": 127.68359375,
+              "std": 21.135525400613087,
+              "shannon_bits": 6.425172071143482,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.17797189822291895
+            },
+            {
+              "mean": 127.594482421875,
+              "std": 21.343849716679664,
+              "shannon_bits": 6.4335017235980505,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.17013650153783716
+            },
+            {
+              "mean": 126.900390625,
+              "std": 20.875627793791306,
+              "shannon_bits": 6.4088217257511095,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.17819509522098007
+            },
+            {
+              "mean": 127.552978515625,
+              "std": 21.131104099511273,
+              "shannon_bits": 6.424692257019302,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.16033081473048647
+            },
+            {
+              "mean": 127.23974609375,
+              "std": 21.190406841847835,
+              "shannon_bits": 6.4310946339545705,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.18698778049568557
+            },
+            {
+              "mean": 127.4853515625,
+              "std": 21.158310467273346,
+              "shannon_bits": 6.4214096106841065,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 124,
+              "lag1_autocorrelation": 0.18073684555411917
+            },
+            {
+              "mean": 128.00341796875,
+              "std": 21.247874159224484,
+              "shannon_bits": 6.42922906856766,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.16759956931420442
+            },
+            {
+              "mean": 127.158203125,
+              "std": 21.18372871796276,
+              "shannon_bits": 6.419609559388878,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.17294859261325898
+            },
+            {
+              "mean": 127.2724609375,
+              "std": 20.940029777170487,
+              "shannon_bits": 6.406377643651343,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.15636029815375216
+            },
+            {
+              "mean": 126.941650390625,
+              "std": 21.305127564918752,
+              "shannon_bits": 6.432007295184679,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.19245552305349062
+            },
+            {
+              "mean": 127.244140625,
+              "std": 21.16935443584014,
+              "shannon_bits": 6.426244097633537,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.15201994413270292
+            },
+            {
+              "mean": 127.7939453125,
+              "std": 21.183421032071504,
+              "shannon_bits": 6.424827832317067,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.17671644325666439
+            },
+            {
+              "mean": 127.534912109375,
+              "std": 20.89413073361438,
+              "shannon_bits": 6.4057780526421535,
+              "most_common_probability": 0.02294921875,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.17552980285561137
+            },
+            {
+              "mean": 126.9619140625,
+              "std": 20.27294260350763,
+              "shannon_bits": 6.363940353776481,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 121,
+              "lag1_autocorrelation": 0.17301509936796694
+            },
+            {
+              "mean": 127.022705078125,
+              "std": 20.49378769502608,
+              "shannon_bits": 6.376552607522026,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 125,
+              "lag1_autocorrelation": 0.16687974041436215
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": 0.075439453125,
+            "std_ratio": 1.0339231273046887,
+            "shannon_delta_bits": 0.052875858672221554
+          }
+        },
+        "q": {
+          "blocks": [
+            {
+              "mean": 127.296875,
+              "std": 21.602990741662946,
+              "shannon_bits": 6.452502582190901,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.16797311578676588
+            },
+            {
+              "mean": 127.0107421875,
+              "std": 20.946800216092857,
+              "shannon_bits": 6.407170601334651,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.20573933158609933
+            },
+            {
+              "mean": 126.801513671875,
+              "std": 21.13751034090634,
+              "shannon_bits": 6.423415394137915,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.15635606773309496
+            },
+            {
+              "mean": 127.0966796875,
+              "std": 21.627922235515943,
+              "shannon_bits": 6.4529748527098025,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.16778156164230906
+            },
+            {
+              "mean": 127.699951171875,
+              "std": 21.361656562433676,
+              "shannon_bits": 6.433099139974937,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.17633878540711026
+            },
+            {
+              "mean": 127.734619140625,
+              "std": 21.725125699782552,
+              "shannon_bits": 6.45681249820681,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.16400626956563133
+            },
+            {
+              "mean": 127.937255859375,
+              "std": 21.07426689785892,
+              "shannon_bits": 6.420136415795729,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.17083569620569958
+            },
+            {
+              "mean": 127.3203125,
+              "std": 21.187533128200503,
+              "shannon_bits": 6.424347533225433,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.15676918514380953
+            },
+            {
+              "mean": 127.013427734375,
+              "std": 21.52870007961058,
+              "shannon_bits": 6.4446468719337595,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.16691771108859468
+            },
+            {
+              "mean": 127.33740234375,
+              "std": 21.309210419931848,
+              "shannon_bits": 6.435521636187645,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.19837057034281758
+            },
+            {
+              "mean": 127.470703125,
+              "std": 20.94081412888752,
+              "shannon_bits": 6.4076737802013914,
+              "most_common_probability": 0.024658203125,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.1807169482462366
+            },
+            {
+              "mean": 127.624267578125,
+              "std": 21.218961407053527,
+              "shannon_bits": 6.427336413223204,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.17115537935694453
+            },
+            {
+              "mean": 127.715087890625,
+              "std": 21.540843447229648,
+              "shannon_bits": 6.447060502239625,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.1691428774857686
+            },
+            {
+              "mean": 126.883544921875,
+              "std": 21.02526760038749,
+              "shannon_bits": 6.417632458004084,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.16998450931142814
+            },
+            {
+              "mean": 126.971923828125,
+              "std": 21.07521043623759,
+              "shannon_bits": 6.411927266140647,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.16150320603944407
+            },
+            {
+              "mean": 127.093017578125,
+              "std": 21.01540752851428,
+              "shannon_bits": 6.415866940707538,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.1655097415723797
+            },
+            {
+              "mean": 127.478515625,
+              "std": 21.10946237361058,
+              "shannon_bits": 6.419830608896113,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.19092171838332214
+            },
+            {
+              "mean": 127.5498046875,
+              "std": 21.017140046711948,
+              "shannon_bits": 6.40648492640574,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 127,
+              "lag1_autocorrelation": 0.14892811722639449
+            },
+            {
+              "mean": 127.781005859375,
+              "std": 21.230210007369145,
+              "shannon_bits": 6.42781300069621,
+              "most_common_probability": 0.023193359375,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.1659083554838216
+            },
+            {
+              "mean": 127.43603515625,
+              "std": 21.3051515534979,
+              "shannon_bits": 6.430932422062479,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 122,
+              "lag1_autocorrelation": 0.17525151031813202
+            },
+            {
+              "mean": 126.710205078125,
+              "std": 21.202871759655118,
+              "shannon_bits": 6.427336451926444,
+              "most_common_probability": 0.025146484375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.19724715542403876
+            },
+            {
+              "mean": 127.067626953125,
+              "std": 21.33095944612164,
+              "shannon_bits": 6.438418770075631,
+              "most_common_probability": 0.0224609375,
+              "unique_symbols": 130,
+              "lag1_autocorrelation": 0.17884648464831526
+            },
+            {
+              "mean": 127.7138671875,
+              "std": 20.878091160678718,
+              "shannon_bits": 6.400322856945348,
+              "most_common_probability": 0.0234375,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.15854459525839537
+            },
+            {
+              "mean": 127.8037109375,
+              "std": 21.24727799428536,
+              "shannon_bits": 6.429991474718764,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.15400113857510653
+            },
+            {
+              "mean": 127.923583984375,
+              "std": 20.94720555010097,
+              "shannon_bits": 6.40739487854599,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.1802002077031147
+            },
+            {
+              "mean": 126.963134765625,
+              "std": 21.031420837377333,
+              "shannon_bits": 6.41409634586152,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 132,
+              "lag1_autocorrelation": 0.1815005976883254
+            },
+            {
+              "mean": 127.285400390625,
+              "std": 21.435947505187546,
+              "shannon_bits": 6.439046402753781,
+              "most_common_probability": 0.02294921875,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.15727382868210316
+            },
+            {
+              "mean": 126.77197265625,
+              "std": 20.940735655188963,
+              "shannon_bits": 6.402822249588765,
+              "most_common_probability": 0.022705078125,
+              "unique_symbols": 131,
+              "lag1_autocorrelation": 0.18195205308718376
+            },
+            {
+              "mean": 127.5712890625,
+              "std": 21.3224018396924,
+              "shannon_bits": 6.429531258230095,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 129,
+              "lag1_autocorrelation": 0.17375947818696202
+            },
+            {
+              "mean": 128.07861328125,
+              "std": 20.854456855388516,
+              "shannon_bits": 6.397995841027384,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 123,
+              "lag1_autocorrelation": 0.16368244476564212
+            },
+            {
+              "mean": 127.513916015625,
+              "std": 20.961804962407438,
+              "shannon_bits": 6.412785778855152,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 128,
+              "lag1_autocorrelation": 0.17417845774795812
+            },
+            {
+              "mean": 127.533447265625,
+              "std": 20.40514579782321,
+              "shannon_bits": 6.3708591720152565,
+              "most_common_probability": 0.024169921875,
+              "unique_symbols": 126,
+              "lag1_autocorrelation": 0.171999071969171
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": -0.236572265625,
+            "std_ratio": 1.0587030818455372,
+            "shannon_delta_bits": 0.08164341017564425
+          }
+        }
+      },
+      "run": 1,
+      "pll_not_locked": true
+    },
+    {
+      "file": "startup_0002.cu8",
+      "bytes": 524288,
+      "sha256": "8dca1e44c70846b413e6965459b7e6fc1d3a051f23664593817173285d5fe52a",
+      "pairs": 262144,
+      "block_pairs": 4096,
+      "blocks_analyzed": 32,
+      "channels": {
+        "i": {
+          "blocks": [
+            {
+              "mean": 127.64794921875,
+              "std": 24.016851702839222,
+              "shannon_bits": 6.601854524633153,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.17113519628337057
+            },
+            {
+              "mean": 127.265869140625,
+              "std": 23.378381003946537,
+              "shannon_bits": 6.566038164902524,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.16957032414538006
+            },
+            {
+              "mean": 127.783935546875,
+              "std": 23.668856980460017,
+              "shannon_bits": 6.579535825868282,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.14706173660845334
+            },
+            {
+              "mean": 126.8056640625,
+              "std": 22.969745453523117,
+              "shannon_bits": 6.538964693138021,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.156041433454036
+            },
+            {
+              "mean": 126.94970703125,
+              "std": 23.131859411557134,
+              "shannon_bits": 6.546466138218975,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 133,
+              "lag1_autocorrelation": 0.14993383807353203
+            },
+            {
+              "mean": 127.334716796875,
+              "std": 23.10426701107427,
+              "shannon_bits": 6.54671578029156,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.15709184894199002
+            },
+            {
+              "mean": 127.53076171875,
+              "std": 23.382154048235368,
+              "shannon_bits": 6.563945127264554,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.16151187432373598
+            },
+            {
+              "mean": 128.008544921875,
+              "std": 23.40338507232843,
+              "shannon_bits": 6.5613335623972,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.18015976573868148
+            },
+            {
+              "mean": 127.580322265625,
+              "std": 23.336436134479595,
+              "shannon_bits": 6.569251392592756,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.16664486144399646
+            },
+            {
+              "mean": 127.456787109375,
+              "std": 23.15048401199927,
+              "shannon_bits": 6.550476736108255,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.15610766232358148
+            },
+            {
+              "mean": 127.425048828125,
+              "std": 23.475307994717227,
+              "shannon_bits": 6.569679353726489,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.15714316288973074
+            },
+            {
+              "mean": 126.7998046875,
+              "std": 23.558095161071556,
+              "shannon_bits": 6.579477745320926,
+              "most_common_probability": 0.0185546875,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.183515599300102
+            },
+            {
+              "mean": 127.578369140625,
+              "std": 23.28070911444812,
+              "shannon_bits": 6.561792054474004,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.13429188849408477
+            },
+            {
+              "mean": 127.824951171875,
+              "std": 23.37960291615636,
+              "shannon_bits": 6.561240046526032,
+              "most_common_probability": 0.018798828125,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.15193246290070525
+            },
+            {
+              "mean": 127.579833984375,
+              "std": 23.271620776520678,
+              "shannon_bits": 6.562382987106524,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.1434930561553669
+            },
+            {
+              "mean": 127.759765625,
+              "std": 23.602521183023402,
+              "shannon_bits": 6.570171139444873,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.14250152599733001
+            },
+            {
+              "mean": 127.6943359375,
+              "std": 23.30493399233617,
+              "shannon_bits": 6.5652505760180135,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 144,
+              "lag1_autocorrelation": 0.1505399227546331
+            },
+            {
+              "mean": 127.3427734375,
+              "std": 23.106943679645184,
+              "shannon_bits": 6.55205232000589,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.16479721651933135
+            },
+            {
+              "mean": 127.403076171875,
+              "std": 23.305825542319706,
+              "shannon_bits": 6.559173473097529,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.16119832458984748
+            },
+            {
+              "mean": 127.125244140625,
+              "std": 23.14625685685191,
+              "shannon_bits": 6.549185765443722,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.16660559781178208
+            },
+            {
+              "mean": 127.3369140625,
+              "std": 23.419258831717748,
+              "shannon_bits": 6.565781038618471,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.16129556056537983
+            },
+            {
+              "mean": 127.66748046875,
+              "std": 22.804970441881466,
+              "shannon_bits": 6.529476104990772,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.13813567956527625
+            },
+            {
+              "mean": 127.844970703125,
+              "std": 23.64299783818637,
+              "shannon_bits": 6.581084093808093,
+              "most_common_probability": 0.01904296875,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.15454113156874985
+            },
+            {
+              "mean": 127.62548828125,
+              "std": 23.492848703196234,
+              "shannon_bits": 6.571047233032342,
+              "most_common_probability": 0.018798828125,
+              "unique_symbols": 144,
+              "lag1_autocorrelation": 0.15868384188197895
+            },
+            {
+              "mean": 127.3203125,
+              "std": 23.142612328151152,
+              "shannon_bits": 6.548131822669426,
+              "most_common_probability": 0.021484375,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.16521664860004454
+            },
+            {
+              "mean": 127.060546875,
+              "std": 23.368183876152585,
+              "shannon_bits": 6.5638053899157125,
+              "most_common_probability": 0.0185546875,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.15068424401292443
+            },
+            {
+              "mean": 127.281982421875,
+              "std": 23.127223870595202,
+              "shannon_bits": 6.5509575401879,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.15106526465482817
+            },
+            {
+              "mean": 126.823486328125,
+              "std": 23.07934355182175,
+              "shannon_bits": 6.541366563679018,
+              "most_common_probability": 0.021240234375,
+              "unique_symbols": 135,
+              "lag1_autocorrelation": 0.1335617152965953
+            },
+            {
+              "mean": 127.193359375,
+              "std": 23.258109616504726,
+              "shannon_bits": 6.551639090297428,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.17056737921931497
+            },
+            {
+              "mean": 127.9345703125,
+              "std": 23.30926620104103,
+              "shannon_bits": 6.562408049394098,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.16016698010720046
+            },
+            {
+              "mean": 127.826904296875,
+              "std": 23.333081330204433,
+              "shannon_bits": 6.558066366018023,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.17245219194250969
+            },
+            {
+              "mean": 127.54345703125,
+              "std": 23.37312129319563,
+              "shannon_bits": 6.565415928004379,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.1525780792967892
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": 0.1044921875,
+            "std_ratio": 1.0275414824391038,
+            "shannon_delta_bits": 0.036438596628774356
+          }
+        },
+        "q": {
+          "blocks": [
+            {
+              "mean": 127.56689453125,
+              "std": 23.721846341962692,
+              "shannon_bits": 6.585175866791677,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 145,
+              "lag1_autocorrelation": 0.15964521293460918
+            },
+            {
+              "mean": 127.656494140625,
+              "std": 23.362106274562446,
+              "shannon_bits": 6.563774396472192,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.1459145163408243
+            },
+            {
+              "mean": 127.7255859375,
+              "std": 23.565409088663245,
+              "shannon_bits": 6.582002736639589,
+              "most_common_probability": 0.01904296875,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.16685865134298403
+            },
+            {
+              "mean": 127.616455078125,
+              "std": 23.22532319330624,
+              "shannon_bits": 6.5521873597071805,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.1457236580100782
+            },
+            {
+              "mean": 127.052490234375,
+              "std": 23.68930213811543,
+              "shannon_bits": 6.583308550092248,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 147,
+              "lag1_autocorrelation": 0.18408467210729573
+            },
+            {
+              "mean": 127.286376953125,
+              "std": 23.575112049841753,
+              "shannon_bits": 6.576806219525336,
+              "most_common_probability": 0.018798828125,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.1390037869932414
+            },
+            {
+              "mean": 126.724365234375,
+              "std": 22.833048367259327,
+              "shannon_bits": 6.5291273247488135,
+              "most_common_probability": 0.02197265625,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.1694071318451345
+            },
+            {
+              "mean": 126.711181640625,
+              "std": 23.09340814974942,
+              "shannon_bits": 6.54666946550176,
+              "most_common_probability": 0.020751953125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.15705126508861236
+            },
+            {
+              "mean": 127.58740234375,
+              "std": 23.503369470254835,
+              "shannon_bits": 6.564433935496525,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 145,
+              "lag1_autocorrelation": 0.1757381226944502
+            },
+            {
+              "mean": 127.62841796875,
+              "std": 23.234382629393277,
+              "shannon_bits": 6.558154194089667,
+              "most_common_probability": 0.0185546875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.12041729589665284
+            },
+            {
+              "mean": 127.71728515625,
+              "std": 22.89876996843113,
+              "shannon_bits": 6.536091480887647,
+              "most_common_probability": 0.019775390625,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.18413067948469072
+            },
+            {
+              "mean": 127.283447265625,
+              "std": 23.23384392111505,
+              "shannon_bits": 6.557714632235354,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.1561103567988202
+            },
+            {
+              "mean": 126.6552734375,
+              "std": 23.622061067270504,
+              "shannon_bits": 6.584338323261527,
+              "most_common_probability": 0.018310546875,
+              "unique_symbols": 146,
+              "lag1_autocorrelation": 0.15208085158888357
+            },
+            {
+              "mean": 127.03759765625,
+              "std": 23.194249196541037,
+              "shannon_bits": 6.557053042924112,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.14520516348726922
+            },
+            {
+              "mean": 127.18603515625,
+              "std": 22.53891080544131,
+              "shannon_bits": 6.51061566490196,
+              "most_common_probability": 0.0205078125,
+              "unique_symbols": 138,
+              "lag1_autocorrelation": 0.14466304595026439
+            },
+            {
+              "mean": 127.595947265625,
+              "std": 23.523271663338395,
+              "shannon_bits": 6.57354914138207,
+              "most_common_probability": 0.0185546875,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.15316091321487377
+            },
+            {
+              "mean": 127.619873046875,
+              "std": 22.730724268380296,
+              "shannon_bits": 6.521774679962947,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 134,
+              "lag1_autocorrelation": 0.1555444304225078
+            },
+            {
+              "mean": 127.76416015625,
+              "std": 23.170774895449654,
+              "shannon_bits": 6.550918113463021,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.13715734158968795
+            },
+            {
+              "mean": 127.107666015625,
+              "std": 23.81229248231792,
+              "shannon_bits": 6.593338351602571,
+              "most_common_probability": 0.01953125,
+              "unique_symbols": 147,
+              "lag1_autocorrelation": 0.15754212655029787
+            },
+            {
+              "mean": 127.31689453125,
+              "std": 23.052105714143856,
+              "shannon_bits": 6.543033708128274,
+              "most_common_probability": 0.01904296875,
+              "unique_symbols": 136,
+              "lag1_autocorrelation": 0.17428309645264015
+            },
+            {
+              "mean": 126.90185546875,
+              "std": 23.26282065189507,
+              "shannon_bits": 6.554760936836965,
+              "most_common_probability": 0.02099609375,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.15397534444239408
+            },
+            {
+              "mean": 127.341064453125,
+              "std": 23.614521759490273,
+              "shannon_bits": 6.577733892036995,
+              "most_common_probability": 0.01904296875,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.17283140762444577
+            },
+            {
+              "mean": 127.469482421875,
+              "std": 23.399365775110773,
+              "shannon_bits": 6.563734526905998,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 139,
+              "lag1_autocorrelation": 0.16455380184517546
+            },
+            {
+              "mean": 127.65771484375,
+              "std": 23.53679028928564,
+              "shannon_bits": 6.579126757447491,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.1416269171765155
+            },
+            {
+              "mean": 128.195068359375,
+              "std": 22.679982938034716,
+              "shannon_bits": 6.521101312927598,
+              "most_common_probability": 0.022216796875,
+              "unique_symbols": 137,
+              "lag1_autocorrelation": 0.12671577510715656
+            },
+            {
+              "mean": 127.557861328125,
+              "std": 23.363687346857464,
+              "shannon_bits": 6.566356821602934,
+              "most_common_probability": 0.0185546875,
+              "unique_symbols": 146,
+              "lag1_autocorrelation": 0.14680266726389746
+            },
+            {
+              "mean": 127.76171875,
+              "std": 23.360620982133554,
+              "shannon_bits": 6.565597004155272,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 140,
+              "lag1_autocorrelation": 0.17471154732608374
+            },
+            {
+              "mean": 127.223876953125,
+              "std": 23.375646009800125,
+              "shannon_bits": 6.561574476938764,
+              "most_common_probability": 0.018310546875,
+              "unique_symbols": 144,
+              "lag1_autocorrelation": 0.15151423625240748
+            },
+            {
+              "mean": 126.82958984375,
+              "std": 23.17502535537765,
+              "shannon_bits": 6.555471756160271,
+              "most_common_probability": 0.020263671875,
+              "unique_symbols": 143,
+              "lag1_autocorrelation": 0.15018919353470542
+            },
+            {
+              "mean": 127.4345703125,
+              "std": 23.634559412933715,
+              "shannon_bits": 6.57966732128644,
+              "most_common_probability": 0.02001953125,
+              "unique_symbols": 142,
+              "lag1_autocorrelation": 0.1622610577400629
+            },
+            {
+              "mean": 127.310791015625,
+              "std": 23.249660631748622,
+              "shannon_bits": 6.554744480050177,
+              "most_common_probability": 0.021728515625,
+              "unique_symbols": 141,
+              "lag1_autocorrelation": 0.17387683712464935
+            },
+            {
+              "mean": 127.670166015625,
+              "std": 23.597285508525687,
+              "shannon_bits": 6.57514698463183,
+              "most_common_probability": 0.019287109375,
+              "unique_symbols": 144,
+              "lag1_autocorrelation": 0.14263421354109465
+            }
+          ],
+          "first_vs_last": {
+            "mean_delta": -0.103271484375,
+            "std_ratio": 1.0052786085667353,
+            "shannon_delta_bits": 0.01002888215984754
+          }
+        }
+      },
+      "run": 2,
+      "pll_not_locked": true
+    }
+  ],
+  "cautions": [
+    "Empirical Shannon entropy is NOT a min-entropy lower bound.",
+    "No proof of USB power cycling beyond operator attestation.",
+    "First rtl_sdr samples may follow hardware/driver warm-up or dropped samples.",
+    "PLL warning in stderr is not proof of persistent PLL failure.",
+    "No NIST restart compliance or cryptographic entropy claim."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source": "results/controlled_abab/A2_50ohm.cu8",
+  "bytes": 864000000,
+  "total_pairs": 432000000,
+  "windows": 120,
+  "pairs_per_window": 65536,
+  "fraction_pairs_analyzed": 0.018204444444444443,
+  "lag_convention": "cross(k) = corr(I[t], Q[t+k])",
+  "antisym_convention": "(cross(+k) - cross(-k))/2",
+  "metrics": {
+    "acf1_i": {
+      "mean": 0.07922430410338231,
+      "std_across_windows": 0.0036619925687999006,
+      "min": 0.06984602589642697,
+      "max": 0.08758701914512856
+    },
+    "acf1_q": {
+      "mean": 0.07959527212534202,
+      "std_across_windows": 0.0036339748966745934,
+      "min": 0.06804227402862169,
+      "max": 0.088704363471273
+    },
+    "cross_+0": {
+      "mean": -2.9420435043420064e-05,
+      "std_across_windows": 0.0036106172047220123,
+      "min": -0.008568794799659312,
+      "max": 0.010165136571139117
+    },
+    "cross_-41": {
+      "mean": 0.00013387504676001585,
+      "std_across_windows": 0.0036752401598946914,
+      "min": -0.00786661446018249,
+      "max": 0.011016725639779866
+    },
+    "cross_-8": {
+      "mean": 0.002106036214035903,
+      "std_across_windows": 0.004039148747230248,
+      "min": -0.006147139039824087,
+      "max": 0.011631261464189534
+    },
+    "cross_+8": {
+      "mean": -0.0013536607301820745,
+      "std_across_windows": 0.0039443154186563165,
+      "min": -0.013340099706330703,
+      "max": 0.010788949300058826
+    },
+    "cross_+41": {
+      "mean": 1.8598157397219123e-05,
+      "std_across_windows": 0.003813667992542668,
+      "min": -0.01074600157419091,
+      "max": 0.00970830492894683
+    },
+    "antisym_8": {
+      "mean": -0.001729848472108989,
+      "std_across_windows": 0.002905095570062546,
+      "min": -0.00990002673481729,
+      "max": 0.00564242676015927
+    },
+    "antisym_41": {
+      "mean": -5.763844468139843e-05,
+      "std_across_windows": 0.002689322299078988,
+      "min": -0.009829791665260126,
+      "max": 0.007410460600642304
+    }
+  },
+  "warning": "Estat\u00edsticas descritivas, n\u00e3o estimativa validada de entropia criptogr\u00e1fica."
+}

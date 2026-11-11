@@ -1,0 +1,187 @@
+{
+  "script_version": "1.1.0",
+  "generated_utc": "2026-11-11T12:52:49.954355+00:00",
+  "input_dirs": {
+    "repeat": "results/E4_repeticao"
+  },
+  "output": "results/E4_E5_reprocessing",
+  "config": {
+    "rate_hz": 2400000,
+    "fft_size": 8192,
+    "resolution_hz": 292.96875,
+    "smooth_actual_khz": 10.25390625,
+    "baselines_khz": [
+      50.0,
+      100.0,
+      150.0,
+      250.0
+    ],
+    "masks_khz": [
+      0.0,
+      5.0,
+      10.0
+    ],
+    "broad_target_hz": 1420330752,
+    "broad_half_window_hz": 20000,
+    "narrow_target_hz": 1419988565
+  },
+  "capture_audit": [
+    {
+      "campaign": "repeat",
+      "capture": "ON1",
+      "fft_blocks": 17578,
+      "samples": 144000000,
+      "discarded_tail_samples": 1024,
+      "dc_center_attenuation_db": -9.333172859996646,
+      "mean_complex_dc_i": -0.1024981455423683,
+      "mean_complex_dc_q": -0.10207557309296422,
+      "azimuth_deg": 105.0,
+      "elevation_deg": 86.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "OFF",
+      "fft_blocks": 17578,
+      "samples": 144000000,
+      "discarded_tail_samples": 1024,
+      "dc_center_attenuation_db": -9.473219227390807,
+      "mean_complex_dc_i": -0.10245650635737855,
+      "mean_complex_dc_q": -0.10235585980833642,
+      "azimuth_deg": 300.0,
+      "elevation_deg": 60.0
+    },
+    {
+      "campaign": "repeat",
+      "capture": "ON2",
+      "fft_blocks": 17578,
+      "samples": 144000000,
+      "discarded_tail_samples": 1024,
+      "dc_center_attenuation_db": -9.297516666550077,
+      "mean_complex_dc_i": -0.10296578775671293,
+      "mean_complex_dc_q": -0.10257649332173029,
+      "azimuth_deg": 101.0,
+      "elevation_deg": 86.0
+    }
+  ],
+  "broad_summary_primary": [
+    {
+      "campaign": "repeat",
+      "pair": "ON1/OFF",
+      "method": "after_dc",
+      "mask_khz": 5.0,
+      "baseline_khz": 100.0,
+      "feature_db": 0.0280694736700825,
+      "linear_sideband_fit_db": 0.1900191155778732,
+      "peak_hz_exploratory": 1420332802.78125,
+      "peak_residual_db": 0.10285510469873649,
+      "n_band_bins": 137,
+      "n_side_bins": 239
+    },
+    {
+      "campaign": "repeat",
+      "pair": "ON2/OFF",
+      "method": "after_dc",
+      "mask_khz": 5.0,
+      "baseline_khz": 100.0,
+      "feature_db": 0.031043871646224575,
+      "linear_sideband_fit_db": 0.1694215442966862,
+      "peak_hz_exploratory": 1420332509.8125,
+      "peak_residual_db": 0.08088597276455267,
+      "n_band_bins": 137,
+      "n_side_bins": 239
+    }
+  ],
+  "narrow_direction_diagnostic": [
+    {
+      "campaign": "repeat",
+      "on_mean_minus_off_peak_db": -0.6772715726594327,
+      "on1_db": 0.8538572150724999,
+      "off_db": 1.615200332852721,
+      "on2_db": 1.0220003053140765
+    }
+  ],
+  "e5_original_method_reanalysis": [
+    {
+      "pair": "ON1/OFF",
+      "method": "before_dc",
+      "peak_hz_around_1420_331": 1420326357.46875,
+      "peak_residual_db": 0.27768973184218404,
+      "candidate_band_median_db": 0.2712826408684803,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    },
+    {
+      "pair": "ON1/OFF",
+      "method": "after_dc",
+      "peak_hz_around_1420_331": 1420326357.46875,
+      "peak_residual_db": 0.2775479716189809,
+      "candidate_band_median_db": 0.2711337914472984,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    },
+    {
+      "pair": "ON2/OFF",
+      "method": "before_dc",
+      "peak_hz_around_1420_331": 1420331337.9375,
+      "peak_residual_db": 0.24714743195715333,
+      "candidate_band_median_db": 0.24237336193097636,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    },
+    {
+      "pair": "ON2/OFF",
+      "method": "after_dc",
+      "peak_hz_around_1420_331": 1420331337.9375,
+      "peak_residual_db": 0.2470397354040688,
+      "candidate_band_median_db": 0.24226059452832835,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    },
+    {
+      "pair": "mean_ON1_ON2/OFF (shared OFF)",
+      "method": "before_dc",
+      "peak_hz_around_1420_331": 1420328408.25,
+      "peak_residual_db": 0.2623552120210394,
+      "candidate_band_median_db": 0.2566528944827767,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    },
+    {
+      "pair": "mean_ON1_ON2/OFF (shared OFF)",
+      "method": "after_dc",
+      "peak_hz_around_1420_331": 1420328408.25,
+      "peak_residual_db": 0.2622652564124588,
+      "candidate_band_median_db": 0.2565585365231769,
+      "median_bins": 83,
+      "gaussian_baseline_sigma_bins": 440.0,
+      "gaussian_residual_sigma_bins": 50.0
+    }
+  ],
+  "temporal": {
+    "repeat_ON1/OFF": {
+      "n_windows": 6,
+      "mean_db": 0.03991968271232671
+    },
+    "repeat_ON2/OFF": {
+      "n_windows": 6,
+      "mean_db": 0.02957818992299364
+    }
+  },
+  "limitations": [
+    "E5 is an exploratory reanalysis of the E4 repeat, not an independent data collection.",
+    "E4/E5 broad candidate was selected post hoc; its positive excess is not a prospective independent confirmation.",
+    "Both ON ratios within a campaign share one OFF recording; not independent contrasts.",
+    "Window pairing is by elapsed time, not simultaneous sky measurements.",
+    "The E5 candidate lies about 75 kHz below the receiver center; upper sideband reaches the DC frequency. Center masking matters.",
+    "Per-block DC removal cannot rule out external fixed-frequency RFI or changing bandpass.",
+    "Baseline choice and candidate selection influence reported excess magnitude.",
+    "No absolute antenna-temperature calibration, LSR correction, or instrument health telemetry.",
+    "This script does not analyze entropy or certify a TRNG."
+  ],
+  "warnings": []
+}

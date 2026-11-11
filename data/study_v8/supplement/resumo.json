@@ -1,0 +1,158 @@
+{
+  "5.0": {
+    "mask_khz": 5.0,
+    "means_db": {
+      "ON1": 0.059667253059364184,
+      "OFF1": 0.0020181182866142217,
+      "ON2": 0.04218098731379533,
+      "OFF2": 0.00307501211821557,
+      "ON3": 0.06160895320123797
+    },
+    "on_capture_mean_db": 0.054485731191465825,
+    "off_capture_mean_db": 0.002546565202414896,
+    "contrast_capture_mean_db": 0.05193916598905093,
+    "exact_assignment_one_sided_p": 0.1,
+    "num_sky_captures": 5,
+    "num_label_assignments": 10,
+    "fixed_session_block_bootstrap_ci95_db": {
+      "10": {
+        "low": 0.046991003006408245,
+        "median": 0.0519428454266854,
+        "high": 0.056822589247486614
+      },
+      "30": {
+        "low": 0.047564880741661375,
+        "median": 0.05195498130638944,
+        "high": 0.05635500015143019
+      },
+      "60": {
+        "low": 0.04782063184198663,
+        "median": 0.05196432214973715,
+        "high": 0.056022607712750166
+      }
+    },
+    "capture_resampling_ci95_exploratory_db": [
+      0.039634422111380435,
+      0.059062387998823074
+    ],
+    "welch_ci95_capture_means_exploratory_db": [
+      0.02562495315789128,
+      0.07825337882021058
+    ],
+    "welch_df": 2.0291574387132787
+  },
+  "10.0": {
+    "mask_khz": 10.0,
+    "means_db": {
+      "ON1": 0.04851909825887017,
+      "OFF1": 0.000720999758494444,
+      "ON2": 0.0332123726590865,
+      "OFF2": 0.0016272603928255169,
+      "ON3": 0.06414292870822275
+    },
+    "on_capture_mean_db": 0.04862479987539314,
+    "off_capture_mean_db": 0.0011741300756599805,
+    "contrast_capture_mean_db": 0.04745066979973316,
+    "exact_assignment_one_sided_p": 0.1,
+    "num_sky_captures": 5,
+    "num_label_assignments": 10,
+    "fixed_session_block_bootstrap_ci95_db": {
+      "10": {
+        "low": 0.04134338917250307,
+        "median": 0.047502252708947576,
+        "high": 0.05362544104703801
+      },
+      "30": {
+        "low": 0.041487994983494106,
+        "median": 0.047390224481965795,
+        "high": 0.053564786244392315
+      },
+      "60": {
+        "low": 0.0416119782411295,
+        "median": 0.04741539229305865,
+        "high": 0.053412897710225296
+      }
+    },
+    "capture_resampling_ci95_exploratory_db": [
+      0.03203824258342652,
+      0.06296879863256277
+    ],
+    "welch_ci95_capture_means_exploratory_db": [
+      0.009170718944821014,
+      0.08573062065464532
+    ],
+    "welch_df": 2.0102880118293314
+  },
+  "spectral_placebo": {
+    "original_target_mean_db": 0.05204259153857097,
+    "number_other_windows": 94,
+    "fraction_other_windows_with_larger_excess": 0.010638297872340425,
+    "fraction_other_windows_all_three_positive": 0.20212765957446807,
+    "max_other_mean_db": 0.055305417660530966,
+    "max_other_center_mhz": 1420.475752
+  },
+  "geometry": {
+    "coordinates": [
+      {
+        "capture": "ON1",
+        "timestamp_utc": "2026-11-10T12:48:57.450810+00:00",
+        "azimuth_deg": 200.0,
+        "elevation_deg": 54.0,
+        "ra_deg": 166.09358670949857,
+        "dec_deg": -59.34370423167915,
+        "gal_lon_deg": 289.6557630607714,
+        "gal_lat_deg": 0.7399957566037593
+      },
+      {
+        "capture": "OFF1",
+        "timestamp_utc": "2026-11-10T13:03:46.761318+00:00",
+        "azimuth_deg": 300.0,
+        "elevation_deg": 60.0,
+        "ra_deg": 166.95396483768445,
+        "dec_deg": -9.901812374541539,
+        "gal_lon_deg": 265.244367246417,
+        "gal_lat_deg": 45.25297974003576
+      },
+      {
+        "capture": "ON2",
+        "timestamp_utc": "2026-11-10T13:08:29.396629+00:00",
+        "azimuth_deg": 205.0,
+        "elevation_deg": 50.0,
+        "ra_deg": 161.10077941308302,
+        "dec_deg": -60.1778262789299,
+        "gal_lon_deg": 287.75477972777946,
+        "gal_lat_deg": -1.1040962954301896
+      },
+      {
+        "capture": "OFF2",
+        "timestamp_utc": "2026-11-10T13:13:49.733654+00:00",
+        "azimuth_deg": 300.0,
+        "elevation_deg": 60.0,
+        "ra_deg": 169.47322830264193,
+        "dec_deg": -9.901812374541539,
+        "gal_lon_deg": 268.2620757534403,
+        "gal_lat_deg": 46.57677639973277
+      },
+      {
+        "capture": "ON3",
+        "timestamp_utc": "2026-11-10T13:18:08.311599+00:00",
+        "azimuth_deg": 205.0,
+        "elevation_deg": 50.0,
+        "ra_deg": 163.5195294207199,
+        "dec_deg": -60.1778262789299,
+        "gal_lon_deg": 288.82757022405127,
+        "gal_lat_deg": -0.5599442019544331
+      }
+    ],
+    "target_frequency_hz": 1420392000,
+    "topocentric_radio_velocity_km_s_approx": 2.9024642606576183,
+    "method": "approximate GMST and altaz transformation; manually pointed; no LSR correction; assumed Chapeco lat=-27.10 long=-52.62"
+  },
+  "limitations": [
+    "Fixed-session temporal block bootstrap is conditional on these five recordings and cannot address session-to-session systematics or sky-attribution.",
+    "Exact permutation over 5 sky recordings has minimum one-sided p=0.10 and assumes exchangeability violated by time-order/pointing.",
+    "Frequency-placebo scan is a diagnostic, not a calibrated null distribution: spectral bins are correlated and target was preselected based on E6.",
+    "No external HI4PI spectrum for recorded coordinates was downloaded; qualitative spatial consistency only; no direct profile or velocity comparison.",
+    "The observing setup lacks absolute calibration, verified antenna beam, precise pointing and logged gain/noise temperature."
+  ]
+}

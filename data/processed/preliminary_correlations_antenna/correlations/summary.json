@@ -1,0 +1,67 @@
+{
+  "source": "results/antenna_30db/capture.cu8",
+  "bytes": 864000000,
+  "total_pairs": 432000000,
+  "windows": 120,
+  "pairs_per_window": 65536,
+  "fraction_pairs_analyzed": 0.018204444444444443,
+  "lag_convention": "cross(k) = corr(I[t], Q[t+k])",
+  "antisym_convention": "(cross(+k) - cross(-k))/2",
+  "metrics": {
+    "acf1_i": {
+      "mean": 0.07960989095895371,
+      "std_across_windows": 0.004061791324081845,
+      "min": 0.06903090481453852,
+      "max": 0.09116635935731703
+    },
+    "acf1_q": {
+      "mean": 0.08011815422900001,
+      "std_across_windows": 0.00371665906515208,
+      "min": 0.07113215460543691,
+      "max": 0.0893848303285242
+    },
+    "cross_+0": {
+      "mean": -0.0003157673781184644,
+      "std_across_windows": 0.003909697461644776,
+      "min": -0.00901289140084339,
+      "max": 0.009962825115516351
+    },
+    "cross_-41": {
+      "mean": 0.0003513153021329391,
+      "std_across_windows": 0.0034422129966105107,
+      "min": -0.007627865472709616,
+      "max": 0.009517845821954475
+    },
+    "cross_-8": {
+      "mean": 0.002170334273461776,
+      "std_across_windows": 0.003771591322875099,
+      "min": -0.00528670197873306,
+      "max": 0.01363100328685265
+    },
+    "cross_+8": {
+      "mean": -0.001912928229732899,
+      "std_across_windows": 0.004010747467462271,
+      "min": -0.010585552998572612,
+      "max": 0.008172858249023295
+    },
+    "cross_+41": {
+      "mean": 3.2559366572011696e-05,
+      "std_across_windows": 0.003876620301601196,
+      "min": -0.009039847902035526,
+      "max": 0.00816089735751983
+    },
+    "antisym_8": {
+      "mean": -0.0020416312515973375,
+      "std_across_windows": 0.0027991904861098624,
+      "min": -0.010273287063027856,
+      "max": 0.004334976203738134
+    },
+    "antisym_41": {
+      "mean": -0.00015937796778046377,
+      "std_across_windows": 0.002524769874501545,
+      "min": -0.008054549719881175,
+      "max": 0.006482018313280788
+    }
+  },
+  "warning": "Estat\u00edsticas descritivas, n\u00e3o estimativa validada de entropia criptogr\u00e1fica."
+}
