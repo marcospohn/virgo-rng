@@ -2942,15 +2942,15 @@
   {
     "path": "README.md",
     "source": "packaging:documentation or tool",
-    "sha256": "db9e61d1f4c901de9a9fdafad041abf0c4b54e169b07dfdc8f2695e6f773832c",
-    "size_bytes": 3921,
+    "sha256": "f73bb28027dd73ee2e8e783fa6c1a1c8577568eebfb2062cdc7b6ee8575fc497",
+    "size_bytes": 4847,
     "redacted_paths": false
   },
   {
     "path": "README.pt-BR.md",
     "source": "packaging:documentation or tool",
-    "sha256": "6b106443af2eafb435769ad610eda278ab86142ada85e1c79791c5bda779a109",
-    "size_bytes": 924,
+    "sha256": "9745246676350a19119da6e85629aea8f66b0496b8e4090f134bc96525375933",
+    "size_bytes": 1824,
     "redacted_paths": false
   },
   {
@@ -2977,8 +2977,8 @@
   {
     "path": "docs/PUBLICATION_CHECKLIST.md",
     "source": "packaging:documentation or tool",
-    "sha256": "212a73935428826d52bbbca1812c6bfff1f6bbfbe5e4f2fc2b3d80bbf89a7357",
-    "size_bytes": 1163,
+    "sha256": "6fb75aef5d0b7b2f68ab4fef65f4f545f18ec4fe5b6fd0bf1dff57024050bb85",
+    "size_bytes": 1833,
     "redacted_paths": false
   },
   {
@@ -2991,8 +2991,8 @@
   {
     "path": "docs/THIRD_PARTY.md",
     "source": "packaging:documentation or tool",
-    "sha256": "d97300f31f9bba35f01ba1abdeaaf5666cc5eaf72931ceb36a9bdf6668ae7b82",
-    "size_bytes": 1240,
+    "sha256": "5993ad4ae479ccd2bb843c07f4b233f9110bdeac6d85401dcf265f4e22c9c549",
+    "size_bytes": 2045,
     "redacted_paths": false
   },
   {
@@ -3007,6 +3007,27 @@
     "source": "packaging:documentation or tool",
     "sha256": "7b47f78de8580b5ff474c0cec78744aa13ac6568f4afcbe0043e38c25ce37d9d",
     "size_bytes": 997,
+    "redacted_paths": false
+  },
+  {
+    "path": "docs/UPSTREAM_VIRGO.md",
+    "source": "attribution-update:2026-11",
+    "sha256": "f17227e539e05798ce68506504f53da405f78604fc53b63b1cd63d4537394a30",
+    "size_bytes": 3944,
+    "redacted_paths": false
+  },
+  {
+    "path": "docs/ATUALIZAR_GITHUB_VIRGO.md",
+    "source": "attribution-update:2026-11",
+    "sha256": "b6e575423c5fca32f81c348d29fcce617003f83c56f1a634ca1313e471433fce",
+    "size_bytes": 1977,
+    "redacted_paths": false
+  },
+  {
+    "path": "tools/apply_upstream_notice.py",
+    "source": "attribution-update:2026-11",
+    "sha256": "abf1b0982a5f0a8bb0be31d8e44f7732eb10e281f577e4b29252244c2ae4bd42",
+    "size_bytes": 6906,
     "redacted_paths": false
   }
 ]

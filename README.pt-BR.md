@@ -14,3 +14,11 @@ python -m pytest -q tests
 ```
 
 O programa principal é `virgo-rng-lab` (consulte `--help`). Para publicar na sua conta GitHub, consulte **[docs/COMO_PUBLICAR_GITHUB.md](docs/COMO_PUBLICAR_GITHUB.md)**. Antes de tornar público, escolha a licença e confira possíveis dados sensíveis em metadados.
+
+<!-- BEGIN VIRGO-UPSTREAM-ATTRIBUTION -->
+## Relação com o Virgo original e licença
+
+O espectrômetro **Virgo**, originalmente desenvolvido por **Apostolos Spanakis-Misirlis**, é distribuído sob a licença **GNU GPL v3**: https://github.com/0xCoto/Virgo. Publicação: Spanakis-Misirlis, Van Eck e Boven (2021), *JOSS*, DOI: https://doi.org/10.21105/joss.03067.
+
+**Virgo-RNG é um projeto de pesquisa separado**, e esta distribuição não inclui intencionalmente a árvore de código-fonte do Virgo original. Isso não equivale a uma auditoria integral de similaridade/proveniência. Se houver incorporação de código GPL de terceiros, devem ser respeitadas as obrigações da licença. Veja [a documentação de atribuição e licenciamento](docs/UPSTREAM_VIRGO.md). O código e os dados próprios **ainda não receberam uma licença neste pacote**.
+<!-- END VIRGO-UPSTREAM-ATTRIBUTION -->

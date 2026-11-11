@@ -10,3 +10,9 @@
 - [ ] Choose whether to include original multi-GB CU8 at all. The deposited full records must be accompanied by checksums and data descriptors.
 - [ ] Run `python tools/verify_repo.py` and `pytest -q tests`.
 - [ ] Make the repository public only after final review.
+
+<!-- BEGIN VIRGO-UPSTREAM-ATTRIBUTION -->
+- [ ] Confirm whether any Virgo upstream GPL-covered source was copied, adapted, or combined into **any** Virgo-RNG or historical module. If so, preserve notices and comply with the applicable GPL terms before publishing.
+- [ ] Keep the upstream Virgo citation, copyright attribution, original repository link, and software-vs-paper license distinction in the README and documentation.
+- [ ] Do **not** select an MIT/Apache license for the entire repository without clearing third-party and institutional rights; do **not** describe the project as officially endorsed by upstream Virgo.
+<!-- END VIRGO-UPSTREAM-ATTRIBUTION -->

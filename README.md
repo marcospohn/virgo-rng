@@ -50,4 +50,12 @@ Read [dataset details](docs/DATA_AVAILABILITY.md), [reproducibility guidance](do
 
 This research was directed and the antenna/SDR observations conducted by the human investigator, with AI assistance in scripting, data analysis and drafting. All scientific interpretations require human verification. For the distinct open-source **Virgo** radio astronomy package and the official NIST SP 800-90B tools, see [third-party notices](docs/THIRD_PARTY.md); neither is bundled.
 
+<!-- BEGIN VIRGO-UPSTREAM-ATTRIBUTION -->
+### Relationship to the original Virgo spectrometer
+
+The open-source **Virgo** spectrometer was created by **Apostolos Spanakis-Misirlis** and is distributed under **GNU GPL v3**: https://github.com/0xCoto/Virgo. Its peer-reviewed software paper is Spanakis-Misirlis, Van Eck and Boven (2021), *JOSS*, DOI: https://doi.org/10.21105/joss.03067.
+
+**Virgo-RNG is a separate research toolkit and is not an official Virgo release.** This distribution does not intentionally include the upstream Virgo source tree; this statement is not a line-by-line provenance audit. Incorporating upstream GPL-covered source in the future requires satisfying that license's conditions. Read [upstream attribution and licensing](docs/UPSTREAM_VIRGO.md) before publishing or relicensing. The project code and datasets have **no license assigned in this package**.
+<!-- END VIRGO-UPSTREAM-ATTRIBUTION -->
+
 **Before publishing publicly:** the project owner must choose a software/data license, confirm ownership/third-party rights, check sensitive metadata, and provide authorship/citation details. See [publication checklist](docs/PUBLICATION_CHECKLIST.md). Without a license, public availability is *not* permission for others to reuse the materials.
